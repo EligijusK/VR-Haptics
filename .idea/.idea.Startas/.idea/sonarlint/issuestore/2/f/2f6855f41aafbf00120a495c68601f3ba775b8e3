@@ -1,0 +1,10 @@
+
+vcsharpsquid:S3776""RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ùõ’8µ†ÎÏƒ2
+Tcsharpsquid:S3903"+Move 'OrderElement' into a named namespace.(õùôüÿÿÿÿÿ8†«©ƒ2
+mcsharpsquid:S1104	"DMake this field 'private' and encapsulate it in a 'public' property.(É‰ºÚùÿÿÿÿ8•ôèÎƒ2
+mcsharpsquid:S1104
+"DMake this field 'private' and encapsulate it in a 'public' property.(ˆÆíÙüÿÿÿÿ8ÂÉ³Ä…2
+mcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(áĞÃÁşÿÿÿÿ8¼½ïÎƒ2
+mcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(òîÒ³ûÿÿÿÿ8ó·úÎƒ2
+hcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(Áš¥¿8ó·úÎƒ2
+ccsharpsquid:S2259‡"9'previousElement' is null on at least one execution path.(ï²ÚÅüÿÿÿÿ8³äÎÏƒ2
