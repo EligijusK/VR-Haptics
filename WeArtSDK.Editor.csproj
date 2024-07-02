@@ -45,38 +45,38 @@
     <Analyzer Include="D:\Unity\2022.3.35f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\TouchUI\TouchToggleEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\TouchUI\BleConnectionPanelEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Utils\WeArtUIToolkitExtensions.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\TouchUI\WristPanelEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Utils\WeArtStatusDisplayEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Properties\WeArtClosurePropertyDrawer.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\WeArtDeviceTrackingObjectEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\WeArtThimbleTrackingObjectEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Utils\WeArtDebuggerMenuItem.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Utils\WeArtDeviceStatusDisplayEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Utils\WeArtTouchableObjectMenuItem.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Utils\WeArtPrefabMenuItem.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\WeArtTrackingCalibrationEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Properties\WeArtPropertyDrawer.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Properties\WeArtTemperaturePropertyDrawer.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Utils\WeArtFinderMenuItem.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\WeArtStatusTrackerEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\WeArtControllerEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\TouchUI\TouchDiverInfolEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\TouchUI\TouchButtonEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\TouchUI\StartPanelEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\WeArtComponentEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Properties\WeArtForcePropertyDrawer.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\WeArtGhostHandControllerEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\WeArtTouchableObjectEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\WeArtHapticObjectEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\WeArtHandControllerEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Properties\WeArtTexturePropertyDrawer.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\WeArtThimbleSensorObjectEditor.cs" />
-    <Compile Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Components\WeArtDeviceEditor.cs" />
-    <None Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\WeArtSDK.Editor.asmdef" />
-    <None Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Editor\Resources\Styles\WeArtStyle.uss" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\TouchUI\TouchToggleEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\TouchUI\BleConnectionPanelEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Utils\WeArtUIToolkitExtensions.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\TouchUI\WristPanelEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Utils\WeArtStatusDisplayEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Properties\WeArtClosurePropertyDrawer.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\WeArtDeviceTrackingObjectEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\WeArtThimbleTrackingObjectEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Utils\WeArtDebuggerMenuItem.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Utils\WeArtDeviceStatusDisplayEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Utils\WeArtTouchableObjectMenuItem.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Utils\WeArtPrefabMenuItem.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\WeArtTrackingCalibrationEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Properties\WeArtPropertyDrawer.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Properties\WeArtTemperaturePropertyDrawer.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Utils\WeArtFinderMenuItem.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\WeArtStatusTrackerEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\WeArtControllerEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\TouchUI\TouchDiverInfolEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\TouchUI\TouchButtonEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\TouchUI\StartPanelEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\WeArtComponentEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Properties\WeArtForcePropertyDrawer.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\WeArtGhostHandControllerEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\WeArtTouchableObjectEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\WeArtHapticObjectEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\WeArtHandControllerEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Properties\WeArtTexturePropertyDrawer.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\WeArtThimbleSensorObjectEditor.cs" />
+    <Compile Include="WEART-UNITY-SDK\Editor\Components\WeArtDeviceEditor.cs" />
+    <None Include="WEART-UNITY-SDK\Editor\WeArtSDK.Editor.asmdef" />
+    <None Include="WEART-UNITY-SDK\Editor\Resources\Styles\WeArtStyle.uss" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Unity\2022.3.35f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -360,7 +360,7 @@
       <HintPath>D:\Projektas Unity\Startas\Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="WeartMiddleware">
-      <HintPath>C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Runtime\Plugin\Windows\WeartMiddleware.dll</HintPath>
+      <HintPath>D:\Projektas Unity\Startas\WEART-UNITY-SDK\Runtime\Plugin\Windows\WeartMiddleware.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>D:\Projektas Unity\Startas\Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>

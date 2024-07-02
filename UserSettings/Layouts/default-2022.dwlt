@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 8
-    y: 51
+    x: 1821
+    y: 78
     width: 1918
     height: 981
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 66
+  controlID: 16
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 67
+  controlID: 17
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 58
+  controlID: 18
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 120
+  controlID: 111
   draggingID: 0
 --- !u!114 &12
 MonoBehaviour:
@@ -449,8 +449,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1365
-    y: 81
+    x: 3178
+    y: 108
     width: 560
     height: 606
   m_SerializedDataModeController:
@@ -594,8 +594,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 81
+    x: 1821
+    y: 108
     width: 565
     height: 624
   m_SerializedDataModeController:
@@ -610,10 +610,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 549}
-      m_SelectedIDs: cee3ffff
+      scrollPos: {x: 0, y: 1109}
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 26fbffff
+      m_ExpandedIDs: de88ffff42c2ffff46c2ffff4ac2ffff5ec2ffff62c2ffff66c2ffffbec2ffff4ac9ffff56c9ffff26fbffffa86f0000ac720000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -657,8 +657,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 574
-    y: 81
+    x: 2387
+    y: 108
     width: 789
     height: 624
   m_SerializedDataModeController:
@@ -1123,9 +1123,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.82699513, y: 1.2606418, z: 7.5295897}
+    m_Target: {x: 11.502288, y: 113.73577, z: -9.977265}
     speed: 2
-    m_Value: {x: -0.82699513, y: 1.2606418, z: 7.5295897}
+    m_Value: {x: 11.502288, y: 113.73577, z: -9.977265}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1171,20 +1171,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.465
   m_Rotation:
-    m_Target: {x: 0.083724596, y: 0.8057033, z: -0.10747697, w: 0.5772005}
+    m_Target: {x: -0.0021159383, y: 0.98776585, z: -0.15397754, w: -0.038851228}
     speed: 2
-    m_Value: {x: 0.083724596, y: 0.8057033, z: -0.10747698, w: 0.5772005}
+    m_Value: {x: -0.0025766958, y: 0.98719853, z: -0.15390092, w: -0.04179545}
   m_Size:
-    m_Target: 1.3237296
+    m_Target: 1.3693482
     speed: 2
-    m_Value: 1.3237296
+    m_Value: 1.4338725
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.3803096
-    m_SpeedNormalized: 0.6899998
+    m_Speed: 0.7206398
+    m_SpeedNormalized: 0.35999992
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1222,8 +1222,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 726
+    x: 1821
+    y: 753
     width: 1356
     height: 265
   m_SerializedDataModeController:
@@ -1247,7 +1247,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/3D Modeliai/Priemones/Akiniai_Skydeliai_FBX
+    - "Assets/3D Modeliai/Operacin\u0117s Instrumentai ir staliukai"
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1255,16 +1255,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/3D Modeliai/Priemones/Akiniai_Skydeliai_FBX
+  - "Assets/3D Modeliai/Operacin\u0117s Instrumentai ir staliukai"
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Projektas Unity\Startas
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 287}
-    m_SelectedIDs: 0e9f0000
-    m_LastClickedID: 40718
-    m_ExpandedIDs: 00000000da9d0000dc9d0000de9d0000e09d0000e29d0000e49d0000e69d0000e89d0000ea9d0000ec9d0000ee9d0000f09d0000f29d0000f49d0000f69d0000f89d0000fa9d0000fc9d0000fe9d0000909e0000109f000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 271}
+    m_SelectedIDs: 649f0000
+    m_LastClickedID: 40804
+    m_ExpandedIDs: 00000000e69d0000e89d0000ea9d0000ec9d0000ee9d0000f09d0000f29d0000f49d0000f69d0000f89d0000fa9d0000fc9d0000fe9d0000009e0000029e0000049e0000069e0000089e00000a9e0000c69e0000469f0000649f000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1292,7 +1292,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000da9d0000dc9d0000de9d0000e09d0000e29d0000e49d0000e69d0000e89d0000ea9d0000ec9d0000ee9d0000f09d0000f29d0000f49d0000f69d0000f89d0000fa9d0000fc9d0000fe9d0000
+    m_ExpandedIDs: 00000000e69d0000e89d0000ea9d0000ec9d0000ee9d0000f09d0000f29d0000f49d0000f69d0000f89d0000fa9d0000fc9d0000fe9d0000009e0000029e0000049e0000069e0000089e00000a9e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1319,7 +1319,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300002eed0000108e0000048e0000068e000026980000088e0000f08d0000a2b60000b4bf00003a8f0000b6bd0000ca920000da95000004bf00006296000072b600005e9600003cb7000042a800005ca00000849e00005e8f0000588f000080a10000f6a00000ee9300000ca10000f2930000aa95000098990000c6bd000096910000bab20000e8920000b6be0000baca000036c60000a8b3000034c60000faa20000a2a5000096aa000098aa000038aa000094aa000000a30000ca9f00007e690000c49a00006e680000229800004e7200008a150400148800004a25010000000000b0af0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1344,7 +1344,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 66}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
@@ -1476,8 +1476,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1365
-    y: 708
+    x: 3178
+    y: 735
     width: 560
     height: 283
   m_SerializedDataModeController:

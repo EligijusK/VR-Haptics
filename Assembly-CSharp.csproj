@@ -119,7 +119,7 @@
     <None Include="Assets\3D\Shaders\shaser\Tessellation\SkinShader_Variants_3D_Tessellation.shader" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\HairShader_2nd_Pass_Variants_3D_Tessellation.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="C:\Users\eligijus\Downloads\WEART-UNITY-SDK\package.json" />
+    <None Include="WEART-UNITY-SDK\package.json" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\3D\Shaders\TearlineShader_3D.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
@@ -400,7 +400,7 @@
       <HintPath>D:\Unity\2022.3.35f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="WeartMiddleware">
-      <HintPath>C:\Users\eligijus\Downloads\WEART-UNITY-SDK\Runtime\Plugin\Windows\WeartMiddleware.dll</HintPath>
+      <HintPath>D:\Projektas Unity\Startas\WEART-UNITY-SDK\Runtime\Plugin\Windows\WeartMiddleware.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>D:\Projektas Unity\Startas\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
