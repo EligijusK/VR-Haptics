@@ -242,7 +242,7 @@
       "url": "https://packages.unity.com"
     },
     "com.weart.sdk": {
-      "version": "file:C:/Users/eligijus/Downloads/WEART-UNITY-SDK",
+      "version": "file:../WEART-UNITY-SDK",
       "depth": 0,
       "source": "local",
       "dependencies": {

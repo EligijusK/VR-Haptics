@@ -1,0 +1,30 @@
+{
+  "name": "com.weart.sdk",
+  "displayName": "WEART SDK",
+  "version": "1.3.0",
+  "unity": "2019.4",
+  "description": "WEART SDK - 1.3.0 (Android and PC)",
+  "documentationUrl": "https://weart.it/docs/sdkunity/1.3.0/",
+  "keywords": [
+    "WEART",
+    "Unity"
+  ],
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.1",
+    "com.unity.textmeshpro": ""
+  },
+  "category": "Unity",
+  "samples": [
+    {
+      "displayName": "Simple Temperature",
+      "description": "This sample contains a very basic scene with one Touchable Cube and one finger Haptic Object for testing actuation",
+      "path": "Samples~/SimpleTemperature"
+    },
+    {
+      "displayName": "Sample Demo",
+      "description": "This sample contains a ready to use demo with multiple interactions",
+      "path": "Samples~/SampleDemo"
+    }
+  ],
+  "type": "library"
+}

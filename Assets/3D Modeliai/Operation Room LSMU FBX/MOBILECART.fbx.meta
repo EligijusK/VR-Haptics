@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: 4a07480a8203c704caea0b730f8b6951
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART1
+    second: {fileID: 2100000, guid: 52ea6bba73add3d4ba0bf801184c53ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART10
+    second: {fileID: 2100000, guid: d524fcb9882043447bc297d3fdda675a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART11
+    second: {fileID: 2100000, guid: 1e351f32a3dc5224c9181b53c798c21b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART12
+    second: {fileID: 2100000, guid: 44b1af32fd7c48e46b08515eb27273fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART13
+    second: {fileID: 2100000, guid: 1133612c6f970a7499ec9e109d1060ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART14
+    second: {fileID: 2100000, guid: 941ed9efcaeefbf47a194bd83f54d6a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART15
+    second: {fileID: 2100000, guid: 6f5904e0d3805d249adf64f9ce4bd500, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART16
+    second: {fileID: 2100000, guid: 9ab81f7efa3df9d479e8fcf2e7a494e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART17
+    second: {fileID: 2100000, guid: fdfe84e190c6d284c8e979e880c35acf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART18
+    second: {fileID: 2100000, guid: a6fc0c79c93a1464787820fe0709a843, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART19
+    second: {fileID: 2100000, guid: 4266bc9258493be43a2bef3946f8d29b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART2
+    second: {fileID: 2100000, guid: 6572add5edaa591449b563138b3e63b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART20
+    second: {fileID: 2100000, guid: a2a56e8d2ba79a84ca91ceaace6dab23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART201
+    second: {fileID: 2100000, guid: 1e7185f73a34a9d49807c6075f7e06d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART21
+    second: {fileID: 2100000, guid: d8c86261f744bbb459888bc3d3d6fc39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART22
+    second: {fileID: 2100000, guid: 03a37a6adbba2f447b684107119e7faf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART23
+    second: {fileID: 2100000, guid: 1703e579268c2ba4d8ae789128fd9f51, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART24
+    second: {fileID: 2100000, guid: ccbe8017b8fad3547a1b79c33718662d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART25
+    second: {fileID: 2100000, guid: a26aa6cca99b8cc48804e4d1f76bddc5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART26
+    second: {fileID: 2100000, guid: f214c444ab45eb34885602233a1ad20c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART27
+    second: {fileID: 2100000, guid: fc4555e45c4612a41a80c35bd2a2b5b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART28
+    second: {fileID: 2100000, guid: f40b2a3ab30d8ec4c867d4c5ad402af0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART3
+    second: {fileID: 2100000, guid: fc35db93a918dbb4bacefa8778fca114, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART4
+    second: {fileID: 2100000, guid: 9e320c83c5c3d7245aa950dcf3fe1519, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART5
+    second: {fileID: 2100000, guid: fc96f8e0628106844acb0976029fc95a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART6
+    second: {fileID: 2100000, guid: bf1bf9e87eaf5be458ef36726751c5ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART7
+    second: {fileID: 2100000, guid: d7bda0d2f090fb845adbd0ca5081c0ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART8
+    second: {fileID: 2100000, guid: 8cb1e8cde7aea7d4ab6f67781c2f9d10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MOBILECART9
+    second: {fileID: 2100000, guid: 2cb1f59cb4839814d8b333b26c05d2f1, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

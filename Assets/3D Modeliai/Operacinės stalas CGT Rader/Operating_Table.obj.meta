@@ -1,0 +1,457 @@
+fileFormatVersion: 2
+guid: 89583a1633a52e74aaaec4af8bcd8cce
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OperatingTable_LeftLeg_Cushion1_Opereating_Table_Left_leg_Operating_TableMat
+    second: {fileID: 2100000, guid: efe39ded9eedfd647b1565539d8e8293, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_OperatingTable_FeetMat
+    second: {fileID: 2100000, guid: c391c371dae65f044aebab90ecfad3f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_OperatingTable_HandlesMat
+    second: {fileID: 2100000, guid: cc479867e1d7b924f9dfe85cdb34b5bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_OperatingTable_Handles_2Mat
+    second: {fileID: 2100000, guid: c92a3d9f3720d8a45b2d05f2ad655ae7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_OperatingTable_Head_Handle_Opereating_Table_HeadMat
+    second: {fileID: 2100000, guid: 884631ce4debead4fa2c272b577fbc0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_ClothMat
+    second: {fileID: 2100000, guid: cf448ea97e3219941832e78310344469, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part10Mat
+    second: {fileID: 2100000, guid: 4bf6020e1856976419606d9591a96662, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part11Mat
+    second: {fileID: 2100000, guid: bcf5551c2b1687a4caf877223e76dfc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part12Mat
+    second: {fileID: 2100000, guid: 71ce07e027fe1894cbc9ef18cbb331f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part13Mat
+    second: {fileID: 2100000, guid: 7302a8c5beb3fb644b39d657f49e47bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part14Mat
+    second: {fileID: 2100000, guid: 4c16e8c2ef8a3964182cb3ac9ec2592e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part15Mat
+    second: {fileID: 2100000, guid: 7c73df31696400e46862fce220c9f954, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part16Mat
+    second: {fileID: 2100000, guid: 68257efab8be07e4fb26b4040cbde241, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part17Mat
+    second: {fileID: 2100000, guid: 35f87c80219bf374ca487256b9c59bc7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part18Mat
+    second: {fileID: 2100000, guid: c61db13dcac5c954f88866ed77abe316, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part19Mat
+    second: {fileID: 2100000, guid: 20cb81f829db3434c875e9d0bff3dc5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part20Mat
+    second: {fileID: 2100000, guid: 950dd34e3540e5f4887dd646d111ae81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part2Mat
+    second: {fileID: 2100000, guid: f073b3def8403784daafe419d618f87b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part3Mat
+    second: {fileID: 2100000, guid: 59631890873c98141a08aaac39e5e8c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part4Mat
+    second: {fileID: 2100000, guid: 59f435b2a79a13a469a216ffa9af9615, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part5Mat
+    second: {fileID: 2100000, guid: 50912997c68de5e45bae296fb336d32f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part6Mat
+    second: {fileID: 2100000, guid: 1051a2440bf93aa4cb40ef93d8edc450, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part7Mat
+    second: {fileID: 2100000, guid: 0ebf2f720330cd24c9d1e5176a8bc815, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part8Mat
+    second: {fileID: 2100000, guid: 281f422ac8992264aab4776ff769973a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Operating_Table_Left_Side_Bed_Details_Part9Mat
+    second: {fileID: 2100000, guid: 7f36a180379e8ee4aaba908fafc4f409, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Left_Side_Bed_Details_Part1_Operating_Table_Left_Side_Bed_DetailsMat
+    second: {fileID: 2100000, guid: bc629ecd0347a154392f9ae0c80c95e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part10Mat
+    second: {fileID: 2100000, guid: b458218a48d5e58468f1222062516b5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part11Mat
+    second: {fileID: 2100000, guid: 0eb1b439b97e1794fa6a160db4acd280, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part13Mat
+    second: {fileID: 2100000, guid: 628b98c09ab420444997a1d30ee8353c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part14Mat
+    second: {fileID: 2100000, guid: b50ee0b5a1f80724c875e56e4ee01621, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part15Mat
+    second: {fileID: 2100000, guid: c8d7dc67c20f27a428052374df47a727, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part16Mat
+    second: {fileID: 2100000, guid: f589aa10b15a8c84797a6bdb60eb3a6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part17Mat
+    second: {fileID: 2100000, guid: 44841eb2a70c99b429d27c9194be567b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part18Mat
+    second: {fileID: 2100000, guid: b84a6bd21f959ac43bcdad37829f305c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part19Mat
+    second: {fileID: 2100000, guid: 7aa2ce32245d1fa44a00f1ede45cd5db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part1Mat
+    second: {fileID: 2100000, guid: 0ba1f67ea6454c1418a2e52324feb32c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part20Mat
+    second: {fileID: 2100000, guid: f312288d966bfd84c812337a8678c326, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part2Mat
+    second: {fileID: 2100000, guid: 23aa8bdfeb6cdde439db2827b21b3bfd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part3Mat
+    second: {fileID: 2100000, guid: a18aa1451b5e0064a91e2d543069d208, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part4Mat
+    second: {fileID: 2100000, guid: f904852ad0c73c74dbbdd0ef631eec76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part5Mat
+    second: {fileID: 2100000, guid: 54bb7ca322a1eeb43801ed5ce8e00591, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part6Mat
+    second: {fileID: 2100000, guid: e77ec6a9488afdb429f906e6cfc880bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part7Mat
+    second: {fileID: 2100000, guid: c711af3503f141146b46e221a288ad96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part8Mat
+    second: {fileID: 2100000, guid: 8d0eb255c7ddcf648ad30164d34fd7ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Operating_Table_Right_Side_Bed_Details_Part9Mat
+    second: {fileID: 2100000, guid: 5076bc93d1180f94f83aff05746a244d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Right_Side_Bed_Details_Part12_Operating_Table_Right_Side_Bed_DetailsMat
+    second: {fileID: 2100000, guid: 8d1dc955074ff1342ac845fe8bb58c9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Screws4_Operating_Table_ScrewsMat
+    second: {fileID: 2100000, guid: 139c4ffb4c1669f4e9b817f099d59b96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Screws_Operating_Table_Screws10Mat
+    second: {fileID: 2100000, guid: 4c99dece8dc116c48a925ab29b18bf16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Screws_Operating_Table_Screws11Mat
+    second: {fileID: 2100000, guid: 68d73af6f84ba724bba067ac8566202d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Screws_Operating_Table_Screws12Mat
+    second: {fileID: 2100000, guid: df5a95efd58e6cf4e9cbcb2af34a0038, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Screws_Operating_Table_Screws1Mat
+    second: {fileID: 2100000, guid: fc165ee01a430d74685ec1bf8d5d5b65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Screws_Operating_Table_Screws2Mat
+    second: {fileID: 2100000, guid: 8b770e2b086d23848a9ea74281e9e297, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Screws_Operating_Table_Screws3Mat
+    second: {fileID: 2100000, guid: 6fac250aee71cc845a886c870197b32b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Screws_Operating_Table_Screws5Mat
+    second: {fileID: 2100000, guid: ac1c5fdc54877c845a23bfcb95547e7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Screws_Operating_Table_Screws6Mat
+    second: {fileID: 2100000, guid: d11ac58ac0fddfe4b9288206f5f39510, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Screws_Operating_Table_Screws7Mat
+    second: {fileID: 2100000, guid: e0abd0e2c8d31124296b3ef2667198f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Screws_Operating_Table_Screws8Mat
+    second: {fileID: 2100000, guid: 21af625ba620a314ea64e69bfd11072f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_Screws_Operating_Table_Screws9Mat
+    second: {fileID: 2100000, guid: d30af2d0022ab1a48a9509bcec59763d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Operating_Table_TissueMat
+    second: {fileID: 2100000, guid: 341dc1290e7b2d341a49e232cc349432, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Opereating_Table_Controller_Cable_Opereating_Table_ControllerMat
+    second: {fileID: 2100000, guid: c371cb76fa952a24ab3804a1305241c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Opereating_Table_Controller_Opereating_Table_Controller_HolderMat
+    second: {fileID: 2100000, guid: f3e32090884c68847b41b9df811aa00d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Opereating_Table_Controller_Opereating_Table_Controller_MainMat
+    second: {fileID: 2100000, guid: 02b0af2e2a446954c95ab41b370371a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Opereating_Table_Head_OperatingTable_Head_CushionMat
+    second: {fileID: 2100000, guid: 5f85d8a356309484aaa18909a619d5b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Opereating_Table_Rotational_AdjustmentMat
+    second: {fileID: 2100000, guid: 0a1826f35191b1f4f97b8ee4dc8fbe36, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Opereating_Table_StandMat
+    second: {fileID: 2100000, guid: 6c5c62c7baad70e4080c8b6470cf2ba4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Opereating_Table_Trunk_Cushion_Opereating_Table_TrunkMat
+    second: {fileID: 2100000, guid: 75cee711a4083ba498ef1b1168049f57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Opereating_Table_Vertical_Adjustment_D_Opereating_Table_Vertical_AdjustmentMat
+    second: {fileID: 2100000, guid: 7362fa321f0c06344a4aad6fa2dcab50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Opereating_Table_Vertical_Adjustment_Opereating_Table_Vertical_Adjustment_AMat
+    second: {fileID: 2100000, guid: acbc473d766140947a998f61cb3acafa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Opereating_Table_Vertical_Adjustment_Opereating_Table_Vertical_Adjustment_BMat
+    second: {fileID: 2100000, guid: dea995b5f302fa44bb1fd7d2de14ae93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Operating_Table_Opereating_Table_Vertical_Adjustment_Opereating_Table_Vertical_Adjustment_CMat
+    second: {fileID: 2100000, guid: 0a6252dcffa8c104ea7737c8de758d30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Opereating_Table_Left_leg_Operating_Table_OperatingTable_LeftLeg_CushionMat
+    second: {fileID: 2100000, guid: b1aabc6935881a4488aaefc1783ace07, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

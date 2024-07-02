@@ -1,0 +1,259 @@
+fileFormatVersion: 2
+guid: 723b855809ec1f24c894572143292f88
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_1
+    second: {fileID: 2100000, guid: c4b05cd94ddfde54db43228736362c4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_10
+    second: {fileID: 2100000, guid: ca542ea604e13c443ad6ea5cdc2cb478, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_11
+    second: {fileID: 2100000, guid: de0c58bc6e9d9bc41b3550830ee71e35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_12
+    second: {fileID: 2100000, guid: b952626a9e5726a4f87a46718bc33649, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_1234
+    second: {fileID: 2100000, guid: 1d0341d1fc49dd14abd2e609a04caca8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_13
+    second: {fileID: 2100000, guid: 267be2bbf756bbb45b6ba2060ff8e7ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_14
+    second: {fileID: 2100000, guid: f16a3559678e48447badc63e573828d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_15
+    second: {fileID: 2100000, guid: c0f5c5df888aedc4388273e32271dd11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_16
+    second: {fileID: 2100000, guid: 274a50e95c81aa34eb858db5f88ae593, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_17
+    second: {fileID: 2100000, guid: c5ec3f48b4134a94b95e6ff0564a5f03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_18
+    second: {fileID: 2100000, guid: c571fc2475341784c9e83ab76f02fa11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_19
+    second: {fileID: 2100000, guid: d34b23430a40f35439d52e14326324f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_2
+    second: {fileID: 2100000, guid: 0505193b08cef8745ae7d0bbec7f4ffc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_20
+    second: {fileID: 2100000, guid: 41a72a0208129fe458a08a862053ba7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_21
+    second: {fileID: 2100000, guid: bebc44f4d1996cf44908ceb616cccfa5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_21331
+    second: {fileID: 2100000, guid: 16d8dc1b623f37b448bb7324f79eaa77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_22
+    second: {fileID: 2100000, guid: ea4db2db12fd74147b4e651935ba7794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_23
+    second: {fileID: 2100000, guid: 6f72a687106d61d4598f55bb2ba1d410, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_24
+    second: {fileID: 2100000, guid: dc9c2b44ebf7f4545902d46c9294b7d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_25
+    second: {fileID: 2100000, guid: cdb9f194c876f3f479d17ea6b9f3faf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_26
+    second: {fileID: 2100000, guid: c5919983e8157804ca80a127018dc417, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_3
+    second: {fileID: 2100000, guid: af0f66ac3a23d0b4a93ad923cafd797f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_4
+    second: {fileID: 2100000, guid: f818be665b6adbb4c99d5ce8438ec0f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_5
+    second: {fileID: 2100000, guid: 170cd29ff47746344bb45f5ada88756b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_6
+    second: {fileID: 2100000, guid: f925b23121e20ab4288cf9af425ad8a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_7
+    second: {fileID: 2100000, guid: f35f32c9794c50c43830568d9d9bf3f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_8
+    second: {fileID: 2100000, guid: 277de4881d8edb34bb86490172843292, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_9
+    second: {fileID: 2100000, guid: 86953dadfefea2b49b1ae143ecb6b050, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_999
+    second: {fileID: 2100000, guid: 49ade0ac85c2d3c4d9da63f1479c7a1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Anastesia_e33wq3
+    second: {fileID: 2100000, guid: 794b5afb3b01ae94c9ccc0afacc7c1fb, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
