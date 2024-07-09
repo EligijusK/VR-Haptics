@@ -7,11 +7,11 @@ using UnityEngine.Events;
 public class OrderElement : MonoBehaviour
 {
        public OrderingInLine reference;
-       public Outline outline;
        public int order;
        private Vector3 startingPosition;
        public OrderElement previousElement;
        public OrderElement nextElement;
+       Outline outline;
        private Vector3 previousPosition;
        private bool startTracking = true;
        private Vector3 currentPosition;
@@ -144,5 +144,9 @@ public class OrderElement : MonoBehaviour
               }
        }
        
+       public Outline GetOutline()
+       {
+              return outline;
+       }
      
 }

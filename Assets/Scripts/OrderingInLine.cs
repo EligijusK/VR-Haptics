@@ -48,7 +48,7 @@ public class OrderingInLine : MonoBehaviour
     {
         for (OrderElement element = firstElement; element.nextElement != null; element = element.nextElement)
         {
-            element.outline.StartBlinking();
+            element.GetOutline().StartBlinking();
             
         }
     }
@@ -57,7 +57,7 @@ public class OrderingInLine : MonoBehaviour
     {
         for (OrderElement element = firstElement; element.nextElement != null; element = element.nextElement)
         {
-            element.outline.StartBlinkingTimer();
+            element.GetOutline().StartBlinkingTimer();
             
         }
     }
@@ -66,7 +66,7 @@ public class OrderingInLine : MonoBehaviour
     {
         for (OrderElement element = firstElement; element.nextElement != null; element = element.nextElement)
         {
-            element.outline.StopBlinking();
+            element.GetOutline().StopBlinking();
         }
     }
 
