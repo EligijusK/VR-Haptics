@@ -44,6 +44,21 @@ public class OrderingInLine : MonoBehaviour
         }
     }
 
+    public bool CheckOrderInList(int index)
+    {
+        int tempIndex = 0;
+        bool orderIsCorrect = true;
+        for (OrderElement element = firstElement; element.nextElement != null; element = element.nextElement)
+        {
+            if (tempIndex == index && element.order != tempIndex)
+            {
+                return false;
+            }
+            tempIndex++;
+        }
+        return true;
+    }
+
     public void StartBlinking()
     {
         for (OrderElement element = firstElement; element.nextElement != null; element = element.nextElement)
