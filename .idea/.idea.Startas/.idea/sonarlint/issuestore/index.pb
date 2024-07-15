@@ -23,13 +23,15 @@ K
 Assets/Scripts/OpenDoors.cs,6\1\61c168fdb6a3c33c51df3d26c6207654e4cee881
 O
 Assets/Scripts/CreateNewMesh.cs,1\4\14035e38c5d9a843cd92a7410494f1aa5fa23d34
-L
-Assets/Scripts/SelectItem.cs,e\0\e006823b2770ee0b13767f36c5e4aa1497a61335
-M
-Assets/Scripts/CorrectItem.cs,8\e\8e07f223c990bbe1c7d1a640f25a9dd2b5e84f59
 F
 Assets/Scripts/Item.cs,8\f\8fd611711f914a127b2046bd3327fbdf8d92ef73
 N
 Assets/Scripts/SelectedItem.cs,f\1\f13a1f0ebb69890eccbfe83f4e985dd5b87e4aeb
 j
 :WEART-UNITY-SDK/Runtime/Components/WeArtTouchableObject.cs,e\d\ed62a9cc17557ce16fbe6368269188366f596e28
+¥
+uLibrary/PackageCache/com.unity.xr.interaction.toolkit@3.0.3/Runtime/Interaction/Interactables/XRSimpleInteractable.cs,3\4\34530fccef18b0d88fd6b44eeffdb8710c14683f
+–
+fLibrary/PackageCache/com.unity.xr.interaction.toolkit@3.0.3/Runtime/Interaction/XRInteractionEvents.cs,7\4\74b049d85aca09863919dcb69472f0a1e98af668
+£
+sLibrary/PackageCache/com.unity.xr.interaction.toolkit@3.0.3/Runtime/Interaction/Interactables/XRBaseInteractable.cs,8\3\83992764f536c7db7542b7cf913972d406c172d4
