@@ -13,7 +13,7 @@ public class Instrument : MonoBehaviour
         originalPosition = transform.position;
     }
     
-    public void PlaceOnTable()
+    public void InteractWithItem()
     {
         if (!onTable)
         {
@@ -24,22 +24,20 @@ public class Instrument : MonoBehaviour
         {
             spot.RemoveInstrumentFromSpot();
             onTable = false;
-            StartCoroutine(MoveInstrumentToOriginalPosition());
         }
     }
     
-    private IEnumerator MoveInstrumentToOriginalPosition()
+    public IEnumerator MoveInstrumentToSpot(Vector3 endPosition)
     {
         Vector3 startPosition = transform.position;
-        Vector3 endPosition = originalPosition;
-        float duration = 1.0f; // Adjust this for speed
+        float duration = 1.0f;
         float elapsedTime = 0f;
 
         while (elapsedTime < duration)
         {
             elapsedTime += Time.deltaTime;
             float t = elapsedTime / duration;
-            float height = -4 * t * (t - 1); // This gives the parabolic effect
+            float height = -4 * t * (t - 1);
 
             Vector3 currentPosition = Vector3.Lerp(startPosition, endPosition, t);
             currentPosition.y += height;

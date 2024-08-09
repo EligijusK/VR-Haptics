@@ -12,7 +12,6 @@ public class InstrumentTableListController : MonoBehaviour
         {
             if (spot.CanPlaceInSpot())
             {
-                Debug.Log("Can place!");
                 spot.PlaceInstrumentInSpot(instrumentToPlace);
                 instrumentToPlace.spot = spot;
                 break;
