@@ -53,6 +53,6 @@ public class TriggerEventSystem : MonoBehaviour
 
     void CheckTriggerPress(InputAction.CallbackContext context)
     {
-        Debug.Log("Aurimas Ciulpia");
+        Debug.Log("Aurimas");
     }
 }
