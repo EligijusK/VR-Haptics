@@ -1,24 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Instrument : MonoBehaviour
 {
     [SerializeField] private InstrumentTableListController table;
+    [SerializeField] public Categories category;
+    private Rigidbody _rigidbody;
     public InstrumentSpot spot;
     public Vector3 originalPosition;
+    public Quaternion originalRotation;
     private bool onTable;
+    private bool isMoving;
+
     void Start()
     {
         originalPosition = transform.position;
+        originalRotation = transform.rotation;
+        _rigidbody = GetComponent<Rigidbody>();
     }
-    
+
     public void InteractWithItem()
     {
+        if (isMoving) return; 
+        
         if (!onTable)
         {
-            table.PlaceInstrument(this);
-            onTable = true;
+            onTable = table.TryPlaceInstrument(this);
         }
         else
         {
@@ -26,12 +36,16 @@ public class Instrument : MonoBehaviour
             onTable = false;
         }
     }
-    
+
     public IEnumerator MoveInstrumentToSpot(Vector3 endPosition)
     {
+        isMoving = true;
+        transform.rotation = originalRotation;
         Vector3 startPosition = transform.position;
         float duration = 1.0f;
         float elapsedTime = 0f;
+        
+        _rigidbody.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
 
         while (elapsedTime < duration)
         {
@@ -48,5 +62,11 @@ public class Instrument : MonoBehaviour
         }
 
         transform.position = endPosition;
+        
+        yield return new WaitForSeconds(0.5f);
+        transform.rotation = originalRotation;
+        _rigidbody.constraints = RigidbodyConstraints.None;
+
+        isMoving = false;
     }
 }
