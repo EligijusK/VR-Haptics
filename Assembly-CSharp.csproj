@@ -51,6 +51,7 @@
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\VariableTemperatureInteraction.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\GestureRotationController.cs" />
+    <Compile Include="Assets\Scripts\InstrumentCategory.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\GestureScaleController.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Assets\Scripts\LineController.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\WeArtSlider.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\AbacusManager.cs" />
+    <Compile Include="Assets\Scripts\LineColorChangeHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\ScaleSlider.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />

@@ -32577,7 +32577,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -32600,8 +32600,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.2650282, y: 2.3192596, z: 0.20071572}
-  m_Center: {x: 4.030933, y: -0.013800116, z: 0.10035786}
+  m_Size: {x: 7.5826836, y: 2.391311, z: 0}
+  m_Center: {x: 1.0045074, y: 0.022224892, z: 0.20071572}
 --- !u!23 &1100349391
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32773,7 +32773,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 1
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -32837,9 +32837,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1100349387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eeff2c5d0ae36794989bc16a8c8e9a38, type: 3}
+  m_Script: {fileID: 11500000, guid: fc1bf6139433d634796987c64b17e939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lineRenderer: {fileID: 1590830229}
+  collisionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &1100521232 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1817752537321972114, guid: 6453b81317370b5479f943e5c153d101, type: 3}
@@ -49142,6 +49144,7 @@ GameObject:
   - component: {fileID: 1590830232}
   - component: {fileID: 1590830231}
   - component: {fileID: 1590830233}
+  - component: {fileID: 1590830234}
   m_Layer: 0
   m_Name: Line
   m_TagString: Untagged
@@ -49265,7 +49268,7 @@ LineRenderer:
   m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
-  m_ApplyActiveColorSpace: 1
+  m_ApplyActiveColorSpace: 0
 --- !u!114 &1590830230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49352,6 +49355,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1590830234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590830227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1bf6139433d634796987c64b17e939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineRenderer: {fileID: 1590830229}
+  collisionColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &1591214835
 GameObject:
   m_ObjectHideFlags: 0
