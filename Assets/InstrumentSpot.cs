@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using DefaultNamespace;
 using UnityEngine;
 
 public class InstrumentSpot : MonoBehaviour
@@ -23,5 +25,12 @@ public class InstrumentSpot : MonoBehaviour
     {
         taken = false;
         StartCoroutine(instrument.MoveInstrumentToSpot(instrument.originalPosition));
+        Categories cat = instrument.category;
+        InstrumentTableListController table = instrument.table;
+        var category = table.categories.Find(c => c.category == cat);
+        if (category != null)
+        {
+            category.currentCount--;
+        }    
     }
 }

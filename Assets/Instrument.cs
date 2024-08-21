@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 
 public class Instrument : MonoBehaviour
 {
-    [SerializeField] private InstrumentTableListController table;
+    [SerializeField] public InstrumentTableListController table;
     [SerializeField] public Categories category;
     private Rigidbody _rigidbody;
     public InstrumentSpot spot;
