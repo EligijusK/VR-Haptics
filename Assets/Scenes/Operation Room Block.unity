@@ -33402,12 +33402,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1100349387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc1bf6139433d634796987c64b17e939, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d1486497e2b54c4e93fa823fefb12e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 2067411044}
+  - {fileID: 1154876103}
+  - {fileID: 931300395}
+  - {fileID: 205527325}
+  - {fileID: 26319255}
   lineRenderer: {fileID: 1590830229}
-  collisionMaterial: {fileID: 0}
-  defaultMaterial: {fileID: 0}
 --- !u!1 &1100521232 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1817752537321972114, guid: 6453b81317370b5479f943e5c153d101, type: 3}
@@ -50132,7 +50136,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590830227}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
