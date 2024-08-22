@@ -25994,9 +25994,6 @@ PrefabInstance:
       addedObject: {fileID: 891063373}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5fd7510ce02249c428df6ee8bf691c48, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 891063376}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5fd7510ce02249c428df6ee8bf691c48, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 891063377}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5fd7510ce02249c428df6ee8bf691c48, type: 3}
       insertIndex: -1
@@ -26068,23 +26065,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5fd7510ce02249c428df6ee8bf691c48, type: 3}
   m_PrefabInstance: {fileID: 891063370}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &891063376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891063371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f224abd534835a4990ee52b5d9e2b31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  table: {fileID: 1493719411}
-  category: 0
-  spot: {fileID: 0}
-  originalPosition: {x: 0, y: 0, z: 0}
-  originalRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &891063377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26175,7 +26155,7 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 891063376}
+      - m_Target: {fileID: 891063378}
         m_TargetAssemblyTypeName: Instrument, Assembly-CSharp
         m_MethodName: InteractWithItem
         m_Mode: 1
