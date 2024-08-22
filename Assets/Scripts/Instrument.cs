@@ -9,12 +9,14 @@ public class Instrument : MonoBehaviour
 {
     [SerializeField] public InstrumentTableListController table;
     [SerializeField] public Categories category;
+    [SerializeField] public GameObject targetPositionObject;
     private Rigidbody _rigidbody;
     public InstrumentSpot spot;
     public Vector3 originalPosition;
     public Quaternion originalRotation;
     private bool onTable;
     private bool isMoving;
+    private int interactions = 0;
     
 
     void Start()
@@ -26,7 +28,15 @@ public class Instrument : MonoBehaviour
 
     public void InteractWithItem()
     {
-        if (isMoving) return; 
+        if (isMoving) return;
+
+        if (interactions > 0)
+        {
+            StartCoroutine(GetComponent<PouringAnimation>().MoveToPouringPosition(targetPositionObject, 1.0f, 0.5f, 1.0f));
+            interactions++;
+            return;
+        }
+        interactions++;
         
         if (!onTable)
         {
