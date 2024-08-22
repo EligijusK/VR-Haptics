@@ -12,7 +12,6 @@ public class LineColorChangeHandler : MonoBehaviour
     {
         // Get the collision point
         Vector3 collisionPoint = collision.contacts[0].point;
-        Debug.Log("Collision at point: " + collisionPoint);
 
         // Find the closest point on the line
         float closestDistance = float.MaxValue;
@@ -27,7 +26,6 @@ public class LineColorChangeHandler : MonoBehaviour
             Vector3 closestPoint = ClosestPointOnLineSegment(segmentStart, segmentEnd, collisionPoint);
             float distance = Vector3.Distance(collisionPoint, closestPoint);
 
-            Debug.Log($"Segment {i}: Start={segmentStart}, End={segmentEnd}, ClosestPoint={closestPoint}, Distance={distance}");
 
             if (distance < closestDistance)
             {
@@ -36,7 +34,6 @@ public class LineColorChangeHandler : MonoBehaviour
             }
         }
 
-        Debug.Log("Closest segment index: " + closestSegmentIndex);
         
         // Change the material of the line at the closest segment
         ChangeLineMaterialAtSegment(closestSegmentIndex);
