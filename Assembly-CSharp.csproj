@@ -47,9 +47,9 @@
   <ItemGroup>
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\CountDownTimer.cs" />
     <Compile Include="Assets\Scripts\PathTracking.cs" />
-    <Compile Include="Assets\Instrument.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\VariableTemperatureInteraction.cs" />
+    <Compile Include="Assets\Scripts\InstrumentSpot.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\GestureRotationController.cs" />
     <Compile Include="Assets\Scripts\InstrumentCategory.cs" />
@@ -73,7 +73,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Scripts\SelectedItem.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-    <Compile Include="Assets\InstrumentSpot.cs" />
+    <Compile Include="Assets\Scripts\Instrument.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\BunsenActivation.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
@@ -81,7 +81,6 @@
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\WeArtTemperatureVolume.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\HapticObjectTemperatureChange.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-    <Compile Include="Assets\Scripts\TriggerEventSystem.cs" />
     <Compile Include="Assets\Scripts\OrderingInLine.cs" />
     <Compile Include="Assets\Scripts\CreateNewMesh.cs" />
     <Compile Include="Assets\Scripts\OpenDoors.cs" />
@@ -96,9 +95,9 @@
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\WeArtButton.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\Scripts\InstrumentTableListController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
-    <Compile Include="Assets\InstrumentTableListController.cs" />
     <Compile Include="Assets\Scripts\OrderElement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
@@ -119,7 +118,6 @@
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\ResetRigidbodies.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\ActiveEffect.cs" />
-    <Compile Include="Assets\Scripts\TriggerEventListner.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\DrawLineRender.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\SpherePulseInteraction.cs" />
