@@ -33429,11 +33429,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {fileID: 2067411044}
-  - {fileID: 1154876103}
-  - {fileID: 931300395}
-  - {fileID: 205527325}
-  - {fileID: 26319255}
+  - {fileID: 694537912}
+  - {fileID: 716212435}
+  - {fileID: 140643067}
+  - {fileID: 1270275933}
+  - {fileID: 436510640}
+  - {fileID: 501711210}
+  - {fileID: 119906518}
+  - {fileID: 1822931092}
+  - {fileID: 1626140948}
+  - {fileID: 836067762}
+  - {fileID: 721951807}
   lineRenderer: {fileID: 1590830229}
 --- !u!1 &1100521232 stripped
 GameObject:
@@ -50233,7 +50239,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590830227}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
