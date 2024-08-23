@@ -16,6 +16,7 @@ namespace DefaultNamespace
     {
         Default,
         Scissors,
-        Antiseptic
+        Antiseptic,
+        Bowl
     }
 }
