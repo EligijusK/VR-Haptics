@@ -32,7 +32,11 @@ public class Instrument : MonoBehaviour
 
         if (interactions > 0)
         {
-            StartCoroutine(GetComponent<PouringAnimation>().MoveToPouringPosition(targetPositionObject, 1.0f, 0.5f, 1.0f));
+            StartCoroutine(GetComponent<PouringAnimation>().PerformPouringAnimation(
+                targetPositionObject, 
+                moveDuration: 1.0f, 
+                pourRotationDuration: 0.5f, 
+                holdDuration: 1.0f));            
             interactions++;
             return;
         }
