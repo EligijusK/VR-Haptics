@@ -47856,6 +47856,9 @@ MonoBehaviour:
   - category: 2
     requiredCount: 2
     currentCount: 0
+  - category: 3
+    requiredCount: 1
+    currentCount: 0
 --- !u!65 &1493719414
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52852,6 +52855,14 @@ PrefabInstance:
     - target: {fileID: 3065511251592051495, guid: 7367dbba2b0d70a4fab1c1568eb8154a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487184777023844018, guid: 7367dbba2b0d70a4fab1c1568eb8154a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2800
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487184777023844018, guid: 7367dbba2b0d70a4fab1c1568eb8154a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2800
       objectReference: {fileID: 0}
     - target: {fileID: 3845607379648418699, guid: 7367dbba2b0d70a4fab1c1568eb8154a, type: 3}
       propertyPath: m_Name

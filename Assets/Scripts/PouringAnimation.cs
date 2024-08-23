@@ -79,8 +79,8 @@ public class PouringAnimation : MonoBehaviour
         liquidMesh.SetActive(true);
         Vector3 originalScale = liquidMesh.transform.localScale;
         Vector3 targetScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
-        liquidMesh.transform.localScale = new Vector3(originalScale.x, originalScale.y, /*originalScale.z*/0);
-        yield return LerpScale(liquidMesh.transform, new Vector3(originalScale.x, originalScale.y, /*originalScale.z*/0), targetScale, fillDuration);
+        liquidMesh.transform.localScale = new Vector3(originalScale.x, originalScale.y, 0);
+        yield return LerpScale(liquidMesh.transform, new Vector3(originalScale.x, originalScale.y, 0), targetScale, fillDuration);
     }
 
     private IEnumerator LerpPosition(Transform objTransform, Vector3 targetPosition, float duration)
