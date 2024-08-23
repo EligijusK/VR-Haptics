@@ -10,6 +10,7 @@ public class PouringAnimation : MonoBehaviour
     [SerializeField] private float capMoveDuration = 0.5f;
     [SerializeField] private GameObject liquidMesh;
     [SerializeField] private float fillDuration = 3.0f;
+    [SerializeField] private float fillStartDelay = 2.0f;
 
     private Vector3 originalPosition;
     private Quaternion originalRotation;
@@ -66,10 +67,13 @@ public class PouringAnimation : MonoBehaviour
 
     private IEnumerator StartPouringAndFilling(float pourRotationDuration)
     {
-        StartCoroutine(FillCup());
         Quaternion pourRotation = Quaternion.Euler(90f, 45f, 0f);
         yield return RotateToAngle(pourRotation, pourRotationDuration);
         particleSystem.SetActive(true);
+
+        yield return new WaitForSeconds(fillStartDelay);
+
+        StartCoroutine(FillCup());
         yield return new WaitForSeconds(fillDuration);
         particleSystem.SetActive(false);
     }
