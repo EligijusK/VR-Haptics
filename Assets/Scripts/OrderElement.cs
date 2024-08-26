@@ -1,6 +1,7 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -13,11 +14,11 @@ public class OrderElement : MonoBehaviour
        public OrderElement nextElement;
        Outline outline;
        private Vector3 previousPosition;
-       private bool startTracking = true;
+       private bool startTracking = false;
        private Vector3 currentPosition;
        void Start()
        {
-              startTracking = true;
+              startTracking = false;
               startingPosition = transform.position;
               outline = GetComponent<Outline>();
        }
@@ -142,6 +143,20 @@ public class OrderElement : MonoBehaviour
                      // start
                      Debug.Log("start element");
               }
+       }
+       
+       public void StartTracking()
+       {
+              startTracking = true;
+       }
+       
+       public void CheckIfCorrect()
+       {
+              if (startTracking)
+              {
+                     reference.HandWashTest(order);
+              }
+              startTracking = false;
        }
        
        public Outline GetOutline()

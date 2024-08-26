@@ -39,3 +39,5 @@ Q
 !Assets/Scripts/HandWashingTest.cs,8\2\8237533b62343f7f4ecc150044da7c44b8935ff7
 U
 %Assets/Scripts/VideoClipController.cs,7\1\7130c75a0de10487e3976624f46b11c84fd5c7ea
+R
+"Assets/Scripts/TextNotification.cs,a\b\ab0a5dec4117d2a9347f5ffd3e43f4225c82602e

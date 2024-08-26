@@ -8,8 +8,9 @@ namespace DefaultNamespace
         [SerializeField] OrderingInLine checkOrderInList;
         [SerializeField] VideoClipController videoClipController;
         [SerializeField] VideoPlayer videoController;
-        [SerializeField] VideoClip mistakeVideoClip;
+        [SerializeField] VideoClipController mistakeVideoClipController;
         [SerializeField] int allowedMistakes = 3;
+        [SerializeField] bool playVideoIfMistake = true;
         int mistakes = 0;
         
         public void CheckIfElementIsInCorrectPlace(int index)
@@ -17,7 +18,7 @@ namespace DefaultNamespace
             if (mistakes < allowedMistakes)
             {
                 bool isCorrect = checkOrderInList.CheckOrderInList(index);
-                if (isCorrect)
+                if (isCorrect && !playVideoIfMistake)
                 {
                     VideoClip videoClip = videoClipController.GetVideoClip(index);
                     videoController.Stop();
@@ -28,13 +29,14 @@ namespace DefaultNamespace
                 else
                 {
                     mistakes++;
+                    StartCoroutine(TextNotification._instance.ShowNotification("Mistakes: " + mistakes + " / " + allowedMistakes, 1f));
                 }
             }
-            else
+            if (playVideoIfMistake && mistakes >= allowedMistakes)
             {
                 videoController.Stop();
                 videoController.frame = 0;
-                videoController.clip = mistakeVideoClip;
+                videoController.clip = mistakeVideoClipController.GetVideoClip(-1);
                 videoController.Play();
             }
         }

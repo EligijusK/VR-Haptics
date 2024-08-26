@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class OrderingInLine : MonoBehaviour
 {
     [SerializeField] OpenDoors _openDoors;
-    public bool orderFromLeftToRight = true;
+    [SerializeField] private HandWashingTest handWashingTest;
     
     public OrderElement firstElement;
     public OrderElement lastElement;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,11 @@ public class OrderingInLine : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void HandWashTest(int index)
+    {
+        handWashingTest.CheckIfElementIsInCorrectPlace(index);
     }
 
     public void ChangedOrderInList()

@@ -7,10 +7,15 @@ namespace DefaultNamespace
 {
     public class VideoClipController : MonoBehaviour
     {
+        [SerializeField] VideoClip _defaultVideoClip;
         [SerializeField] VideoClipData[] _videoClips;
         
         public VideoClip GetVideoClip(int index)
         {
+            if (_defaultVideoClip != null && index == -1)
+            {
+                return _defaultVideoClip;
+            }
             foreach (var videoClipData in _videoClips)
             {
                 if (videoClipData.index == index)
