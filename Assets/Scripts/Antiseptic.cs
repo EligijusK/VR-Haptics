@@ -6,7 +6,8 @@ namespace DefaultNamespace
 
         public override void InteractWithItem()
         {
-            if (interactions > 0)
+            
+            if (interactions > 0 && onTable)
             {
                 StartCoroutine(GetComponent<PouringAnimation>().PerformPouringAnimation(
                     targetPositionObject, 

@@ -18229,16 +18229,10 @@ MonoBehaviour:
   - {fileID: 1618899148}
   - {fileID: 1201842319}
   categories:
-  - category: 0
-    requiredCount: 0
-    currentCount: 0
-  - category: 1
-    requiredCount: 2
-    currentCount: 0
   - category: 2
-    requiredCount: 2
+    requiredCount: 1
     currentCount: 0
-  - category: 3
+  - category: 4
     requiredCount: 1
     currentCount: 0
   attemptsLeft: 3

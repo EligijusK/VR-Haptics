@@ -17,6 +17,7 @@ namespace DefaultNamespace
         Default,
         Scissors,
         Antiseptic,
-        Bowl
+        Bowl,
+        Secret
     }
 }

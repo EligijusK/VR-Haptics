@@ -16,7 +16,7 @@ public class Instrument : MonoBehaviour
     private Rigidbody _rigidbody;
     public Vector3 originalPosition;
     public Quaternion originalRotation;
-    private bool onTable;
+    protected bool onTable;
     private bool isMoving;
     
 
