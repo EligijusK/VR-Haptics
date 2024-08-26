@@ -5025,7 +5025,6 @@ GameObject:
   - component: {fileID: 1371272274993423546}
   - component: {fileID: 713361838985240124}
   - component: {fileID: 1100980092122817577}
-  - component: {fileID: 4929794384569104976}
   - component: {fileID: 1709989819874759900}
   m_Layer: 0
   m_Name: Antiseptikas
@@ -5190,7 +5189,7 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4929794384569104976}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Instrument, Assembly-CSharp
         m_MethodName: InteractWithItem
         m_Mode: 1
@@ -5208,24 +5207,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
---- !u!114 &4929794384569104976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9154377795096312124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f224abd534835a4990ee52b5d9e2b31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  table: {fileID: 0}
-  category: 2
-  targetPositionObject: {fileID: 0}
-  spot: {fileID: 0}
-  originalPosition: {x: 0, y: 0, z: 0}
-  originalRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &1709989819874759900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5245,3 +5226,4 @@ MonoBehaviour:
   capMoveDuration: 0.5
   liquidMesh: {fileID: 0}
   fillDuration: 3
+  fillStartDelay: 2

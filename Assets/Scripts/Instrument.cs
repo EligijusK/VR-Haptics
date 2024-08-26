@@ -16,31 +16,18 @@ public class Instrument : MonoBehaviour
     public Quaternion originalRotation;
     private bool onTable;
     private bool isMoving;
-    private int interactions = 0;
     
 
-    void Start()
+    public virtual void Start()
     {
         originalPosition = transform.position;
         originalRotation = transform.rotation;
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    public void InteractWithItem()
+    public virtual void InteractWithItem()
     {
         if (isMoving) return;
-
-        if (interactions > 0)
-        {
-            StartCoroutine(GetComponent<PouringAnimation>().PerformPouringAnimation(
-                targetPositionObject, 
-                moveDuration: 1.0f, 
-                pourRotationDuration: 0.5f, 
-                holdDuration: 1.0f));            
-            interactions++;
-            return;
-        }
-        interactions++;
         
         if (!onTable)
         {
