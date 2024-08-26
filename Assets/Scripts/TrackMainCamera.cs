@@ -14,7 +14,7 @@ public class TrackMainCamera : MonoBehaviour
     Quaternion startingRotation;
     Camera mainCamera;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         startingPosition = transform.position;
         startingRotation = transform.rotation;
