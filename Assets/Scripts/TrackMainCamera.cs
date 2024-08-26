@@ -56,6 +56,12 @@ public class TrackMainCamera : MonoBehaviour
         backToStart = true;
     }
 
+    public void SetPositionToCamera()
+    {
+        transform.position = Vector3.Slerp(transform.position, mainCamera.transform.position + (mainCamera.transform.forward * offset), 1f);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(mainCamera.transform.rotation.eulerAngles + cameraAngle), 1f);
+    }
+
     private void OnDestroy()
     {
         StopTracking();

@@ -2,12 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
+using TMPro;
 using UnityEngine;
 
 public class InstrumentTableListController : MonoBehaviour
 {
     [SerializeField] private List<InstrumentSpot> spotsForInstruments;
     [SerializeField] public List<InstrumentCategory> categories;
+    [SerializeField] public int attemptsLeft = 3;
     private int totalRequired = 0;
     private int currentTotalCount = 0;
 
@@ -18,6 +20,7 @@ public class InstrumentTableListController : MonoBehaviour
             totalRequired += category.requiredCount;
         }
     }
+    
 
     public bool TryPlaceInstrument(Instrument instrumentToPlace)
     {
@@ -28,7 +31,7 @@ public class InstrumentTableListController : MonoBehaviour
                 if (category.category == Categories.Default)
                 {
                     //picked wrong object
-                    FailedToPickInstrument();
+                    FailedToPickInstrument("Incorrect item");
                     return false;
                 }
                 if (category.currentCount < category.requiredCount)
@@ -43,7 +46,7 @@ public class InstrumentTableListController : MonoBehaviour
                     return true;
                 }
                 //picked too many objects of the same category
-                FailedToPickInstrument();
+                FailedToPickInstrument("Picked too many of the same item");
                 return false;
             }
         }
@@ -65,12 +68,22 @@ public class InstrumentTableListController : MonoBehaviour
 
     public void SuccessfullyPlacedAllInstruments()
     {
-        throw new NotImplementedException();
+        StartCoroutine(TextNotification._instance.ShowNotification("All items chosen correctly", 4.0f));
+        /*text.gameObject.SetActive(true);
+        text.text = "All items chosen correctly";
+        trackMainCamera.StartTracking();
+        yield return new WaitForSeconds(4.0f);
+        text.gameObject.SetActive(false);*/
     }
 
-    public void FailedToPickInstrument()
+    public void FailedToPickInstrument(string displayText)
     {
-        throw new NotImplementedException();
+        StartCoroutine(TextNotification._instance.ShowNotification("All items chosen bad", 4.0f));
 
+        /*text.gameObject.SetActive(true);
+        text.text = displayText + --attemptsLeft + " attempts left";
+        trackMainCamera.StartTracking();
+        yield return new WaitForSeconds(4.0f);
+        text.gameObject.SetActive(false);*/
     }
 }
