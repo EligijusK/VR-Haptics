@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -12,6 +13,8 @@ namespace DefaultNamespace
         [SerializeField] int allowedMistakes = 3;
         [SerializeField] bool playVideoIfMistake = true;
         int mistakes = 0;
+        private bool incorrectOnce = false;
+        
         
         public void CheckIfElementIsInCorrectPlace(int index)
         {
@@ -32,12 +35,23 @@ namespace DefaultNamespace
                     StartCoroutine(TextNotification._instance.ShowNotification("Mistakes: " + mistakes + " / " + allowedMistakes, 1f));
                 }
             }
-            if (playVideoIfMistake && mistakes >= allowedMistakes)
+            if (playVideoIfMistake && mistakes >= allowedMistakes && !incorrectOnce)
             {
                 videoController.Stop();
                 videoController.frame = 0;
                 videoController.clip = mistakeVideoClipController.GetVideoClip(-1);
                 videoController.Play();
+                incorrectOnce = true;
+            }
+        }
+
+        private void Update()
+        {
+            if (incorrectOnce && !videoController.isPlaying)
+            {
+                incorrectOnce = false;
+                mistakes = 0;
+                StartCoroutine(TextNotification._instance.ShowNotification("Try one more time", 1f));
             }
         }
     }
