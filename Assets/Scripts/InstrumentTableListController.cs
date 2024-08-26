@@ -31,7 +31,7 @@ public class InstrumentTableListController : MonoBehaviour
                 if (category.category == Categories.Default)
                 {
                     //picked wrong object
-                    FailedToPickInstrument("Incorrect item");
+                    FailedToPickInstrument();
                     return false;
                 }
                 if (category.currentCount < category.requiredCount)
@@ -46,7 +46,7 @@ public class InstrumentTableListController : MonoBehaviour
                     return true;
                 }
                 //picked too many objects of the same category
-                FailedToPickInstrument("Picked too many of the same item");
+                FailedToPickInstrument();
                 return false;
             }
         }
@@ -66,24 +66,13 @@ public class InstrumentTableListController : MonoBehaviour
         }
     }
 
-    public void SuccessfullyPlacedAllInstruments()
+    private void SuccessfullyPlacedAllInstruments()
     {
         StartCoroutine(TextNotification._instance.ShowNotification("All items chosen correctly", 4.0f));
-        /*text.gameObject.SetActive(true);
-        text.text = "All items chosen correctly";
-        trackMainCamera.StartTracking();
-        yield return new WaitForSeconds(4.0f);
-        text.gameObject.SetActive(false);*/
     }
 
-    public void FailedToPickInstrument(string displayText)
+    private void FailedToPickInstrument()
     {
         StartCoroutine(TextNotification._instance.ShowNotification("All items chosen bad", 4.0f));
-
-        /*text.gameObject.SetActive(true);
-        text.text = displayText + --attemptsLeft + " attempts left";
-        trackMainCamera.StartTracking();
-        yield return new WaitForSeconds(4.0f);
-        text.gameObject.SetActive(false);*/
     }
 }
