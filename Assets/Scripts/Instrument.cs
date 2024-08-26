@@ -4,14 +4,16 @@ using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class Instrument : MonoBehaviour
 {
     [SerializeField] public InstrumentTableListController table;
     [SerializeField] public Categories category;
     [SerializeField] public GameObject targetPositionObject;
+    [SerializeField] public XRSimpleInteractable SimpleInteractable;
+    [SerializeField] public XRGrabInteractable GrabInteractable;
     private Rigidbody _rigidbody;
-    public InstrumentSpot spot;
     public Vector3 originalPosition;
     public Quaternion originalRotation;
     private bool onTable;
@@ -25,6 +27,12 @@ public class Instrument : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
     }
 
+    public void MakeItemGrabbable()
+    {
+        SimpleInteractable.enabled = false;
+        GrabInteractable.enabled = true;
+    }
+
     public virtual void InteractWithItem()
     {
         if (isMoving) return;
@@ -35,8 +43,9 @@ public class Instrument : MonoBehaviour
         }
         else
         {
-            spot.RemoveInstrumentFromSpot();
-            onTable = false;
+            //removed ability to remove from table
+            //spot.RemoveInstrumentFromSpot();
+            //onTable = false;
         }
     }
 

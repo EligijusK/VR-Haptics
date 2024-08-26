@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class InstrumentSpot : MonoBehaviour
 {
@@ -18,7 +19,13 @@ public class InstrumentSpot : MonoBehaviour
     {
         instrument = instrumentToPlace;
         taken = true;
-        StartCoroutine(instrument.MoveInstrumentToSpot(transform.position));
+        StartCoroutine(MoveAndMakeGrabbable(instrument));
+    }
+    
+    private IEnumerator MoveAndMakeGrabbable(Instrument instrumentToPlace)
+    {
+        yield return StartCoroutine(instrumentToPlace.MoveInstrumentToSpot(transform.position));
+        instrumentToPlace.MakeItemGrabbable();
     }
 
     public void RemoveInstrumentFromSpot()
@@ -32,5 +39,10 @@ public class InstrumentSpot : MonoBehaviour
         {
             category.currentCount--;
         }    
+    }
+
+    public Instrument GetInstrument()
+    {
+        return instrument;
     }
 }

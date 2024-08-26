@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DefaultNamespace;
 using TMPro;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class InstrumentTableListController : MonoBehaviour
 {
@@ -60,7 +61,6 @@ public class InstrumentTableListController : MonoBehaviour
             if (spot.CanPlaceInSpot())
             {
                 spot.PlaceInstrumentInSpot(instrumentToPlace);
-                instrumentToPlace.spot = spot;
                 break;
             }
         }
@@ -71,8 +71,21 @@ public class InstrumentTableListController : MonoBehaviour
         StartCoroutine(TextNotification._instance.ShowNotification("All items chosen correctly", 4.0f));
     }
 
+
     private void FailedToPickInstrument()
     {
-        StartCoroutine(TextNotification._instance.ShowNotification("All items chosen bad", 4.0f));
+        string displayText;
+        float displayTime;
+        if (attemptsLeft < 1)
+        {
+            displayText = "You have failed";
+            displayTime = 1000.0f;
+        }
+        else
+        {
+            displayText = "Picked wrong instrument " + --attemptsLeft + " attempts left.";
+            displayTime = 4.0f;
+        }
+        StartCoroutine(TextNotification._instance.ShowNotification(displayText, displayTime));
     }
 }
