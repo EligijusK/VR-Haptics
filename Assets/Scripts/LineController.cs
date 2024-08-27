@@ -1,40 +1,31 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LineController : MonoBehaviour
 {
-    private LineRenderer lineRenderer;
-    [SerializeField] private Transform[] points;
-
-    private int currentPointIndex = 0; // Index to track the current waypoint
+    public LineRenderer lineRenderer; // Reference to the Line Renderer for the path
 
     void Start()
     {
-        lineRenderer = GetComponent<LineRenderer>();
-        lineRenderer.positionCount = 0; // Start with no points
+        // Ensure we have a reference to the LineRenderer
+        if (lineRenderer == null)
+        {
+            lineRenderer = GetComponent<LineRenderer>();
+        }
+
+        // Initialize the Line Renderer with no positions
+        lineRenderer.positionCount = 0;
     }
 
-    void Update()
+    // Method to extend the LineRenderer when a waypoint is hit
+    public void ExtendLineRenderer(Vector3 waypointPosition)
     {
-        if (currentPointIndex < points.Length)
-        {
-            CheckWaypointReached(); // Check if the current waypoint is reached
-        }
-    }
+        // Add a new position to the LineRenderer
+        int newPositionIndex = lineRenderer.positionCount;
+        lineRenderer.positionCount = newPositionIndex + 1;
+        lineRenderer.SetPosition(newPositionIndex, waypointPosition);
 
-    void CheckWaypointReached()
-    {
-        // Check if the object is close enough to the current waypoint
-        if (Vector3.Distance(transform.position, points[currentPointIndex].position) < 0.1f)
-        {
-            // Add the current waypoint to the Line Renderer
-            lineRenderer.positionCount = currentPointIndex + 1;
-            lineRenderer.SetPosition(currentPointIndex, points[currentPointIndex].position);
-
-            // Move to the next waypoint
-            currentPointIndex++;
-        }
+        Debug.Log("LineRenderer extended to: " + waypointPosition);
     }
 }
