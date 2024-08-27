@@ -19,13 +19,13 @@ public class InstrumentSpot : MonoBehaviour
     {
         instrument = instrumentToPlace;
         taken = true;
-        StartCoroutine(MoveAndMakeGrabbable(instrument));
+        StartCoroutine(MoveAndPlace(instrument));
     }
     
-    private IEnumerator MoveAndMakeGrabbable(Instrument instrumentToPlace)
+    private IEnumerator MoveAndPlace(Instrument instrumentToPlace)
     {
         yield return StartCoroutine(instrumentToPlace.MoveInstrumentToSpot(transform.position));
-        instrumentToPlace.MakeItemGrabbable();
+        instrumentToPlace.OnPlace();
     }
 
     public void RemoveInstrumentFromSpot()

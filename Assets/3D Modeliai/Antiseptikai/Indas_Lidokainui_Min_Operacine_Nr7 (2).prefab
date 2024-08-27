@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1810962423007299322}
   - component: {fileID: 8202749379179148615}
   - component: {fileID: 3502013208199477871}
-  - component: {fileID: 2369316551018187297}
   - component: {fileID: 7044675677750431530}
   m_Layer: 0
   m_Name: Indas_Lidokainui_Min_Operacine_Nr7 (2)
@@ -182,7 +181,7 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2369316551018187297}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Instrument, Assembly-CSharp
         m_MethodName: InteractWithItem
         m_Mode: 1
@@ -200,26 +199,6 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
---- !u!114 &2369316551018187297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3845607379648418699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f224abd534835a4990ee52b5d9e2b31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  table: {fileID: 0}
-  category: 3
-  targetPositionObject: {fileID: 0}
-  SimpleInteractable: {fileID: 0}
-  GrabInteractable: {fileID: 0}
-  spot: {fileID: 0}
-  originalPosition: {x: 0, y: 0, z: 0}
-  originalRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &7044675677750431530
 BoxCollider:
   m_ObjectHideFlags: 0

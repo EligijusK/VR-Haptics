@@ -27,12 +27,6 @@ public class Instrument : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    public void MakeItemGrabbable()
-    {
-        SimpleInteractable.enabled = false;
-        GrabInteractable.enabled = true;
-    }
-
     public virtual void InteractWithItem()
     {
         if (isMoving) return;
@@ -80,5 +74,11 @@ public class Instrument : MonoBehaviour
         _rigidbody.constraints = RigidbodyConstraints.None;
 
         isMoving = false;
+    }
+
+    public virtual void OnPlace()
+    {
+        SimpleInteractable.enabled = false;
+        GrabInteractable.enabled = true;
     }
 }

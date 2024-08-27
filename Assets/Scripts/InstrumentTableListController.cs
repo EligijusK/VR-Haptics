@@ -54,7 +54,7 @@ public class InstrumentTableListController : MonoBehaviour
         return false;
     }
     
-    public void PlaceInstrument(Instrument instrumentToPlace)
+    private void PlaceInstrument(Instrument instrumentToPlace)
     {
         foreach (var spot in spotsForInstruments)
         {
