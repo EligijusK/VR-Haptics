@@ -17991,48 +17991,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9168142743249570444, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_MoveSpeed
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 9014170783809206332, guid: 895f6f3c2d334633b5800312285058d2,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 386317119}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
---- !u!1 &386317118 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9014170783809206332, guid: 895f6f3c2d334633b5800312285058d2,
-    type: 3}
-  m_PrefabInstance: {fileID: 386317117}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &386317119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386317118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4538f4e35f68ae44da77934a78df5160, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  baseTexture: {fileID: 2800000, guid: 0c68df88224b0fb4b8b096733c150ed6, type: 3}
-  meshMaterial: {fileID: 2100000, guid: abe6456ed83c0b04b9cbb30ceab40a02, type: 2}
-  meshGameobject: {fileID: 0}
-  UVShader: {fileID: 4800000, guid: d39c13fa40470d84eaae92a154ecf1f0, type: 3}
-  meshToDraw: {fileID: -1716514513414428537, guid: e74775141b315434cada73a49cae6ba1,
-    type: 3}
-  ilsandMarkerShader: {fileID: 4800000, guid: d39c13fa40470d84eaae92a154ecf1f0, type: 3}
-  fixIlsandEdgesShader: {fileID: 4800000, guid: 74ee5375b10b65e4eb4c870ac758eafd,
-    type: 3}
-  combineMetalicSmoothnes: {fileID: 4800000, guid: ab7cb3f3b6d884743b7948eca35448f4,
-    type: 3}
-  smoothness:
-    id: 
-    runTimeTexture: {fileID: 0}
-    paintedTexture: {fileID: 0}
 --- !u!1 &386645109
 GameObject:
   m_ObjectHideFlags: 0
@@ -51720,6 +51688,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 210632195}
+  - {fileID: 1179279651}
   m_Father: {fileID: 558969429}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 90}
 --- !u!114 &1100349394
@@ -54741,6 +54710,59 @@ Transform:
   - {fileID: 901537238}
   m_Father: {fileID: 1750423631}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1179279650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1179279651}
+  - component: {fileID: 1179279652}
+  m_Layer: 0
+  m_Name: AttachmentPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1179279651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179279650}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.7827, y: 0.0215, z: 2.293}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1100349393}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1179279652
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179279650}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1180968830
 GameObject:
   m_ObjectHideFlags: 0
@@ -87502,7 +87524,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0c483ef37f590c4aaecc85f1bd5c0ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attachmentPoint: {fileID: 210632195}
+  targetPoint: {fileID: 1674017846}
+  snapDistance: 0.1
+  snapSpeed: 10
 --- !u!114 &1674017849
 MonoBehaviour:
   m_ObjectHideFlags: 0
