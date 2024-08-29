@@ -6,10 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Operation Room Block.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 3f381af48f28f4f468db62d30b69fc05, type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c7c82981355fb4a428350d0f062174c0, type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: afe9038ca32ef9d4991470c82712dc61, type: 2}
-    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 95ab4c71529af0846b9ad1e5613533ff, type: 2}
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b85153652d468ff42a9839af6208c849,
+      type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: ea2f28e77a493d94f871bf93548b631f,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 17ed32925409c614886890b641b1a1b3,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b257dcec9f8c560429b8286194599491,
+      type: 2}
