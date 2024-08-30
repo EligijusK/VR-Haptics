@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\OrderingInLine.cs" />
     <Compile Include="Assets\Scripts\CreateNewMesh.cs" />
     <Compile Include="Assets\Scripts\OpenDoors.cs" />
+    <Compile Include="Assets\Scripts\RaycastPainting.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\ClosureDislpay.cs" />

@@ -17,7 +17,9 @@ public class TexturePaint : MonoBehaviour {
     public  Shader           fixIlsandEdgesShader;
     public  Shader           combineMetalicSmoothnes;                         
     public  static Vector3   mouseWorldPosition;
-
+    public RaycastPainting   raycastPaintingLeft;
+    public RaycastPainting   raycastPaintingRight;
+    
     // --------------------------------
   
     private Camera           mainC;
@@ -138,16 +140,32 @@ public class TexturePaint : MonoBehaviour {
         // ---------------------------------------------------------------------------
         // Setting up Mouse Parameters
 
-        RaycastHit hit;
-        Ray        ray = mainC.ScreenPointToRay(Mouse.current.position.ReadValue());
+        // RaycastHit hit;
+        // Ray        ray = mainC.ScreenPointToRay(Mouse.current.position.ReadValue());
         Vector4    mwp = Vector3.positiveInfinity;
 
-        if (Physics.Raycast(ray, out hit))
+        // if (Physics.Raycast(ray, out hit))
+        // {
+        //     if (hit.collider.gameObject.tag == "PaintObject")
+        //     {
+        //         mwp = hit.point;
+        //         Debug.Log(mwp.ToString());
+        //     }
+        // }
+
+        if (raycastPaintingRight != null)
         {
-            if (hit.collider.gameObject.tag == "PaintObject")
+            if (raycastPaintingRight.GetWasHit())
             {
-                mwp = hit.point;
-                Debug.Log(mwp.ToString());
+                mwp = raycastPaintingRight.GetHitPoint();
+            }
+        }
+
+        if (raycastPaintingLeft != null)
+        {
+            if (raycastPaintingLeft.GetWasHit())
+            {
+                mwp = raycastPaintingLeft.GetHitPoint();
             }
         }
 
