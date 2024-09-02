@@ -18,7 +18,10 @@ public class InstrumentTableListController : MonoBehaviour
     {
         foreach (var category in categories)
         {
-            totalRequired += category.requiredCount;
+            if (!category.optional)
+            {
+                totalRequired += category.requiredCount;
+            }
         }
     }
     
@@ -29,20 +32,17 @@ public class InstrumentTableListController : MonoBehaviour
         {
             if (category.category.Equals(instrumentToPlace.category))
             {
-                if (category.category == Categories.Default)
-                {
-                    //picked wrong object
-                    FailedToPickInstrument();
-                    return false;
-                }
                 if (category.currentCount < category.requiredCount)
                 {
                     PlaceInstrument(instrumentToPlace);
-                    category.currentCount++;
-                    currentTotalCount++;
-                    if (currentTotalCount == totalRequired)
+                    if (!category.optional)
                     {
-                        SuccessfullyPlacedAllInstruments();
+                        category.currentCount++;
+                        currentTotalCount++;
+                        if (currentTotalCount == totalRequired)
+                        {
+                            SuccessfullyPlacedAllInstruments();
+                        }
                     }
                     return true;
                 }
@@ -51,6 +51,7 @@ public class InstrumentTableListController : MonoBehaviour
                 return false;
             }
         }
+        FailedToPickInstrument();
         return false;
     }
     
