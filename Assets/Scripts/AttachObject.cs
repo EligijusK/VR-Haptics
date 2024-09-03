@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class AttachObject : MonoBehaviour
@@ -31,7 +30,7 @@ public class AttachObject : MonoBehaviour
             other.transform.parent = transform;
             other.transform.position = transform.position;
             other.transform.rotation = Quaternion.Euler(snapRotation);
-            parentObject.AddComponent<RaycastPainting>();
+            // parentObject.AddComponent<RaycastPainting>();
 
             // other.attachedRigidbody. = attachedRigidbody;
             // other.attachedRigidbody.isKinematic = false;

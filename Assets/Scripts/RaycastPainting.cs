@@ -6,6 +6,11 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class RaycastPainting : MonoBehaviour
 {
+    [SerializeField] private Transform raycastOrigin;
+    [SerializeField] private float hitDistance = 0.05f;
+    [SerializeField] private Vector2 brushSizeRange = new Vector2(0.01f, 0.1f);
+    [SerializeField] private Vector2 minMaxDistance = new Vector2(0.01f, 0.05f);
+    int callsPerSecond = 8000;
     RaycastHit hit;
     bool wasHit = false;
     Vector3 hitPoint;
@@ -16,35 +21,41 @@ public class RaycastPainting : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         
-        
-        // Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity);
-        // Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-        // if (hit.transform.tag == "PaintObject")
-        // {
-        //     Debug.Log("Hit PaintObject");
-        //     wasHit = true;
-        //     hitPoint = hit.point;
-        // }
-        // else
-        // {
-        //     wasHit = false;
-        // }
+        // Debug.DrawRay(raycastOrigin.position, raycastOrigin.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+        if (Physics.Raycast(raycastOrigin.position, raycastOrigin.TransformDirection(Vector3.forward), out hit, Mathf.Infinity) &&
+            hit.distance < hitDistance && hit.transform.CompareTag("PaintObject") && !wasHit)
+        {
+            wasHit = true;
+            // Debug.Log("Hit PaintObject");
+            hitPoint = hit.point;
+        }
+        else
+        {
+            wasHit = false;
+        }
     }
+    
 
-    private void OnCollisionStay(Collision other)
+    // private void OnCollisionEnter(Collision other)
+    // {
+    //     // hitPoint = other.GetContact(0).point;
+    //     wasHit = true;
+    // }
+    //
+    // private void OnCollisionExit(Collision other)
+    // {
+    //     wasHit = false;
+    // }
+
+    
+    public RaycastHit GetHit()
     {
-        hitPoint = other.GetContact(0).point;
-        wasHit = true;
+        return hit;
     }
-
-    private void OnCollisionExit(Collision other)
-    {
-        wasHit = false;
-    }
-
+    
     public bool GetWasHit()
     {
         return wasHit;
@@ -54,4 +65,6 @@ public class RaycastPainting : MonoBehaviour
     {
         return hitPoint;
     }
+    
+    
 }

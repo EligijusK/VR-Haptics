@@ -17,7 +17,6 @@ public class TexturePaint : MonoBehaviour {
     public  Shader           fixIlsandEdgesShader;
     public  Shader           combineMetalicSmoothnes;                         
     public  static Vector3   mouseWorldPosition;
-    public RaycastPainting   raycastPaintingLeft;
     public RaycastPainting   raycastPaintingRight;
     
     // --------------------------------
@@ -40,6 +39,11 @@ public class TexturePaint : MonoBehaviour {
     
     private InputAction leftMouseClick;
     private int mouseIsDown = 0;
+    private Vector3 previousPosition;
+    private Vector3 tempPosition;
+    private Vector3 currentPosition;
+    private bool lerpingStarted = false;
+    private float timer = 0f;
 
     void Start () {
 
@@ -50,10 +54,7 @@ public class TexturePaint : MonoBehaviour {
         leftMouseClick.started += ctx => MouseClick();
         leftMouseClick.canceled += ctx => MouseClickRelease();
         leftMouseClick.Enable();
-                           mainC = Camera.main;
-        if (mainC == null) mainC = this.GetComponent<Camera>();
-        if (mainC == null) mainC = GameObject.FindObjectOfType<Camera>();
-
+        mainC = Camera.main;
 
         // Texture and Mat initalization ---------------------------------------------
         markedIlsandes = new RenderTexture(baseTexture.width, baseTexture.height, 0, RenderTextureFormat.R8);
@@ -114,19 +115,11 @@ public class TexturePaint : MonoBehaviour {
 
     private void Update()
     {
-        if (numberOfFrames > 2) mainC.RemoveCommandBuffer(CameraEvent.AfterDepthTexture, cb_markingIlsdands);
+        if (numberOfFrames > 3) mainC.RemoveCommandBuffer(CameraEvent.AfterDepthTexture, cb_markingIlsdands);
 
         createMetalicGlossMap.SetTexture("_Smoothness", smoothness.runTimeTexture);
         createMetalicGlossMap.SetTexture("_MainTex", metalic.runTimeTexture);
         Graphics.Blit(metalic.runTimeTexture, metalicGlossMapCombined, createMetalicGlossMap);
-
-
-
-
-
-
-
-
 
         numberOfFrames++;
 
@@ -155,22 +148,33 @@ public class TexturePaint : MonoBehaviour {
 
         if (raycastPaintingRight != null)
         {
-            if (raycastPaintingRight.GetWasHit())
+            if (raycastPaintingRight.GetWasHit() && !lerpingStarted)
             {
-                mwp = raycastPaintingRight.GetHitPoint();
+                tempPosition = raycastPaintingRight.GetHitPoint();
+                
+                if (Vector3.Distance(tempPosition, previousPosition) > 0.01f)
+                {
+                    currentPosition = tempPosition;
+                    lerpingStarted = true;
+                    timer = 0;
+                }
+                
             }
-        }
-
-        if (raycastPaintingLeft != null)
-        {
-            if (raycastPaintingLeft.GetWasHit())
+            if(lerpingStarted)
             {
-                mwp = raycastPaintingLeft.GetHitPoint();
+                mwp = Vector3.Slerp(previousPosition, currentPosition, timer);
+                timer += 0.5f;
+
+                if (Vector3.Distance(mwp, currentPosition) < 0.01f)
+                {
+                    lerpingStarted = false;
+                    previousPosition = tempPosition;
+                }
             }
         }
 
         //mwp.w = Input.GetMouseButton(0)? 1 : 0;
-        mwp.w = mouseIsDown;
+        mwp.w = 1; // mouseIsDown;
 
         mouseWorldPosition = mwp;
         Shader.SetGlobalVector("_Mouse", mwp);
@@ -178,6 +182,8 @@ public class TexturePaint : MonoBehaviour {
 
         
     }
+    
+    
 
     // ======================================================================================================================
     // HELPER FUNCTIONS ---------------------------------------------------------------------------
@@ -240,10 +246,10 @@ public class PaintableTexture
 
         fixedIlsands   = new RenderTexture(paintedTexture.descriptor);
 
-        Graphics.SetRenderTarget(runTimeTexture);
-        GL.Clear(false, true, clearColor);
-        Graphics.SetRenderTarget(paintedTexture);
-        GL.Clear(false, true, clearColor);
+        // Graphics.SetRenderTarget(runTimeTexture);
+        // GL.Clear(false, true, clearColor);
+        // Graphics.SetRenderTarget(paintedTexture);
+        // GL.Clear(false, true, clearColor);
 
 
         mPaintInUV  = new Material(sPaintInUV);
