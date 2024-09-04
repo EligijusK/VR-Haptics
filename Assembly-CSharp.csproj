@@ -45,6 +45,7 @@
     <Analyzer Include="D:\Unity\2022.3.35f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\HandPose.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\CountDownTimer.cs" />
     <Compile Include="Assets\Scripts\PathTracking.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="Assets\Samples\OpenXR Plugin\1.11.0\Meshing Subsystem Feature\MeshingBehaviour.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.11.0\Intercept Feature\InterceptCreateSessionFeature.cs" />
     <Compile Include="Assets\Scripts\TextNotification.cs" />
+    <Compile Include="Assets\Scripts\HandData.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\ExitApplication.cs" />
     <Compile Include="Assets\InkPainter\Script\Core\Math.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.11.0\Intercept Feature\InterceptMessageHandler.cs" />
