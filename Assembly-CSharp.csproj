@@ -54,6 +54,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\InkPainter\Script\Effective\HeightFluid.cs" />
     <Compile Include="Assets\InkPainter\Script\Util\SceneViewCamera.cs" />
+    <Compile Include="Assets\Scripts\XRInputController.cs" />
     <Compile Include="Assets\Scripts\TrackMainCamera.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\InkPainter\Script\Extenision\GameObjectExtension.cs" />
@@ -1133,6 +1134,10 @@
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.Hands.Editor.csproj">
       <Project>{58fbb26d-3825-7cab-da55-e253f4c74206}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.Hands.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Hands.Samples.Gestures.csproj">
+      <Project>{486fa320-b758-5ae0-13b6-3f3bc68963f6}</Project>
+      <Name>Unity.XR.Hands.Samples.Gestures</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Hands.Samples.VisualizerSample.csproj">
       <Project>{d7f7fc1e-0c0b-d21f-e966-79940113a1da}</Project>
