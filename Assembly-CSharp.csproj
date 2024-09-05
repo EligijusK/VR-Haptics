@@ -115,12 +115,14 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\Scripts\HandAnimatorController.cs" />
+    <Compile Include="Assets\Scripts\TestSelector.cs" />
     <Compile Include="Assets\Scripts\Outline.cs" />
     <Compile Include="Assets\Scripts\LineController.cs" />
     <Compile Include="Assets\Scripts\HandWashingTest.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\AbacusManager.cs" />
     <Compile Include="Assets\Scripts\LineColorChangeHandler.cs" />
     <Compile Include="Assets\InkPainter\Script\Effective\ReverseUV.cs" />
+    <Compile Include="Assets\Scripts\Tampon.cs" />
     <Compile Include="Assets\InkPainter\Sample\Script\CollisionPainter.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\ScaleSlider.cs" />
     <Compile Include="Assets\Scripts\SelectedItem.cs" />
