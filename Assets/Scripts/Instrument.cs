@@ -14,11 +14,12 @@ public class Instrument : MonoBehaviour
     [SerializeField] public GameObject targetPositionObject;
     [SerializeField] public XRSimpleInteractable SimpleInteractable;
     [SerializeField] public XRGrabInteractable GrabInteractable;
+    [SerializeField] public Transform predeterminedSpot;
     private Rigidbody _rigidbody;
     public Vector3 originalPosition;
     public Quaternion originalRotation;
     protected bool onTable;
-    private bool isMoving;
+    protected bool isMoving;
     
 
     public virtual void Start()

@@ -10,7 +10,7 @@ public class PouringAnimation : MonoBehaviour
     [SerializeField] private float capMoveDuration = 0.5f;
     [SerializeField] private GameObject liquidMesh;
     [SerializeField] private float fillDuration = 3.0f;
-    [SerializeField] private float fillStartDelay = 2.0f;
+    [SerializeField] private float fillStartDelay = 1.0f;
 
     private Vector3 originalPosition;
     private Quaternion originalRotation;
@@ -66,26 +66,35 @@ public class PouringAnimation : MonoBehaviour
     }
 
     private IEnumerator StartPouringAndFilling(float pourRotationDuration)
-    {
-        Quaternion pourRotation = Quaternion.Euler(90f, 45f, 0f);
-        yield return RotateToAngle(pourRotation, pourRotationDuration);
-        particleSystem.SetActive(true);
+{
+    Quaternion pourRotation = Quaternion.Euler(90f, 45f, 0f);
+    yield return RotateToAngle(pourRotation, pourRotationDuration);
+    
+    particleSystem.SetActive(true);
 
-        yield return new WaitForSeconds(fillStartDelay);
+    yield return new WaitForSeconds(fillStartDelay);
 
-        StartCoroutine(FillCup());
-        yield return new WaitForSeconds(fillDuration);
-        particleSystem.SetActive(false);
-    }
+    // Start filling the cup
+    StartCoroutine(FillCup());
 
-    public IEnumerator FillCup()
-    {
-        liquidMesh.SetActive(true);
-        Vector3 originalScale = liquidMesh.transform.localScale;
-        Vector3 targetScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
-        liquidMesh.transform.localScale = new Vector3(originalScale.x, originalScale.y, 0);
-        yield return LerpScale(liquidMesh.transform, new Vector3(originalScale.x, originalScale.y, 0), targetScale, fillDuration);
-    }
+    yield return new WaitForSeconds(fillDuration);
+    
+    // Deactivate the particle system after the liquid has been poured
+    particleSystem.SetActive(false);
+}
+
+public IEnumerator FillCup()
+{
+    liquidMesh.SetActive(true);  
+    Renderer renderer = liquidMesh.GetComponent<Renderer>();
+    renderer.material.renderQueue = 3000;    
+    Vector3 originalScale = liquidMesh.transform.localScale;
+    Vector3 targetScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
+    liquidMesh.transform.localScale = new Vector3(originalScale.x, originalScale.y, 0);
+    yield return LerpScale(liquidMesh.transform, new Vector3(originalScale.x, originalScale.y, 0), targetScale, fillDuration);
+}
+
+
 
     private IEnumerator LerpPosition(Transform objTransform, Vector3 targetPosition, float duration)
     {
