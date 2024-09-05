@@ -73,7 +73,7 @@ public class HandPose : MonoBehaviour
 
     public void UsePose(HandPose handPose)
     {
-        if (handType == HandType.Left)
+        if (handPose.handType == HandType.Left)
         {
             UsePose(handPose, ref poseDataLeft, ref originlaPoseDataLeft);
         }
