@@ -26,6 +26,7 @@ public class HandPose : MonoBehaviour
         if (TryGetComponent(typeof(XRGrabInteractable), out Component grabInteractable))
         {
             XRGrabInteractable grabInteractableComponent = (XRGrabInteractable) grabInteractable;
+            grabInteractableComponent.hoverEntered.AddListener(ChangeOrigin);
             grabInteractableComponent.selectEntered.AddListener(SetPose);
             grabInteractableComponent.selectExited.AddListener(ResetPose);
         }
@@ -94,6 +95,33 @@ public class HandPose : MonoBehaviour
         }
     }
     
+    
+    public void UseOrigin(HandPose handPose)
+    {
+        if (handPose.handType == HandType.Left)
+        {
+            ChangeOrigin(poseDataLeft);
+        }
+        else
+        {
+            ChangeOrigin(poseDataRight);
+        }
+    }
+    
+    private void ChangeOrigin(HandData poseData)
+    {
+        
+        if (poseData == null)
+        {
+            Debug.LogError("No Pose Data");
+            return;
+        }
+        
+        origin.transform.localPosition = poseData.originPosition;
+        origin.transform.localRotation = poseData.originRotation;
+        
+    }
+    
     public HandData GetPoseData()
     {
         if (handType == HandType.Left)
@@ -119,8 +147,6 @@ public class HandPose : MonoBehaviour
         originalPoseData.fingerPositions = new Vector3[handPose.fingerObjects.Length];
         originalPoseData.fingerRotations = new Quaternion[handPose.fingerObjects.Length];
         originalPoseData.fingerScales = new Vector3[handPose.fingerObjects.Length];
-        origin.transform.localPosition = poseData.originPosition;
-        origin.transform.localRotation = poseData.originRotation;
         
         for (int i = 0; i < handPose.fingerObjects.Length; i++)
         {
@@ -136,13 +162,24 @@ public class HandPose : MonoBehaviour
             handPose.fingerObjects[i].transform.localScale = poseData.fingerScales[i];
         }
     }
+    
+    public void ChangeOrigin(BaseInteractionEventArgs args)
+    {
+        
+        if(args.interactorObject is XRDirectInteractor)
+        {
+            XRDirectInteractor interactor = (XRDirectInteractor) args.interactorObject;
+            HandPose handComponent = interactor.transform.parent.GetComponent<HandPose>();
+            UseOrigin(handComponent);
+        } 
+    }
 
     public void SetPose(BaseInteractionEventArgs args)
     {
-        Debug.Log("HAHAHAHHAH");
+        
         if(args.interactorObject is XRDirectInteractor)
         {
-            Debug.Log("HuHuHuHuHuH");
+            
             XRDirectInteractor interactor = (XRDirectInteractor) args.interactorObject;
             HandPose handComponent = interactor.transform.parent.GetComponent<HandPose>();
             handComponent.handSkeletonDriver.UnsubscribeFromFingerTrackingEvents();
@@ -211,7 +248,7 @@ public class HandPoseEditor : Editor
         
         if(!hand.editorIsEnabled)
         {
-            if (GUILayout.Button("left"))
+            if (GUILayout.Button("Left"))
             {
                 hand.editorIsEnabled = true;
                 hand.currentHandType = HandType.Left;
