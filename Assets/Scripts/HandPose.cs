@@ -8,6 +8,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class HandPose : MonoBehaviour
 {
+    public GameObject origin;
     public HandType handType;
     public XRHandSkeletonDriver handSkeletonDriver;
     public GameObject[] fingerObjects;
@@ -15,6 +16,10 @@ public class HandPose : MonoBehaviour
     public HandData poseDataLeft;
     public HandData originlaPoseDataRight;
     public HandData poseDataRight;
+    public bool editorIsEnabled = false;
+    public HandPose handPose;
+    public GameObject prefab;
+    public HandType currentHandType;
     // Start is called before the first frame update
     void Start()
     {
@@ -63,6 +68,12 @@ public class HandPose : MonoBehaviour
             poseData.fingerScales = new Vector3[fingerObjects.Length];
         }
 
+        if (origin != null)
+        {
+            poseData.originPosition = origin.transform.position;
+            poseData.originRotation = origin.transform.rotation;
+        }
+
         for (int i = 0; i < fingerObjects.Length; i++)
         {
             poseData.fingerPositions[i] = fingerObjects[i].transform.localPosition;
@@ -83,6 +94,18 @@ public class HandPose : MonoBehaviour
         }
     }
     
+    public HandData GetPoseData()
+    {
+        if (handType == HandType.Left)
+        {
+            return poseDataLeft;
+        }
+        else
+        {
+            return poseDataRight;
+        }
+    }
+    
     private void UsePose(HandPose handPose, ref HandData poseData, ref HandData originalPoseData)
     {
         
@@ -96,6 +119,8 @@ public class HandPose : MonoBehaviour
         originalPoseData.fingerPositions = new Vector3[handPose.fingerObjects.Length];
         originalPoseData.fingerRotations = new Quaternion[handPose.fingerObjects.Length];
         originalPoseData.fingerScales = new Vector3[handPose.fingerObjects.Length];
+        origin.transform.localPosition = poseData.originPosition;
+        origin.transform.localRotation = poseData.originRotation;
         
         for (int i = 0; i < handPose.fingerObjects.Length; i++)
         {
@@ -176,15 +201,69 @@ public class HandPose : MonoBehaviour
 
 
 [CustomEditor(typeof(HandPose))]
-public class HandPoseEditor : Editor 
+public class HandPoseEditor : Editor
 {
+    
+    
+    
     public override void OnInspectorGUI() {
         HandPose hand = (HandPose)target;
-        if (GUILayout.Button("Test"))
+        
+        if(!hand.editorIsEnabled)
         {
-          
-            hand.CreatePose();
-            EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
+            if (GUILayout.Button("left"))
+            {
+                hand.editorIsEnabled = true;
+                hand.currentHandType = HandType.Left;
+                Object newObject = AssetDatabase.LoadAssetAtPath("Assets/Samples/XR Hands/1.4.1/HandVisualizer/Prefabs/Left Hand Tracking.prefab", typeof(GameObject));
+                hand.prefab = PrefabUtility.InstantiatePrefab(newObject) as GameObject;
+                hand.handPose = hand.prefab.GetComponentInChildren<HandPose>();
+                hand.prefab.transform.parent = hand.transform;
+                hand.prefab.transform.localPosition = Vector3.zero;
+                hand.prefab.transform.localRotation = Quaternion.identity;
+            }
+        }
+        if (!hand.editorIsEnabled)
+        {
+            if (GUILayout.Button("Right"))
+            {
+                hand.editorIsEnabled = true;
+                hand.currentHandType = HandType.Right;
+                Object newObject = (GameObject)AssetDatabase.LoadAssetAtPath("Assets/Samples/XR Hands/1.4.1/HandVisualizer/Prefabs/Right Hand Tracking.prefab", typeof(GameObject));
+                hand.prefab = PrefabUtility.InstantiatePrefab(newObject) as GameObject;
+                hand.handPose = hand.prefab.GetComponentInChildren<HandPose>();
+                hand.prefab.transform.parent = hand.transform;
+                hand.prefab.transform.localPosition = Vector3.zero;
+                hand.prefab.transform.localRotation = Quaternion.identity;
+            }
+        }
+
+        if (hand.editorIsEnabled)
+        {
+            if (GUILayout.Button("SavePose"))
+            {
+                hand.editorIsEnabled = false;
+                hand.handPose.CreatePose();
+                HandData data = hand.handPose.GetPoseData();
+                data.originPosition = hand.origin.transform.parent.InverseTransformPoint(data.originPosition);
+                data.originRotation = Quaternion.Inverse(hand.origin.transform.parent.rotation) * data.originRotation;
+                if (hand.currentHandType == HandType.Left)
+                {
+                    hand.poseDataLeft = data;
+                }
+                else
+                {
+                    hand.poseDataRight = data;
+                }
+                EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
+                DestroyImmediate(hand.prefab);
+            }
+
+            if (GUILayout.Button("Cancel"))
+            {
+                hand.editorIsEnabled = false;
+                DestroyImmediate(hand.prefab);
+            }
         }
     }
 }
