@@ -18,17 +18,17 @@ public class TestSelector : MonoBehaviour
         if (selectedObject == correctObject)
         {
             Debug.Log(correctMessage);
-            label.text = "eik nx";
+            label.text = correctMessage;
         }
         else
         {
             Debug.Log(incorrectMessage);
-            label.text = "pisk nx";
+            label.text = incorrectMessage;
         }
     }
 
     public void PopUp()
     {
-        StartCoroutine(TextNotification._instance.ShowNotification("eik nx", 3.0f));
+        StartCoroutine(TextNotification._instance.ShowNotification("Saunuolis", 3.0f));
     }
 }
