@@ -101,6 +101,7 @@
     <Compile Include="Assets\InkPainter\Script\Core\Math.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.11.0\Intercept Feature\InterceptMessageHandler.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.11.0\Meshing Subsystem Feature\FallingSphere.cs" />
+    <Compile Include="Assets\Scripts\NewSkeleton.cs" />
     <Compile Include="Assets\Scripts\Antiseptic.cs" />
     <Compile Include="Assets\InkPainter\Sample\Script\CollisionReflectionPainter.cs" />
     <Compile Include="Assets\Scripts\Bowl.cs" />
