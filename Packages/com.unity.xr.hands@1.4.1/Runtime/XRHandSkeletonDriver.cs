@@ -55,6 +55,9 @@ namespace UnityEngine.XR.Hands
         [SerializeField]
         [Tooltip("The XR Hand Tracking Events component that will be used to subscribe to hand tracking events.")]
         XRHandTrackingEvents m_XRHandTrackingEvents;
+        
+        [SerializeField]
+        bool m_TrackPosition = true;
 
         [SerializeField]
         [Tooltip("The Transform that will be driven by the hand's root position and rotation.")]
@@ -105,6 +108,7 @@ namespace UnityEngine.XR.Hands
         protected virtual bool hasRootOffset => m_HasRootOffset;
         
         bool m_HasRootOffset;
+        
 
         /// <summary>
         /// The serialized list of <see cref="XRHandJointID"/> with a reference to a transform to drive.
@@ -207,8 +211,11 @@ namespace UnityEngine.XR.Hands
         {
             if (m_XRHandTrackingEvents != null)
             {
+                if (m_TrackPosition)
+                {
+                    m_XRHandTrackingEvents.poseUpdated.RemoveListener(OnRootPoseUpdated);
+                }
                 m_XRHandTrackingEvents.jointsUpdated.RemoveListener(OnJointsUpdated);
-                m_XRHandTrackingEvents.poseUpdated.RemoveListener(OnRootPoseUpdated);
             }
         }
         
@@ -234,8 +241,12 @@ namespace UnityEngine.XR.Hands
         {
             if (m_XRHandTrackingEvents != null)
             {
+                if (m_TrackPosition)
+                {
+                    m_XRHandTrackingEvents.poseUpdated.AddListener(OnRootPoseUpdated);
+                }
                 m_XRHandTrackingEvents.jointsUpdated.AddListener(OnJointsUpdated);
-                m_XRHandTrackingEvents.poseUpdated.AddListener(OnRootPoseUpdated);
+
             }
         }
 
