@@ -74,12 +74,12 @@ MonoBehaviour:
   m_Name: MockInteractionFeature Standalone
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
+  nameUi: Mock Interaction Feature
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.mockinteraction
   openxrExtensionStrings: 
-  company: 
-  priority: 0
+  company: Unity
+  priority: -2147483648
   required: 0
 --- !u!114 &-4814062756160499158
 MonoBehaviour:
@@ -478,6 +478,7 @@ MonoBehaviour:
   - {fileID: -2087331656045572932}
   - {fileID: 3259782041661394600}
   - {fileID: -4814062756160499158}
+  - {fileID: -5945938906844808324}
   - {fileID: -8763392501442699086}
   - {fileID: 1808375709711935293}
   - {fileID: 781751465473245536}
