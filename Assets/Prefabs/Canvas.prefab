@@ -608,7 +608,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.131, y: 0.642}
+  m_AnchoredPosition: {x: -0.131, y: 0.599}
   m_SizeDelta: {x: 1, y: 0.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7905881701201793651
@@ -5098,10 +5098,10 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3422332902531444730}
-        m_TargetAssemblyTypeName: TestQuestion, Assembly-CSharp
-        m_MethodName: AnsweredCorrectly
-        m_Mode: 1
+      - m_Target: {fileID: 525728631300901550}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5782,10 +5782,10 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3422332902531444730}
-        m_TargetAssemblyTypeName: TestQuestion, Assembly-CSharp
-        m_MethodName: AnsweredCorrectly
-        m_Mode: 1
+      - m_Target: {fileID: 525728631300901550}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7182,10 +7182,10 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3422332902531444730}
-        m_TargetAssemblyTypeName: TestQuestion, Assembly-CSharp
-        m_MethodName: AnsweredCorrectly
-        m_Mode: 1
+      - m_Target: {fileID: 525728631300901550}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
