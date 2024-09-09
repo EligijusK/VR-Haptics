@@ -175,14 +175,18 @@
     <None Include="Assets\InkPainter\Shader\Effective\InvertAlpha.shader" />
     <None Include="Assets\InkPainter\Shader\Effective\SingleColorFill.shader" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\SkinShader_Variants_3D_Tessellation.shader" />
+    <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationRoomXRay.shader" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\HairShader_2nd_Pass_Variants_3D_Tessellation.shader" />
+    <None Include="Packages\com.unity.xr.legacyinputhelpers@2.1.10\package.json" />
     <None Include="Assets\InkPainter\Shader\Effective\TextureMorphing.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="WEART-UNITY-SDK\package.json" />
+    <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\XRayURPForwardPass.hlsl" />
     <None Include="Assets\Scripts_Painting\ColorPicker.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\3D\Shaders\TearlineShader_3D.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
+    <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\XRayCommon.cginc" />
     <None Include="Assets\InkPainter\Shader\Effective\ReverseUV.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\Scripts_Painting\TexturePaint.shader" />
@@ -199,33 +203,49 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\InkPainter\Shader\Effective\HeightToColor.shader" />
     <None Include="Assets\InkPainter\Shader\Paint\PaintNormal.shader" />
+    <None Include="Packages\com.unity.xr.openxr@1.11.0\package.json" />
+    <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationLegacyRoomXRay.shader" />
+    <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\GizmoSolidColor.shader" />
     <None Include="Assets\InkPainter\Shader\Paint\PaintHeight.shader" />
     <None Include="Assets\Resources\BillingMode.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Packages\com.unity.xr.arfoundation@5.1.5\package.json" />
     <None Include="Packages\com.unity.xr.hands@1.4.1\package.json" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Packages\com.unity.xr.management@4.4.0\package.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\Lit_AlphaClipped_3D_Tessellation.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\CorneaShaderParallax_3D_Tessellation.shader" />
+    <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationURPRoomXRay.shader" />
     <None Include="Assets\3D\Shaders\shaser\Lit_AlphaBlend_DblSided_3D.shader" />
     <None Include="Assets\InkPainter\readme_jp.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Scripts_Painting\MarkIlsands.shader" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\HairShader_Clipped_3D_Tessellation.shader" />
+    <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationURPSynthetic.shader" />
+    <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationBackgroundSimple.shader" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\TeethShader_3D_Tessellation.shader" />
+    <None Include="Packages\com.unity.xr.interaction.toolkit@2.5.4\package.json" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationSyntheticLit.shader" />
     <None Include="Assets\Scripts_Painting\CombineMetalicSmoothness.shader" />
+    <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationLegacyStandard.shader" />
     <None Include="Assets\Samples\Polybrush\1.0.2\Shader Examples (Standard)\Shader\StandardVertexColor.shader" />
     <None Include="Packages\com.unity.xr.hands@1.4.1\ValidationExceptions.json" />
     <None Include="Assets\MeshingFeaturePlugin\UnitySubsystemsManifest.json" />
+    <None Include="Packages\com.unity.xr.core-utils@2.3.0\package.json" />
     <None Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Sprites\Candle_Flame.shader" />
+    <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationStandardLit.shader" />
+    <None Include="Packages\com.unity.xr.oculus@4.2.0\package.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\InkPainter\Sample\Shader\VTFHeightTransform.shader" />
     <None Include="Assets\InkPainter\Shader\Effective\HeightToNormal.shader" />
+    <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationLegacySynthetic.shader" />
+    <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationURPLit.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\3D\Shaders\EyeOcclusionShader_3D.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
@@ -233,7 +253,9 @@
     <None Include="Assets\InkPainter\Shader\Effective\GrabArea.shader" />
     <None Include="Assets\Shaders\OutlineFill.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Packages\com.unity.xr.interaction.toolkit@2.5.4\ValidationExceptions.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Runtime\UnitySubsystemsManifest.json" />
     <None Include="Assets\LearningVideo\UnlitVideoShader.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
     <None Include="Assets\InkPainter\Shader\Lib\InkPainterFoundation.cginc" />
@@ -870,17 +892,8 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.35f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.MetaQuestSupport.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.MetaQuestSupport.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Management">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Services.Analytics.Editor">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.Services.Analytics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Interaction.Toolkit.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing.Stores">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\UnityEngine.Purchasing.Stores.dll</HintPath>
@@ -897,20 +910,8 @@
     <Reference Include="Unity.Services.Core">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.ARFoundation.VisualScripting.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.ARFoundation.VisualScripting.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARSubsystems.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.ARSubsystems.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
@@ -921,29 +922,11 @@
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.CoreUtils">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.CoreUtils.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARFoundation.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.ARFoundation.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Simulation">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.Simulation.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.OpenXR.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Polybrush.Editor">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.Polybrush.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Environments">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARSubsystems">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.ARSubsystems.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.MetaQuestSupport">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.MetaQuestSupport.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing.SecurityCore">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
@@ -951,20 +934,8 @@
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.Management.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARAnalytics.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.ARAnalytics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARFoundation.VisualScripting">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.ARFoundation.VisualScripting.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.Purchasing.Codeless">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.CoreUtils.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.CoreUtils.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
@@ -975,23 +946,11 @@
     <Reference Include="Unity.Services.Core.Analytics">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.Simulation.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.Simulation.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Oculus.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Interaction.Toolkit">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
@@ -1001,12 +960,6 @@
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARFoundation">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.ARFoundation.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
@@ -1023,9 +976,6 @@
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
@@ -1035,17 +985,11 @@
     <Reference Include="Purchasing.Common">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Purchasing.Common.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
     <Reference Include="Analytics">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
@@ -1062,20 +1006,11 @@
     <Reference Include="Unity.InputSystem.ForUI">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.Oculus">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Services.Analytics">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.Services.Analytics.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.OpenXR.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.OpenXR.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.AI.Navigation.Updater">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARFoundation.InternalUtils">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.ARFoundation.InternalUtils.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
@@ -1089,9 +1024,6 @@
     <Reference Include="Unity.AI.Navigation.Editor">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
@@ -1101,13 +1033,41 @@
       <Project>{19b633e2-b764-425e-47e7-b6ed0782b67f}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.XR.OpenXR.Features.MetaQuestSupport.Editor.csproj">
+      <Project>{6ac92887-11af-5d32-8e0f-444b16058db7}</Project>
+      <Name>Unity.XR.OpenXR.Features.MetaQuestSupport.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Management.csproj">
+      <Project>{01cc9b73-70c2-0d9b-e794-ab262d2db779}</Project>
+      <Name>Unity.XR.Management</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.Hands.csproj">
       <Project>{23cae5e7-dcb9-435f-9a0e-f155e49e79c7}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.Hands</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.XR.Interaction.Toolkit.Editor.csproj">
+      <Project>{b5ea975b-27e8-408d-b3a3-1187ca182282}</Project>
+      <Name>Unity.XR.Interaction.Toolkit.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.XR.Hands.csproj">
       <Project>{a8ff1c85-aa2b-983a-77c7-deba2b4ccc79}</Project>
       <Name>Unity.XR.Hands</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.ARFoundation.VisualScripting.Editor.csproj">
+      <Project>{22d06b64-d879-f460-b9b6-c060a7f72e6e}</Project>
+      <Name>Unity.XR.ARFoundation.VisualScripting.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.OpenXR.Features.ConformanceAutomation.csproj">
+      <Project>{529e2490-e233-e509-9f2a-cf88ead3e587}</Project>
+      <Name>Unity.XR.OpenXR.Features.ConformanceAutomation</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.ARSubsystems.Editor.csproj">
+      <Project>{6857fd4e-5a72-7404-0e98-392716f791f4}</Project>
+      <Name>Unity.XR.ARSubsystems.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.csproj">
+      <Project>{fec9d074-60a9-1d88-5730-e025fe8e29b3}</Project>
+      <Name>Unity.XR.OpenXR.Features.OculusQuestSupport.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.csproj">
       <Project>{d01315a4-0e47-2d34-5f43-4faec85adf0f}</Project>
@@ -1117,21 +1077,93 @@
       <Project>{b56539bc-a07d-c6f2-1f4b-51313f8a6aac}</Project>
       <Name>WeArtSDK.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.XR.CoreUtils.csproj">
+      <Project>{a23f54b7-ad1e-17d9-d269-ef57336d2af9}</Project>
+      <Name>Unity.XR.CoreUtils</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.Hands.Editor.csproj">
       <Project>{bc20fd8c-3a1f-fc93-0319-d83f5d4ca4c4}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.Hands.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.ARFoundation.Editor.csproj">
+      <Project>{339f2b14-1081-c915-d1e3-fe04f1240f3a}</Project>
+      <Name>Unity.XR.ARFoundation.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Simulation.csproj">
+      <Project>{9bc7d54c-c05b-a54a-c878-9fc68a2cb6ab}</Project>
+      <Name>Unity.XR.Simulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.OpenXR.csproj">
+      <Project>{a0a10290-0e22-360e-2ae9-c9523e680f96}</Project>
+      <Name>Unity.XR.OpenXR</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.ARSubsystems.csproj">
+      <Project>{b08c06a5-be41-2051-a429-b33b64f071cb}</Project>
+      <Name>Unity.XR.ARSubsystems</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.OpenXR.Features.MetaQuestSupport.csproj">
+      <Project>{0869dcc9-83e0-be56-951e-00966b7d6e91}</Project>
+      <Name>Unity.XR.OpenXR.Features.MetaQuestSupport</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Management.Editor.csproj">
+      <Project>{24d46237-c38c-4b1d-848c-ced835a7c3eb}</Project>
+      <Name>Unity.XR.Management.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.ARAnalytics.Editor.csproj">
+      <Project>{b4d940d0-caa9-1478-5823-e48e19b31a4e}</Project>
+      <Name>Unity.XR.ARAnalytics.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.ARFoundation.VisualScripting.csproj">
+      <Project>{75e3631d-ca7a-36ed-30bb-e9dcc8862847}</Project>
+      <Name>Unity.XR.ARFoundation.VisualScripting</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.CoreUtils.Editor.csproj">
+      <Project>{35074408-2ad5-ca08-ef8e-06fc9b17d4d9}</Project>
+      <Name>Unity.XR.CoreUtils.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Simulation.Editor.csproj">
+      <Project>{379feb6a-58a6-861f-f132-f637367becea}</Project>
+      <Name>Unity.XR.Simulation.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.csproj">
+      <Project>{072db5d4-8b5a-2654-01a6-14f0071d1050}</Project>
+      <Name>Unity.XR.OpenXR.Features.OculusQuestSupport</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Oculus.Editor.csproj">
+      <Project>{a6e90d5e-248b-8a3e-2b07-152415d5e080}</Project>
+      <Name>Unity.XR.Oculus.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Interaction.Toolkit.csproj">
+      <Project>{1d3e3d4c-0a3c-be8d-dac8-212105bd11d2}</Project>
+      <Name>Unity.XR.Interaction.Toolkit</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Hands.Samples.Gestures.csproj">
       <Project>{c81b0d91-59be-095e-182d-1d8f3add3fee}</Project>
       <Name>Unity.XR.Hands.Samples.Gestures</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.XR.ARFoundation.csproj">
+      <Project>{ec53a6ff-0de6-1b92-4d6b-60c3aa42d232}</Project>
+      <Name>Unity.XR.ARFoundation</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.XR.Hands.Samples.VisualizerSample.csproj">
       <Project>{311e59ee-4478-a47a-16aa-8245726fea28}</Project>
       <Name>Unity.XR.Hands.Samples.VisualizerSample</Name>
     </ProjectReference>
+    <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
+      <Project>{eb1a69d8-8490-ef7f-9a80-7667be1b29f2}</Project>
+      <Name>UnityEngine.XR.LegacyInputHelpers</Name>
+    </ProjectReference>
     <ProjectReference Include="ControllerSample.csproj">
       <Project>{924c905b-aecd-d5a2-3345-55ea636f9dd5}</Project>
       <Name>ControllerSample</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.SpatialTracking.csproj">
+      <Project>{7e99daf0-fbbc-6a3b-369d-a2104efefb4e}</Project>
+      <Name>UnityEditor.SpatialTracking</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
+      <Project>{bc979d39-69bd-2027-8a9b-fb50ad815e7d}</Project>
+      <Name>UnityEngine.SpatialTracking</Name>
     </ProjectReference>
     <ProjectReference Include="WeArtSDK.Editor.csproj">
       <Project>{40974b87-4fe9-4892-9903-aec33ec4fea2}</Project>
@@ -1141,13 +1173,37 @@
       <Project>{5ec8462c-a7fc-7398-7e70-018985e5ca0e}</Project>
       <Name>Unity.XR.Hands.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="UnityEditor.XR.LegacyInputHelpers.csproj">
+      <Project>{c3a35a17-dc35-b44a-cc23-574998a8ed43}</Project>
+      <Name>UnityEditor.XR.LegacyInputHelpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.ARFoundation.Editor.CodeSamples.Editor.Tests.csproj">
+      <Project>{54ff54ef-025b-1b32-be0a-77b5698e8b19}</Project>
+      <Name>Unity.XR.ARFoundation.Editor.CodeSamples.Editor.Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Oculus.csproj">
+      <Project>{70d36a47-d2ff-0814-b34e-eb8a60ef8eaa}</Project>
+      <Name>Unity.XR.Oculus</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj">
       <Project>{edc10eff-9546-0009-9c10-f13fe18e0033}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.XR.OpenXR.Editor.csproj">
+      <Project>{d29ebe79-a540-175e-9989-5513b23f65b6}</Project>
+      <Name>Unity.XR.OpenXR.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj">
       <Project>{76d6978c-2213-7cfe-50af-9e631ec2eb2c}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.StarterAssets</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.ARFoundation.InternalUtils.csproj">
+      <Project>{494cfb8f-d9ad-c3f0-b1a6-dfab13ddb381}</Project>
+      <Name>Unity.XR.ARFoundation.InternalUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.csproj">
+      <Project>{3f9313f6-4fd8-02fa-dfc3-c032f19c8877}</Project>
+      <Name>Unity.XR.OpenXR.Features.RuntimeDebugger.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj">
       <Project>{32af6e9e-7237-e7a4-247d-cac72344d9b2}</Project>

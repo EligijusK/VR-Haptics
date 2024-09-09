@@ -708,12 +708,6 @@
     <Reference Include="Unity.Mathematics">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.CoreUtils">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.CoreUtils.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Interaction.Toolkit">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -722,6 +716,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.XR.CoreUtils.csproj">
+      <Project>{a23f54b7-ad1e-17d9-d269-ef57336d2af9}</Project>
+      <Name>Unity.XR.CoreUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Interaction.Toolkit.csproj">
+      <Project>{1d3e3d4c-0a3c-be8d-dac8-212105bd11d2}</Project>
+      <Name>Unity.XR.Interaction.Toolkit</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

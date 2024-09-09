@@ -233,6 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_XRHandTrackingEvents: {fileID: 639686448}
+  m_TrackPosition: 1
   m_RootTransform: {fileID: 5876909491052011584}
   m_JointTransformReferences:
   - m_XRHandJointID: 1
@@ -650,6 +651,9 @@ MonoBehaviour:
     fingerRotations: []
     fingerScales: []
   editorIsEnabled: 0
+  handPose: {fileID: 0}
+  prefab: {fileID: 0}
+  currentHandType: 0
 --- !u!4 &9150967386063312380 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -539611307452216342, guid: bf7151579c38e2a44be94ba8773876c1,
