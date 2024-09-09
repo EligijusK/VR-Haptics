@@ -8,6 +8,7 @@ namespace DefaultNamespace
     {
         [SerializeField] private TestQuestion question;
         [SerializeField] private int awaitTime;
+        [SerializeField] private bool finishTest;
         private void Start()
         {
             StartCoroutine(SelectButton());
@@ -17,8 +18,17 @@ namespace DefaultNamespace
         {
             //while (true)
             {
-                yield return new WaitForSeconds(awaitTime);
-                question.AnsweredCorrectly();
+                if (finishTest)
+                {
+                    yield return new WaitForSeconds(awaitTime);
+                    question.SuccessfullyFinishTest();
+                    
+                }
+                else
+                {
+                    yield return new WaitForSeconds(awaitTime);
+                    question.AnsweredCorrectly();
+                }
             }
         }
     }

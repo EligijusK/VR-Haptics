@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -8,9 +9,17 @@ public class TestQuestion : MonoBehaviour
     [SerializeField] private TMP_Text errorMessageLabel;
     [SerializeField] private string errorMessage;
     [SerializeField] private TMP_Text completionMessageLabel;
-    private float transitionDuration = 0.2f;  
+    [SerializeField] private CanvasGroup canvasGroup;
+    [SerializeField] private GameObject testGameobject;
+    private float transitionDuration = 0.2f;
     private float flyAwayHeight = 0.2f;
-    
+    private float fadeDuration = 1.0f;
+
+    private void Start()
+    {
+        completionMessageLabel.CrossFadeAlpha(0,0,false);
+    }
+
     public void ShowErrorMessage(string message)
     {
         errorMessageLabel.text = message;
@@ -89,6 +98,30 @@ public class TestQuestion : MonoBehaviour
 
     public void SuccessfullyFinishTest()
     {
-        
+        StartCoroutine(CompleteTestRoutine());
+    }
+
+    private IEnumerator CompleteTestRoutine()
+    {
+        Vector3 originalPosition = transform.position;
+        Vector3 flyAwayPosition = originalPosition + new Vector3(0, 10f, 0);  
+        yield return StartCoroutine(MoveUpwardsAndAway(flyAwayPosition));
+        completionMessageLabel.CrossFadeAlpha(1f,0.3f,false);
+        yield return new WaitForSeconds(2.0f);
+        yield return StartCoroutine(FadeOutCanvas());
+        testGameobject.SetActive(false);
+    }
+    
+
+    private IEnumerator FadeOutCanvas()
+    {
+        float elapsedTime = 0f;
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            canvasGroup.alpha = Mathf.Lerp(1f, 0f, elapsedTime / fadeDuration);
+            yield return null;
+        }
+        canvasGroup.alpha = 0f;  
     }
 }
