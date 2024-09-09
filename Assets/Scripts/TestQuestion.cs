@@ -7,6 +7,7 @@ public class TestQuestion : MonoBehaviour
     [SerializeField] private TestQuestion nextQuestion;
     [SerializeField] private TMP_Text errorMessageLabel;
     [SerializeField] private string errorMessage;
+    [SerializeField] private TMP_Text completionMessageLabel;
     private float transitionDuration = 0.2f;  
     private float flyAwayHeight = 0.2f;
     
@@ -84,5 +85,10 @@ public class TestQuestion : MonoBehaviour
             yield return null;
         }
         transform.position = targetPosition;
+    }
+
+    public void SuccessfullyFinishTest()
+    {
+        
     }
 }
