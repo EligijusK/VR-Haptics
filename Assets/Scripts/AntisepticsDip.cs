@@ -19,9 +19,9 @@ public class AntisepticsDip : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Tampon" && !other.GetComponent<TamponInAntyseptics>().CanTamponBeUsed())
+        if (other.transform.parent.tag == "Tampon" && !other.transform.parent.GetComponent<TamponInAntyseptics>().CanTamponBeUsed())
         {
-            other.GetComponent<TamponInAntyseptics>().DipInAntiseptics();
+            other.transform.parent.GetComponent<TamponInAntyseptics>().DipInAntiseptics();
             Debug.Log("Tampon was in antyseptics");
         }
     }

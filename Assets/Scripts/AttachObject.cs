@@ -29,14 +29,15 @@ public class AttachObject : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Tampon" && attachedObject == null)
+        if (other.attachedRigidbody.CompareTag("Tampon") && attachedObject == null)
         {
+            GameObject objectToAttach = other.attachedRigidbody.gameObject;
             Destroy(other.attachedRigidbody);
-            originalParent = other.transform.parent;
-            other.transform.parent = transform;
-            other.transform.position = transform.position;
-            other.transform.rotation = Quaternion.Euler(snapRotation);
-            attachedObject = other.gameObject;
+            originalParent = objectToAttach.transform.parent;
+            objectToAttach.transform.parent = transform;
+            objectToAttach.transform.position = transform.position;
+            objectToAttach.transform.rotation = Quaternion.Euler(snapRotation);
+            attachedObject = objectToAttach;
             OnObjectAttached.Invoke(attachedObject);
             // parentObject.AddComponent<RaycastPainting>();
 
