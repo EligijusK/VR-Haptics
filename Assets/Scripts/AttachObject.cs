@@ -29,7 +29,7 @@ public class AttachObject : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.attachedRigidbody.CompareTag("Tampon") && attachedObject == null)
+        if (other.attachedRigidbody != null && other.attachedRigidbody.CompareTag("Tampon") && attachedObject == null)
         {
             GameObject objectToAttach = other.attachedRigidbody.gameObject;
             Destroy(other.attachedRigidbody);
