@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Es.InkPainter.Sample;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -14,6 +15,7 @@ public class RaycastPainting : MonoBehaviour
     RaycastHit hit;
     bool wasHit = false;
     Vector3 hitPoint;
+    TamponInAntyseptics tamponInAntyseptics;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,7 @@ public class RaycastPainting : MonoBehaviour
         
         // Debug.DrawRay(raycastOrigin.position, raycastOrigin.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
         if (Physics.Raycast(raycastOrigin.position, raycastOrigin.TransformDirection(Vector3.forward), out hit, Mathf.Infinity) &&
-            hit.distance < hitDistance && hit.transform.CompareTag("PaintObject") && !wasHit)
+            hit.distance < hitDistance && hit.transform.CompareTag("PaintObject") && !wasHit && tamponInAntyseptics != null && tamponInAntyseptics.CanTamponBeUsed())
         {
             wasHit = true;
             // Debug.Log("Hit PaintObject");
@@ -36,8 +38,23 @@ public class RaycastPainting : MonoBehaviour
         {
             wasHit = false;
         }
+
+        if (!MousePainter.painter.CheckIfCanPaint())
+        {
+            tamponInAntyseptics.TamponWasUsed();
+        }
+    }
+
+    public void AttachedObject(GameObject attachedObject)
+    {
+        tamponInAntyseptics = attachedObject.GetComponent<TamponInAntyseptics>();
+        MousePainter.painter.SetAvailableDistance(tamponInAntyseptics.GetAvailableDistance());
     }
     
+    public void DropAttachedObject()
+    {
+        tamponInAntyseptics = null;
+    }
 
     // private void OnCollisionEnter(Collision other)
     // {

@@ -6,6 +6,8 @@ namespace Es.InkPainter.Sample
 {
 	public class MousePainter : MonoBehaviour
 	{
+
+		public static MousePainter painter;
 		/// <summary>
 		/// Types of methods used to paint.
 		/// </summary>
@@ -39,6 +41,14 @@ namespace Es.InkPainter.Sample
 		float paintedDistance = 0.0f;
 		Vector3 lastPaintedPosition = Vector3.zero;
 		float originalBrushSize = 0.0f;
+
+		private void Awake()
+		{
+			if (painter == null)
+			{
+				painter = this;
+			}
+		}
 
 		private void Start()
 		{
@@ -120,6 +130,16 @@ namespace Es.InkPainter.Sample
 			paintedDistance = 0.0f;
 			lastPaintedPosition = Vector3.zero;
 			brush.Scale = originalBrushSize;
+		}
+		
+		public void SetAvailableDistance(float distance)
+		{
+			availableDistance = distance;
+		}
+		
+		public bool CheckIfCanPaint()
+		{
+			return paintedDistance < availableDistance;
 		}
 
 		public void OnGUI()
