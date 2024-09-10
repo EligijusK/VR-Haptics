@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Es.InkPainter.Sample;
 using UnityEngine;
 
 public class TamponInAntyseptics : MonoBehaviour
@@ -8,15 +9,11 @@ public class TamponInAntyseptics : MonoBehaviour
     [SerializeField]
     float availableDistance = 0.1f;
     bool wasUsed = false;
-
-
-    private void OnTriggerEnter(Collider other)
+    
+    public void DipInAntiseptics()
     {
-        if (other.CompareTag("Antiseptics") && wasUsed)
-        {
-            wasUsed = false;
-            // Debug.Log("Tampon was in antyseptics");
-        }
+        MousePainter.painter.ResetPainting();
+        wasUsed = false;
     }
 
     public float GetAvailableDistance()

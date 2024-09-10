@@ -49,6 +49,7 @@ public class RaycastPainting : MonoBehaviour
     {
         tamponInAntyseptics = attachedObject.GetComponent<TamponInAntyseptics>();
         MousePainter.painter.SetAvailableDistance(tamponInAntyseptics.GetAvailableDistance());
+        MousePainter.painter.SetRaycastPainting(this);
     }
     
     public void DropAttachedObject()

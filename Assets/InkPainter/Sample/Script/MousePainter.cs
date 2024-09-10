@@ -137,6 +137,11 @@ namespace Es.InkPainter.Sample
 			availableDistance = distance;
 		}
 		
+		public void SetRaycastPainting(RaycastPainting raycastPainting)
+		{
+			this.raycastPainting = raycastPainting;
+		}
+		
 		public bool CheckIfCanPaint()
 		{
 			return paintedDistance < availableDistance;
