@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
 using UnityEditor.SceneManagement;
+#endif
 using UnityEngine.XR.Hands;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -237,6 +239,8 @@ public class HandPose : MonoBehaviour
 }
 
 
+#if UNITY_EDITOR
+
 [CustomEditor(typeof(HandPose))]
 public class HandPoseEditor : Editor
 {
@@ -304,6 +308,8 @@ public class HandPoseEditor : Editor
         }
     }
 }
+
+#endif
 
 public enum HandType
 {
