@@ -46,7 +46,7 @@ public class AttachObject : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.attachedRigidbody != null && other.attachedRigidbody.CompareTag("Tampon") && attachedObject == null)
+        if (other.attachedRigidbody != null && other.attachedRigidbody.CompareTag("Tampon") && attachedObject != null)
         {
             attachedCollider = null;
             attachedObject = null;
@@ -73,12 +73,12 @@ public class AttachObject : MonoBehaviour
         if (attachedObject != null)
         {
             GameObject releasedObject = attachedObject;
-            OnDropAttached.Invoke(attachedObject);
             attachedObject.transform.parent = originalParent;
             attachedObject.AddComponent<Rigidbody>();
             attachedCollider = null;
             attachedObject = null;
             originalParent = null;
+            Debug.Log("ReleaseObject");
             OnDropAttached.Invoke(releasedObject);
             
         }
