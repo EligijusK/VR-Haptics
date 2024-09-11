@@ -481,7 +481,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1129505061803264407}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1014,7 +1014,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1129505061803264407}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1568,7 +1568,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1129505061803264407}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
