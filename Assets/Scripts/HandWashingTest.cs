@@ -13,6 +13,7 @@ namespace DefaultNamespace
         [SerializeField] VideoClipController mistakeVideoClipController;
         [SerializeField] int allowedMistakes = 3;
         [SerializeField] bool playVideoIfMistake = true;
+        [SerializeField] bool playVideoIfNotMistakes = true;
         int mistakes = 0;
         private bool incorrectOnce = false;
         
@@ -22,7 +23,7 @@ namespace DefaultNamespace
             if (mistakes < allowedMistakes)
             {
                 bool isCorrect = checkOrderInList.CheckOrderInList(index);
-                if (isCorrect && !playVideoIfMistake)
+                if (isCorrect && playVideoIfNotMistakes)
                 {
                     // VideoClip videoClip = videoClipController.GetVideoClip(index);
                     // videoController.Stop();
