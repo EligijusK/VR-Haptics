@@ -3051,6 +3051,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: SecondTestCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1556759598932209197, guid: 73def21f4f37ba9428bbc4720ff3086a,
+        type: 3}
+      propertyPath: label
+      value: 
+      objectReference: {fileID: 93893435}
+    - target: {fileID: 1600168067471824303, guid: 73def21f4f37ba9428bbc4720ff3086a,
+        type: 3}
+      propertyPath: label
+      value: 
+      objectReference: {fileID: 93893435}
     - target: {fileID: 1777814313510132308, guid: 73def21f4f37ba9428bbc4720ff3086a,
         type: 3}
       propertyPath: m_Pivot.x
@@ -3156,6 +3166,16 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6813643139866915718, guid: 73def21f4f37ba9428bbc4720ff3086a,
+        type: 3}
+      propertyPath: label
+      value: 
+      objectReference: {fileID: 93893435}
+    - target: {fileID: 7115027195907220585, guid: 73def21f4f37ba9428bbc4720ff3086a,
+        type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3167,6 +3187,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 93893433}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &93893435 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7115027195907220585, guid: 73def21f4f37ba9428bbc4720ff3086a,
+    type: 3}
+  m_PrefabInstance: {fileID: 93893433}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &95396238
 GameObject:
   m_ObjectHideFlags: 0
