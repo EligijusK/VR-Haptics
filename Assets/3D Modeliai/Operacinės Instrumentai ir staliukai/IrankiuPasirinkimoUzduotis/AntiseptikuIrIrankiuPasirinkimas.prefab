@@ -355,7 +355,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 3523783856542648226}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -509,6 +509,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &17811459564404148
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,7 +997,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 1386336571236242706}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -1138,6 +1151,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &196834891688661868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1824,7 +1850,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 4083314549571752578}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -1938,6 +1964,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &452611621105967937
 GameObject:
   m_ObjectHideFlags: 0
@@ -2293,7 +2332,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 6597269942716509915}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -2447,6 +2486,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &480307265546038197
 GameObject:
   m_ObjectHideFlags: 0
@@ -2833,7 +2885,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 2365164153852762631}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -2987,6 +3039,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &693146130384290642
 GameObject:
   m_ObjectHideFlags: 0
@@ -3753,7 +3818,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 8052879585670036995}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -3908,6 +3973,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &905851291362420671
 GameObject:
   m_ObjectHideFlags: 0
@@ -4303,7 +4381,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 1174078168719381276}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -4417,6 +4495,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &984235591865417861
 GameObject:
   m_ObjectHideFlags: 0
@@ -4803,7 +4894,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 2673071951957867715}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -4957,6 +5048,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &1309696817536851757
 GameObject:
   m_ObjectHideFlags: 0
@@ -5630,7 +5734,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 8723182771792063433}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -5744,6 +5848,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &1603730042628882243
 GameObject:
   m_ObjectHideFlags: 0
@@ -6130,7 +6247,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 3326775681576119443}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -6284,6 +6401,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &1852506977950009256
 GameObject:
   m_ObjectHideFlags: 0
@@ -6639,7 +6769,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 8447073860142426665}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -6793,6 +6923,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &1862465107441082099
 GameObject:
   m_ObjectHideFlags: 0
@@ -17009,7 +17152,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 5186380569347504257}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -17123,6 +17266,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &2443808737537024940
 GameObject:
   m_ObjectHideFlags: 0
@@ -22593,7 +22749,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 2418407775690144597}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -22747,6 +22903,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &2568937285627743257
 GameObject:
   m_ObjectHideFlags: 0
@@ -23227,7 +23396,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 548476353522814687}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -23360,11 +23529,83 @@ MonoBehaviour:
     fingerRotations: []
     fingerScales: []
   poseDataLeft:
-    originPosition: {x: 0, y: 0, z: 0}
-    originRotation: {x: 0, y: 0, z: 0, w: 0}
-    fingerPositions: []
-    fingerRotations: []
-    fingerScales: []
+    originPosition: {x: -0.8047155, y: 3.4040527, z: 0.94526255}
+    originRotation: {x: 0.69159955, y: 0.000000004673038, z: -0.000000009845581, w: 0.72228116}
+    fingerPositions:
+    - {x: 0.019818999, y: -0.009505, z: 0.036447998}
+    - {x: 0.003731707, y: 0.0021889722, z: 0.059547838}
+    - {x: 0.0000016721734, y: -0.0000018364933, z: 0.03792739}
+    - {x: 0.00000018382805, y: 0.000000087548756, z: 0.024305224}
+    - {x: -0.00029495324, y: 0.0010254311, z: 0.022364646}
+    - {x: -0.022999, y: -0.009419999, z: 0.034073997}
+    - {x: 0.0000021550406, y: 0.0000013735734, z: 0.045652118}
+    - {x: 0.0000008698934, y: -0.0000009871659, z: 0.030719712}
+    - {x: 0.00000011164067, y: 0.00000074318586, z: 0.020311339}
+    - {x: 0.00024632577, y: 0.0012151983, z: 0.021923328}
+    - {x: 0.00361, y: -0.007648, z: 0.034286}
+    - {x: -0.0018851481, y: 0.005104932, z: 0.061361067}
+    - {x: -0.00000060005493, y: -0.0000009611183, z: 0.042926516}
+    - {x: 0.0000003352074, y: 0.00000071525864, z: 0.027548447}
+    - {x: -0.00030950914, y: 0.0011371507, z: 0.02496384}
+    - {x: -0.014992, y: -0.0060159997, z: 0.034776}
+    - {x: -0.0024728933, y: -0.00051297015, z: 0.053917933}
+    - {x: 0.0000008071903, y: 0.00000026448592, z: 0.03899497}
+    - {x: -0.0000017292876, y: -0.0000004228512, z: 0.026573366}
+    - {x: -0.0002563861, y: 0.0016081122, z: 0.024326071}
+    - {x: 0.030218, y: -0.016083999, z: 0.034498}
+    - {x: -0.0000011091827, y: -0.0000049051077, z: 0.03251377}
+    - {x: -0.000001023574, y: -0.000001828242, z: 0.033794336}
+    - {x: -0.00067067984, y: 0.0010256439, z: 0.02459195}
+    fingerRotations:
+    - {x: 0, y: -0, z: -0, w: 1}
+    - {x: 0.5135136, y: 0.05564698, z: -0.06727075, w: 0.85362864}
+    - {x: 0.43236732, y: 0.004598706, z: 0.026154874, w: 0.90130645}
+    - {x: 0.6197894, y: -0.010181713, z: 0.029092846, w: 0.7841627}
+    - {x: 0, y: 4.3368087e-19, z: -0, w: 1}
+    - {x: 0.018333554, y: -0.14033656, z: 0.2070356, w: 0.96804225}
+    - {x: 0.16689329, y: -0.072406374, z: -0.084665254, w: 0.97966105}
+    - {x: 0.5270678, y: 0.09475051, z: -0.09698314, w: 0.8389375}
+    - {x: 0.60751754, y: 0.041269958, z: -0.025937624, w: 0.7928093}
+    - {x: -2.7755576e-17, y: 2.7755576e-17, z: -1.3877788e-17, w: 1}
+    - {x: 0, y: -0, z: -0, w: 1}
+    - {x: 0.5698693, y: -0.0067814877, z: 0.013650058, w: 0.821594}
+    - {x: 0.48330307, y: 0.0017420813, z: 0.012342306, w: 0.87536436}
+    - {x: 0.64314556, y: 0.025581116, z: 0.031397704, w: 0.76467216}
+    - {x: 2.7755576e-17, y: 3.469447e-18, z: 6.938894e-18, w: 1}
+    - {x: 0, y: -0, z: -0, w: 1}
+    - {x: 0.50924015, y: -0.05276993, z: 0.088092566, w: 0.8544762}
+    - {x: 0.58607143, y: 0.019366808, z: 0.03525252, w: 0.8092605}
+    - {x: 0.69628364, y: 0.028645733, z: -0.011587825, w: 0.7171013}
+    - {x: -0.000029424828, y: -2.7755576e-17, z: -8.16703e-22, w: 1}
+    - {x: -0.06665304, y: 0.39692008, z: -0.5750258, w: 0.71229005}
+    - {x: 0.22474311, y: 0.192452, z: -0.25267094, w: 0.9212004}
+    - {x: 0.11291981, y: 0.05065549, z: -0.0791567, w: 0.98914987}
+    - {x: -9.62965e-35, y: -2.7755576e-17, z: -3.469447e-18, w: 1}
+    fingerScales:
+    - {x: 1, y: 1, z: 1}
+    - {x: 1.0000446, y: 1.0000408, z: 0.999991}
+    - {x: 0.99995506, y: 0.9999494, z: 0.9999497}
+    - {x: 1.0000451, y: 1.0000081, z: 1.0000004}
+    - {x: 1, y: 1, z: 1}
+    - {x: 1.0000185, y: 1.0000081, z: 0.9999589}
+    - {x: 0.9999562, y: 1.0000366, z: 1.0000681}
+    - {x: 1.0000147, y: 1.0000129, z: 0.99994457}
+    - {x: 1.0000222, y: 0.99996865, z: 0.9999735}
+    - {x: 1, y: 1, z: 1}
+    - {x: 1, y: 1, z: 1}
+    - {x: 0.9999646, y: 1.0000069, z: 1.000008}
+    - {x: 1.0000315, y: 0.99999595, z: 1.000038}
+    - {x: 0.9999718, y: 1.0000138, z: 0.99996346}
+    - {x: 1, y: 1, z: 1}
+    - {x: 1, y: 1, z: 1}
+    - {x: 0.99998975, y: 1.0000367, z: 1.0000347}
+    - {x: 1.0000359, y: 0.9999273, z: 0.99994177}
+    - {x: 0.9999347, y: 0.9999719, z: 1.0000098}
+    - {x: 1, y: 1.0000552, z: 1}
+    - {x: 1.0000204, y: 1.0000343, z: 0.9999787}
+    - {x: 0.9999928, y: 0.999997, z: 0.9999632}
+    - {x: 0.9999879, y: 0.9999645, z: 1.0000014}
+    - {x: 1, y: 1, z: 1}
   originlaPoseDataRight:
     originPosition: {x: 0, y: 0, z: 0}
     originRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -23377,10 +23618,23 @@ MonoBehaviour:
     fingerPositions: []
     fingerRotations: []
     fingerScales: []
-  editorIsEnabled: 0
+  editorIsEnabled: 1
   handPose: {fileID: 0}
   prefab: {fileID: 0}
-  currentHandType: 0
+  currentHandType: 1
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!114 &8099891394547299435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24602,7 +24856,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 1928193317137038034}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -24735,6 +24989,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &3328878248249719583
 GameObject:
   m_ObjectHideFlags: 0
@@ -25090,7 +25357,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 6168134496802595109}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -25244,6 +25511,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &3341267517044807440
 GameObject:
   m_ObjectHideFlags: 0
@@ -25683,7 +25963,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 7643873037275343511}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -25797,6 +26077,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &3587609126795140651
 GameObject:
   m_ObjectHideFlags: 0
@@ -26548,7 +26841,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 3866651470385316164}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -26702,6 +26995,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &4100353141734982237
 GameObject:
   m_ObjectHideFlags: 0
@@ -27128,7 +27434,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 6781433029120476510}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -27242,6 +27548,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &4225875614731501950
 GameObject:
   m_ObjectHideFlags: 0
@@ -27597,7 +27916,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 5817856915652191345}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -27751,6 +28070,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &4244332407866783165
 GameObject:
   m_ObjectHideFlags: 0
@@ -28539,7 +28871,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 4140497530942597889}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -28693,6 +29025,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &4465591524463021656
 GameObject:
   m_ObjectHideFlags: 0
@@ -29197,7 +29542,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 7636816719877447890}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -29351,6 +29696,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &4626882413568362676
 GameObject:
   m_ObjectHideFlags: 0
@@ -29706,7 +30064,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 7845950277030464918}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -29860,6 +30218,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &4909137367750130414
 GameObject:
   m_ObjectHideFlags: 0
@@ -35090,7 +35461,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 5128677123690782889}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -35244,6 +35615,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &5000472612903730538
 GameObject:
   m_ObjectHideFlags: 0
@@ -35599,7 +35983,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 6691827870168446041}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -35753,6 +36137,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &5199485250841716894
 GameObject:
   m_ObjectHideFlags: 0
@@ -36273,7 +36670,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 4903196543273233280}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -36427,6 +36824,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &5322309516651727571
 GameObject:
   m_ObjectHideFlags: 0
@@ -36822,7 +37232,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 8601501034056075864}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -36936,6 +37346,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &5420801929498374848
 GameObject:
   m_ObjectHideFlags: 0
@@ -37544,7 +37967,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 5843524385264527805}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -37698,6 +38121,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &5531810739716882395
 GameObject:
   m_ObjectHideFlags: 0
@@ -43772,7 +44208,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 4367518769779774038}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -43886,6 +44322,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &6078261874841211492
 GameObject:
   m_ObjectHideFlags: 0
@@ -44484,6 +44933,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &6155480021303828970
 GameObject:
   m_ObjectHideFlags: 0
@@ -45350,7 +45812,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 160414052435112910}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -45504,6 +45966,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &6684039739627649818
 GameObject:
   m_ObjectHideFlags: 0
@@ -45890,7 +46365,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 9072446617333804989}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -46044,6 +46519,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &6734964645403881171
 GameObject:
   m_ObjectHideFlags: 0
@@ -51283,7 +51771,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 6386150916237262170}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -51437,6 +51925,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &6779431522619757391
 GameObject:
   m_ObjectHideFlags: 0
@@ -51952,7 +52453,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 2876136816392764879}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -52066,6 +52567,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &6871954203315264094
 GameObject:
   m_ObjectHideFlags: 0
@@ -52780,7 +53294,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 2606260165197101761}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -52934,6 +53448,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &7207345103633089260
 GameObject:
   m_ObjectHideFlags: 0
@@ -58852,7 +59379,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 5223115909177794461}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -59007,6 +59534,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &7855785781160532449
 GameObject:
   m_ObjectHideFlags: 0
@@ -59362,7 +59902,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 8913353522894418393}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -59516,6 +60056,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &7866137127478707188
 GameObject:
   m_ObjectHideFlags: 0
@@ -60106,7 +60659,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 5875150990035686444}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -60220,6 +60773,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &8184194277537483526
 GameObject:
   m_ObjectHideFlags: 0
@@ -60606,7 +61172,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 2824201129571336647}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -60739,6 +61305,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &8302630624002940824
 GameObject:
   m_ObjectHideFlags: 0
@@ -61511,7 +62090,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 3210101158031921628}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -61604,6 +62183,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &8488688495056650537
 GameObject:
   m_ObjectHideFlags: 0
@@ -62078,7 +62670,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 5987065062623724345}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -62211,6 +62803,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &8559520870635054687
 GameObject:
   m_ObjectHideFlags: 0
@@ -62839,7 +63444,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 8388613409704188294}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -62993,6 +63598,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &8859483962652851986
 GameObject:
   m_ObjectHideFlags: 0
@@ -68433,7 +69051,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 2938204616539307213}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -68587,6 +69205,19 @@ MonoBehaviour:
   handPose: {fileID: 0}
   prefab: {fileID: 0}
   currentHandType: 0
+  useDefaultPose: 0
+  poseDefaultDataLeft:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
+  poseDefaultDataRight:
+    originPosition: {x: 0, y: 0, z: 0}
+    originRotation: {x: 0, y: 0, z: 0, w: 0}
+    fingerPositions: []
+    fingerRotations: []
+    fingerScales: []
 --- !u!1 &9120073647750281686
 GameObject:
   m_ObjectHideFlags: 0

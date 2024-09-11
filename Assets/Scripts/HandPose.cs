@@ -22,6 +22,9 @@ public class HandPose : MonoBehaviour
     public HandPose handPose;
     public GameObject prefab;
     public HandType currentHandType;
+    public bool useDefaultPose = false;
+    public HandData poseDefaultDataLeft;
+    public HandData poseDefaultDataRight;
     // Start is called before the first frame update
     void Start()
     {
@@ -87,13 +90,29 @@ public class HandPose : MonoBehaviour
 
     public void UsePose(HandPose handPose)
     {
-        if (handPose.handType == HandType.Left)
+        if (!useDefaultPose)
         {
-            UsePose(handPose, ref poseDataLeft, ref originlaPoseDataLeft);
+
+            if (handPose.handType == HandType.Left)
+            {
+                UsePose(handPose, ref poseDataLeft, ref originlaPoseDataLeft);
+            }
+            else
+            {
+                UsePose(handPose, ref poseDataRight, ref originlaPoseDataRight);
+            }
         }
         else
         {
-            UsePose(handPose, ref poseDataRight, ref originlaPoseDataRight);
+            if (this.handType == HandType.Left)
+            {
+                UsePose(this, ref poseDefaultDataLeft, ref originlaPoseDataLeft);
+            }
+            else
+            {
+                UsePose(this, ref poseDefaultDataRight, ref originlaPoseDataRight);
+            }
+        
         }
     }
     
@@ -182,22 +201,22 @@ public class HandPose : MonoBehaviour
         if(args.interactorObject is XRDirectInteractor)
         {
             
-            XRDirectInteractor interactor = (XRDirectInteractor) args.interactorObject;
-            HandPose handComponent = interactor.transform.parent.GetComponent<HandPose>();
-            handComponent.handSkeletonDriver.UnsubscribeFromFingerTrackingEvents();
-            UsePose(handComponent);
+            // XRDirectInteractor interactor = (XRDirectInteractor) args.interactorObject;
+            // HandPose handComponent = interactor.transform.parent.GetComponent<HandPose>();
+            // handComponent.handSkeletonDriver.UnsubscribeFromFingerTrackingEvents();
+            // UsePose(handComponent);
         } 
     }
     
     public void ResetPose(BaseInteractionEventArgs args)
     {
-        if(args.interactorObject is XRDirectInteractor)
-        {
-            XRDirectInteractor interactor = (XRDirectInteractor) args.interactorObject;
-            HandPose handComponent = interactor.transform.parent.GetComponent<HandPose>();
-            ResetHand(handComponent);
-            handComponent.handSkeletonDriver.SubscribeToFingerTrackingEvents();
-        } 
+        // if(args.interactorObject is XRDirectInteractor)
+        // {
+        //     XRDirectInteractor interactor = (XRDirectInteractor) args.interactorObject;
+        //     HandPose handComponent = interactor.transform.parent.GetComponent<HandPose>();
+        //     ResetHand(handComponent);
+        //     handComponent.handSkeletonDriver.SubscribeToFingerTrackingEvents();
+        // } 
     }
 
     public void ResetHand(HandPose handPose)
