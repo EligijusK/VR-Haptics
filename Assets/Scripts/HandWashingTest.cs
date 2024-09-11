@@ -6,6 +6,7 @@ namespace DefaultNamespace
 {
     public class HandWashingTest : MonoBehaviour
     {
+        [SerializeField] private GameObject videoFeed; 
         [SerializeField] OrderingInLine checkOrderInList;
         [SerializeField] VideoClipController videoClipController;
         [SerializeField] VideoPlayer videoController;
@@ -23,11 +24,11 @@ namespace DefaultNamespace
                 bool isCorrect = checkOrderInList.CheckOrderInList(index);
                 if (isCorrect && !playVideoIfMistake)
                 {
-                    VideoClip videoClip = videoClipController.GetVideoClip(index);
-                    videoController.Stop();
-                    videoController.frame = 0;
-                    videoController.clip = videoClip;
-                    videoController.Play();
+                    // VideoClip videoClip = videoClipController.GetVideoClip(index);
+                    // videoController.Stop();
+                    // videoController.frame = 0;
+                    // videoController.clip = videoClip;
+                    // videoController.Play();
                 }
                 else
                 {
@@ -37,10 +38,20 @@ namespace DefaultNamespace
             }
             if (playVideoIfMistake && mistakes >= allowedMistakes && !incorrectOnce)
             {
+                
                 videoController.Stop();
                 videoController.frame = 0;
+                videoFeed.SetActive(true);
                 videoController.clip = mistakeVideoClipController.GetVideoClip(-1);
                 videoController.Play();
+                videoController.loopPointReached += vp =>
+                {
+                    videoFeed.SetActive(false);
+                    videoController.Stop();
+                    videoController.frame = 0;
+                    incorrectOnce = false;
+                    mistakes = 0;
+                };
                 incorrectOnce = true;
             }
         }
