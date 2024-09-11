@@ -22371,10 +22371,35 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 686747619925333076, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: availableDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 862700407356363884, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: availableDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693886978150884041, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: availableDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5743969884300756315, guid: d95f2a514592cc849a6d7f36ea460eed,
         type: 3}
       propertyPath: m_Name
       value: AntiseptikuIrIrankiuPasirinkimas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8503089989213660904, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: availableDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8568460826480055245, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: availableDistance
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9028305032346068442, guid: d95f2a514592cc849a6d7f36ea460eed,
         type: 3}
