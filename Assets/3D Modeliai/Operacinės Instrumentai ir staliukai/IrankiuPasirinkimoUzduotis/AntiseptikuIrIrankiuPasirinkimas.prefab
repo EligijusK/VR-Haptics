@@ -22645,9 +22645,9 @@ MonoBehaviour:
   OnDropAttached:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8054277439031268821}
-        m_TargetAssemblyTypeName: AttachObject, Assembly-CSharp
-        m_MethodName: ReleaseObject
+      - m_Target: {fileID: 8099891394547299435}
+        m_TargetAssemblyTypeName: RaycastPainting, Assembly-CSharp
+        m_MethodName: DropAttachedObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

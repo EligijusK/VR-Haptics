@@ -11,6 +11,7 @@ public class AttachObject : MonoBehaviour
     public UnityEvent<GameObject> OnObjectAttached;
     public UnityEvent<GameObject> OnDropAttached;
     private GameObject attachedObject;
+    private Collider attachedCollider;
     private Transform originalParent;
     // [SerializeField] Rigidbody attachedRigidbody;
 
@@ -32,13 +33,8 @@ public class AttachObject : MonoBehaviour
         if (other.attachedRigidbody != null && other.attachedRigidbody.CompareTag("Tampon") && attachedObject == null)
         {
             GameObject objectToAttach = other.attachedRigidbody.gameObject;
-            Destroy(other.attachedRigidbody);
-            originalParent = objectToAttach.transform.parent;
-            objectToAttach.transform.parent = transform;
-            objectToAttach.transform.position = transform.position;
-            objectToAttach.transform.rotation = Quaternion.Euler(snapRotation);
+            attachedCollider = other;
             attachedObject = objectToAttach;
-            OnObjectAttached.Invoke(attachedObject);
             // parentObject.AddComponent<RaycastPainting>();
 
             // other.attachedRigidbody. = attachedRigidbody;
@@ -47,15 +43,43 @@ public class AttachObject : MonoBehaviour
             // other.attachedRigidbody.constraints = RigidbodyConstraints.FreezeAll;
         }
     }
-    
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.attachedRigidbody != null && other.attachedRigidbody.CompareTag("Tampon") && attachedObject == null)
+        {
+            attachedCollider = null;
+            attachedObject = null;
+            originalParent = null;
+        }
+    }
+
+    public void TriggerAttachObject()
+    {
+        Debug.Log("TriggerAttachObject");
+        if (attachedObject != null)
+        {
+            Destroy(attachedCollider.attachedRigidbody);
+            originalParent = attachedObject.transform.parent;
+            attachedObject.transform.parent = transform;
+            attachedObject.transform.position = transform.position;
+            attachedObject.transform.rotation = Quaternion.Euler(snapRotation);
+            OnObjectAttached.Invoke(attachedObject);
+        }
+    }
+
     public void ReleaseObject()
     {
         if (attachedObject != null)
         {
+            GameObject releasedObject = attachedObject;
             OnDropAttached.Invoke(attachedObject);
             attachedObject.transform.parent = originalParent;
+            attachedObject.AddComponent<Rigidbody>();
+            attachedCollider = null;
             attachedObject = null;
             originalParent = null;
+            OnDropAttached.Invoke(releasedObject);
             
         }
     }
