@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -9,6 +10,8 @@ using UnityEditor;
 public class OpenDoors : MonoBehaviour
 {
     [SerializeField] Vector3 addForce;
+    [SerializeField]
+    UnityEvent openDoorsEvent;
     Rigidbody rb;
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,7 @@ public class OpenDoors : MonoBehaviour
     {
         rb.constraints = RigidbodyConstraints.None;
         rb.AddForce(addForce, ForceMode.Impulse);
+        openDoorsEvent.Invoke();
     }
 }
 

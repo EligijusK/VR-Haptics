@@ -11,7 +11,6 @@ public class OrderingInLine : MonoBehaviour
     [SerializeField] private HandWashingTest handWashingTest;
     
     public OrderElement firstElement;
-    public OrderElement lastElement;
     
     
     // Start is called before the first frame update

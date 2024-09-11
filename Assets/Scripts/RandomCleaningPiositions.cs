@@ -6,6 +6,8 @@ using UnityEngine;
 public class RandomCleaningPiositions : MonoBehaviour
 {
     [SerializeField]
+    OrderingInLine orderingInLine;
+    [SerializeField]
     List<Transform> positions;
     [SerializeField]
     List<OrderElement> orderInLineElements;
@@ -46,6 +48,7 @@ public class RandomCleaningPiositions : MonoBehaviour
             newOrderList.Add(element);
             index++;
         }
+        orderingInLine.firstElement = newOrderList[0];
        
     }
 }

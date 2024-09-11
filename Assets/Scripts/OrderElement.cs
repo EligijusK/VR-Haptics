@@ -127,7 +127,6 @@ public class OrderElement : MonoBehaviour
                             this.startingPosition = tempNext.startingPosition;
                             tempNext.startingPosition = tempPos;
                             
-                            reference.lastElement = this;
                             reference.ChangedOrderInList();
                      }
                      Debug.Log("Next element");
