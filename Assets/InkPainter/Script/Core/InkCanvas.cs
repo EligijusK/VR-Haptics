@@ -262,6 +262,7 @@ namespace Es.InkPainter
 		{
 			if(OnCanvasAttached != null)
 				OnCanvasAttached(this);
+			
 			InitPropertyID();
 			SetMaterial();
 			SetTexture();
