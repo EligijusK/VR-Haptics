@@ -55,6 +55,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\InkPainter\Script\Effective\HeightFluid.cs" />
     <Compile Include="Assets\InkPainter\Script\Util\SceneViewCamera.cs" />
+    <Compile Include="Assets\Scripts\RandomCleaningPiositions.cs" />
     <Compile Include="Assets\Scripts\XRInputController.cs" />
     <Compile Include="Assets\Scripts\TrackMainCamera.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />

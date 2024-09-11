@@ -30,7 +30,7 @@ namespace DefaultNamespace
                     // videoController.clip = videoClip;
                     // videoController.Play();
                 }
-                else
+                if(!isCorrect)
                 {
                     mistakes++;
                     StartCoroutine(TextNotification._instance.ShowNotification("Mistakes: " + mistakes + " / " + allowedMistakes, 1f));
