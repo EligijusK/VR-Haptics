@@ -10102,11 +10102,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AntiseptikuIrIrankiuPasirinkimas
       objectReference: {fileID: 0}
-    - target: {fileID: 5743969884300756315, guid: d95f2a514592cc849a6d7f36ea460eed,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9028305032346068442, guid: d95f2a514592cc849a6d7f36ea460eed,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14837,7 +14832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcf7cebcde7744a47af84289fd38041b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  addForce: {x: 0, y: 0.5, z: 0.5}
+  addForce: {x: 0, y: 0, z: 0.5}
   openDoorsEvent:
     m_PersistentCalls:
       m_Calls:
@@ -15055,7 +15050,7 @@ Rigidbody:
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -15065,7 +15060,7 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
+  m_ImplicitCom: 0
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -26562,21 +26557,6 @@ PrefabInstance:
       propertyPath: _openDoors
       value: 
       objectReference: {fileID: 1087814111}
-    - target: {fileID: 3249629606646919356, guid: c5c2af7c8f008f84d8f93f45ebe6dc71,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4244249505967233387, guid: c5c2af7c8f008f84d8f93f45ebe6dc71,
-        type: 3}
-      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4244249505967233387, guid: c5c2af7c8f008f84d8f93f45ebe6dc71,
-        type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7629578737570150389, guid: c5c2af7c8f008f84d8f93f45ebe6dc71,
         type: 3}
       propertyPath: m_Name
