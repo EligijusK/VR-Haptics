@@ -48,35 +48,30 @@ public class Instrument : MonoBehaviour
     public IEnumerator MoveInstrumentToSpot(Vector3 endPosition)
     {
         isMoving = true;
-        transform.rotation = originalRotation;
-        Vector3 startPosition = transform.position;
+        transform.rotation = originalRotation; 
+        Vector3 startPosition = transform.position;  
         float duration = 1.0f;
         float elapsedTime = 0f;
-        
-        _rigidbody.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
+
+        _rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
 
         while (elapsedTime < duration)
         {
             elapsedTime += Time.deltaTime;
             float t = elapsedTime / duration;
-            float height = -4 * t * (t - 1);
-
+            float height = -4 * t * (t - 1); 
             Vector3 currentPosition = Vector3.Lerp(startPosition, endPosition, t);
-            currentPosition.y += height;
-
-            transform.position = currentPosition;
-
-            yield return null;
+            currentPosition.y += height; 
+            _rigidbody.MovePosition(currentPosition);
+            yield return null;  
         }
-
-        transform.position = endPosition;
-        
+        _rigidbody.MovePosition(endPosition);
         yield return new WaitForSeconds(0.5f);
-        transform.rotation = originalRotation;
-        _rigidbody.constraints = RigidbodyConstraints.None;
-
-        isMoving = false;
+        transform.rotation = originalRotation;  
+        _rigidbody.constraints = RigidbodyConstraints.None;  
+        isMoving = false;  
     }
+
 
     public virtual void OnPlace()
     {
