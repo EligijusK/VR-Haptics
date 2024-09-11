@@ -61,7 +61,7 @@ namespace Es.InkPainter.Sample
 			// {
 				// var ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
 				bool success = true;
-				if(raycastPainting.GetWasHit())
+				if(raycastPainting != null && raycastPainting.GetWasHit())
 				{
 					RaycastHit hitInfo = raycastPainting.GetHit();
 					var paintObject = hitInfo.transform.GetComponent<InkCanvas>();

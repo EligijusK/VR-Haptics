@@ -157,7 +157,7 @@ public class HandPose : MonoBehaviour
             originalPoseData.fingerScales[i] = handPose.fingerObjects[i].transform.localScale;
         }
         
-        for (int i = 0; i < handPose.fingerObjects.Length; i++)
+        for (int i = 0; i < handPose.fingerObjects.Length && poseData.fingerPositions.Length > 0; i++)
         {
             handPose.fingerObjects[i].transform.localPosition = poseData.fingerPositions[i];
             handPose.fingerObjects[i].transform.localRotation = poseData.fingerRotations[i];
