@@ -17,9 +17,9 @@ public class VideoManager : MonoBehaviour
 
     void EndReached(VideoPlayer vp)
     {
-        videoMonitor.StopTracking();
-        orderingInLine.StartBlinkingTimer();
-        stopedTracking = true;
+        // videoMonitor.StopTracking();
+        // orderingInLine.StartBlinkingTimer();
+        // stopedTracking = true;
     }
     // Update is called once per frame
     void Update()
