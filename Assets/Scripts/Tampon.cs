@@ -17,7 +17,7 @@ namespace DefaultNamespace
             }
             else
             {
-                StartCoroutine(TextNotification._instance.ShowNotification("Please select bowl first", 3.0f));
+                StartCoroutine(TextNotification._instance.ShowNotification("Pirmiausia pasirinkine dubenėlį", 3.0f));
             }
         }
     }
