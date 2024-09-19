@@ -221,7 +221,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &5968218630736829923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,8 +413,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.497, y: 0.291}
-  m_SizeDelta: {x: 1.04, y: 0.34}
+  m_AnchoredPosition: {x: 0, y: 0.291}
+  m_SizeDelta: {x: 1, y: 0.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5283334088988215644
 CanvasRenderer:
@@ -965,7 +965,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.516, y: -0.029}
+  m_AnchoredPosition: {x: 0, y: -0.029}
   m_SizeDelta: {x: 1, y: 0.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &470892947375021552
@@ -1264,7 +1264,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.279, y: 1.013}
+  m_AnchoredPosition: {x: 0.279, y: 0.925}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7024319974192298663
@@ -1295,7 +1295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Rinkites \u012F kuri\u0105 patalp\u0105 eisit\u0119"
+  m_text: "Pasirinkite patalp\u0105, \u012F kuri\u0105 eisite"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1329,7 +1329,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1358,7 +1358,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.35268468, y: 0.58277404, z: 0.21419036, w: 0.07901597}
+  m_margin: {x: -0.8297965, y: 0.58277404, z: -0.26694977, w: 0.07901597}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1538,8 +1538,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.45, y: -0.395}
-  m_SizeDelta: {x: 1.12, y: 0.34}
+  m_AnchoredPosition: {x: 0, y: -0.395}
+  m_SizeDelta: {x: 1, y: 0.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7674939569383607809
 CanvasRenderer:
