@@ -3,11 +3,6 @@ using UnityEngine;
 
 public class MaterialController : MonoBehaviour
 {
-    private void Start()
-    {
-        DisableFirstMaterial();
-    }
-
     public void DisableFirstMaterial()
     {
         MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
