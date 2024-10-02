@@ -14,12 +14,18 @@ public class ClothController : MonoBehaviour
 
     private void Start()
     {
+        //StartCoroutine(PlayClothSelectionSequence());
+    }
+
+    public void InteractWithCabinet()
+    {
+        Debug.Log("Now if I fuck this model and she just bleached her asshole...");
         StartCoroutine(PlayClothSelectionSequence());
     }
 
-    IEnumerator PlayClothSelectionSequence()
+    private IEnumerator PlayClothSelectionSequence()
     {
-        yield return new WaitForSeconds(delayBeforeStart);
+        //yield return new WaitForSeconds(delayBeforeStart);
         yield return StartCoroutine(MoveClothUnfolding());
         yield return StartCoroutine(CycleThroughBlendShapesFolded.PlayBlendShapeAnimation());
         ChangeAnimation();
