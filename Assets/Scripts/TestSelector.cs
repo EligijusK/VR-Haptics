@@ -19,11 +19,16 @@ public class TestSelector : MonoBehaviour
         {
             Debug.Log(correctMessage);
             label.text = correctMessage;
+            label.text = correctMessage;
+            Canvas.ForceUpdateCanvases();
+
         }
         else
         {
             Debug.Log(incorrectMessage);
             label.text = incorrectMessage;
+            label.text = incorrectMessage;
+            Canvas.ForceUpdateCanvases();
         }
     }
 
