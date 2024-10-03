@@ -463,7 +463,7 @@ namespace WeArt.Components
         /// The TryGetHapticObjectFromCollider.
         /// </summary>
         /// <param name="collider">The collider<see cref="Collider"/>.</param>
-        /// <param name="hapticObject">The hapticObject<see cref="WeArtHapticObject"/>.</param>
+        /// <param name="hapticObject">The hapticObject<see cref="WeArtHapticObject"/>.</param> 
         /// <returns>The <see cref="bool"/>.</returns>
         private static bool TryGetHapticObjectFromCollider(Collider collider, out WeArtHapticObject hapticObject)
         {

@@ -120,6 +120,7 @@ namespace WeArt.Components
                         break;
                     }
                 }
+                _rigidBody = GetComponent<Rigidbody>();
         }
 
         private void Start()
