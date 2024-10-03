@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\SlidingDoorAnimation.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\IndexControllerDetection.cs" />
+    <Compile Include="Assets\ClothController.cs" />
     <Compile Include="Assets\Scripts\AutoSelector.cs" />
     <Compile Include="Assets\InkPainter\Sample\Script\ReflectPainter.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\BlendHapticInteraction.cs" />
@@ -147,6 +148,7 @@
     <Compile Include="Assets\Scripts\InstrumentTableListController.cs" />
     <Compile Include="Assets\Scripts_Painting\TexturePaint.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\CycleThroughBlendShapes.cs" />
     <Compile Include="Assets\Scripts\OrderElement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\InkPainter\Script\Core\Brush.cs" />
@@ -160,6 +162,7 @@
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\VariableTemperature.cs" />
     <Compile Include="Assets\Scripts\LineCollisionHandler.cs" />
+    <Compile Include="Assets\MaterialController.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\ResetRigidbodies.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\ActiveEffect.cs" />
