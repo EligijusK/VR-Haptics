@@ -68,9 +68,12 @@ namespace WeArt.Components
         private bool _isUsedByHandController = false;
 
         // Used for dynamic force calculations
-        private const float _touchedObjectForcePower = 0.5f;
-        private const float _finalForcePower = 0.5f;
-        private const float _initialForceOffset = 0.5f;
+        [SerializeField]
+        private float _touchedObjectForcePower = 0.5f;
+        [SerializeField]
+        private float _finalForcePower = 0.5f;
+        [SerializeField]
+        private float _initialForceOffset = 0.5f;
 
         private bool isActuating = false;
         
