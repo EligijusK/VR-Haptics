@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class CycleThroughBlendShapes : MonoBehaviour
 {
+    public bool smallCloth = true;
+    public Transform destinationTransform;
     public float animationDuration = 5.0f;
     public SkinnedMeshRenderer meshRenderer;
-
     private int blendShapeCount;
 
     void Start()
     {
         blendShapeCount = meshRenderer.sharedMesh.blendShapeCount;
+        ResetBlendShapes();
+    }
 
+    public void ResetBlendShapes()
+    {
         for (int i = 0; i < blendShapeCount; i++)
         {
             meshRenderer.SetBlendShapeWeight(i, 0);
@@ -28,8 +33,8 @@ public class CycleThroughBlendShapes : MonoBehaviour
             float normalizedTime = elapsedTime / animationDuration;
 
             float blendShapeIndex = normalizedTime * (blendShapeCount - 1);
-            int lowerIndex = Mathf.FloorToInt(blendShapeIndex);
-            int upperIndex = Mathf.Min(lowerIndex + 1, blendShapeCount - 1);
+            int lowerIndex = Mathf.Clamp(Mathf.FloorToInt(blendShapeIndex), 0, blendShapeCount - 1);
+            int upperIndex = Mathf.Clamp(lowerIndex + 1, 0, blendShapeCount - 1);
             float weightFraction = blendShapeIndex - lowerIndex;
 
             for (int i = 0; i < blendShapeCount; i++)
@@ -37,8 +42,15 @@ public class CycleThroughBlendShapes : MonoBehaviour
                 meshRenderer.SetBlendShapeWeight(i, 0);
             }
 
-            meshRenderer.SetBlendShapeWeight(lowerIndex, (1 - weightFraction) * 100);
-            meshRenderer.SetBlendShapeWeight(upperIndex, weightFraction * 100);
+            if (lowerIndex >= 0 && lowerIndex < blendShapeCount)
+            {
+                meshRenderer.SetBlendShapeWeight(lowerIndex, (1 - weightFraction) * 100);
+            }
+
+            if (upperIndex >= 0 && upperIndex < blendShapeCount)
+            {
+                meshRenderer.SetBlendShapeWeight(upperIndex, weightFraction * 100);
+            }
 
             elapsedTime += Time.deltaTime;
 
@@ -53,4 +65,5 @@ public class CycleThroughBlendShapes : MonoBehaviour
 
         enabled = false;
     }
+
 }

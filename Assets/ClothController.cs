@@ -5,72 +5,115 @@ using UnityEngine;
 
 public class ClothController : MonoBehaviour
 {
-    [SerializeField] public GameObject ClothUnfolding;
-    [SerializeField] public GameObject ClothDropping;
-    [SerializeField] public CycleThroughBlendShapes CycleThroughBlendShapesFolded;
-    [SerializeField] public CycleThroughBlendShapes CycleThroughBlendShapesDropping;
-    [SerializeField] public Transform destinationTransform;
+    [SerializeField] public List<CycleThroughBlendShapes> clothItems;
+    [SerializeField] public CycleThroughBlendShapes SmallClothUnfolding;
+    [SerializeField] public CycleThroughBlendShapes LargeClothUnfolding;
     public float delayBeforeStart = 3.0f;
+    public int currentClothIndex = 0;
+
+    private Transform largeClothInitialTransform;
+    private Transform smallClothInitialTransform;
+    CycleThroughBlendShapes clothToUnfold;
 
     private void Start()
     {
-        //StartCoroutine(PlayClothSelectionSequence());
+        largeClothInitialTransform = new GameObject().transform;
+        largeClothInitialTransform.position = LargeClothUnfolding.transform.position;
+        largeClothInitialTransform.localScale = LargeClothUnfolding.transform.localScale;
+        largeClothInitialTransform.rotation = LargeClothUnfolding.transform.rotation;
+
+        smallClothInitialTransform = new GameObject().transform;
+        smallClothInitialTransform.position = SmallClothUnfolding.transform.position;
+        smallClothInitialTransform.localScale = SmallClothUnfolding.transform.localScale;
+        smallClothInitialTransform.rotation = SmallClothUnfolding.transform.rotation;
+        StartCoroutine(CycleThroughCloths());
     }
+
+    private IEnumerator CycleThroughCloths()
+    {
+        foreach (var cloth in clothItems)
+        {
+            yield return StartCoroutine(PlayClothSelectionSequence(cloth));
+            yield return new WaitForSeconds(delayBeforeStart);
+        }
+    }
+
 
     public void InteractWithCabinet()
     {
-        Debug.Log("Now if I fuck this model and she just bleached her asshole...");
-        StartCoroutine(PlayClothSelectionSequence());
+        if (clothItems.Count < currentClothIndex)
+        {
+            StartCoroutine(PlayClothSelectionSequence(clothItems[currentClothIndex++]));
+        }
     }
 
-    private IEnumerator PlayClothSelectionSequence()
+    private IEnumerator PlayClothSelectionSequence(CycleThroughBlendShapes cloth)
     {
         //yield return new WaitForSeconds(delayBeforeStart);
-        yield return StartCoroutine(MoveClothUnfolding());
-        yield return StartCoroutine(CycleThroughBlendShapesFolded.PlayBlendShapeAnimation());
-        ChangeAnimation();
-        yield return StartCoroutine(CycleThroughBlendShapesDropping.PlayBlendShapeAnimation());
+        yield return StartCoroutine(MoveClothUnfolding(cloth));
+        yield return StartCoroutine(clothToUnfold.PlayBlendShapeAnimation());
+        ChangeAnimation(cloth);
+        yield return StartCoroutine(cloth.PlayBlendShapeAnimation());
     }
 
-    public void ChangeAnimation()
+    public void ChangeAnimation(CycleThroughBlendShapes cloth)
     {
-        ClothDropping.SetActive(true);
-        ClothUnfolding.SetActive(false);
+        cloth.gameObject.SetActive(true);
+        ResetUnfoldPositions();
     }
 
-    public void InterpolateToPosition()
+    public void ResetUnfoldPositions()
     {
-        StartCoroutine(MoveClothUnfolding());
+        SmallClothUnfolding.gameObject.transform.position = smallClothInitialTransform.position;
+        SmallClothUnfolding.gameObject.transform.localScale = smallClothInitialTransform.localScale;
+        SmallClothUnfolding.gameObject.transform.rotation = smallClothInitialTransform.rotation;
+        SmallClothUnfolding.ResetBlendShapes();
+        SmallClothUnfolding.gameObject.SetActive(true);
+        LargeClothUnfolding.gameObject.transform.position = largeClothInitialTransform.position;
+        LargeClothUnfolding.gameObject.transform.localScale = largeClothInitialTransform.localScale;
+        LargeClothUnfolding.gameObject.transform.rotation = largeClothInitialTransform.rotation;
+        LargeClothUnfolding.ResetBlendShapes();
+        LargeClothUnfolding.gameObject.SetActive(true);
     }
 
-    private IEnumerator MoveClothUnfolding()
+    private IEnumerator MoveClothUnfolding(CycleThroughBlendShapes cloth)
     {
         float duration = 1.0f;
         float elapsedTime = 0f;
+        if (cloth.smallCloth)
+        {
+            clothToUnfold = SmallClothUnfolding;
+        }
+        else
+        {
+            clothToUnfold = LargeClothUnfolding;
+        }
+        
+        clothToUnfold.gameObject.SetActive(true);
+        
+        Vector3 startingPosition = clothToUnfold.transform.position;
+        Quaternion startingRotation = clothToUnfold.transform.rotation;
+        Vector3 startingScale = clothToUnfold.transform.localScale;
 
-        Vector3 startingPosition = ClothUnfolding.transform.position;
-        Quaternion startingRotation = ClothUnfolding.transform.rotation;
-        Vector3 startingScale = ClothUnfolding.transform.localScale;
-
-        Vector3 targetPosition = destinationTransform.position;
-        Quaternion targetRotation = destinationTransform.rotation;
-        Vector3 targetScale = destinationTransform.localScale;
+        Vector3 targetPosition = cloth.destinationTransform.position;
+        Quaternion targetRotation = cloth.destinationTransform.rotation;
+        Vector3 targetScale = cloth.destinationTransform.localScale;
 
         while (elapsedTime < duration)
         {
             float t = elapsedTime / duration;
 
-            ClothUnfolding.transform.position = Vector3.Lerp(startingPosition, targetPosition, t);
-            ClothUnfolding.transform.rotation = Quaternion.Slerp(startingRotation, targetRotation, t);
-            ClothUnfolding.transform.localScale = Vector3.Lerp(startingScale, targetScale, t);
+            clothToUnfold.transform.position = Vector3.Lerp(startingPosition, targetPosition, t);
+            clothToUnfold.transform.rotation = Quaternion.Slerp(startingRotation, targetRotation, t);
+            clothToUnfold.transform.localScale = Vector3.Lerp(startingScale, targetScale, t);
 
             elapsedTime += Time.deltaTime;
 
             yield return null;
         }
 
-        ClothUnfolding.transform.position = targetPosition;
-        ClothUnfolding.transform.rotation = targetRotation;
-        ClothUnfolding.transform.localScale = targetScale;
+        clothToUnfold.transform.position = targetPosition;
+        clothToUnfold.transform.rotation = targetRotation;
+        clothToUnfold.transform.localScale = targetScale;
     }
 }
