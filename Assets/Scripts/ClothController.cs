@@ -8,6 +8,7 @@ public class ClothController : MonoBehaviour
     [SerializeField] public List<CycleThroughBlendShapes> clothItems;
     [SerializeField] public CycleThroughBlendShapes SmallClothUnfolding;
     [SerializeField] public CycleThroughBlendShapes LargeClothUnfolding;
+    [SerializeField] public GameObject clamps;
     public float delayBeforeStart = 3.0f;
     public int currentClothIndex = 0;
 
@@ -76,6 +77,12 @@ public class ClothController : MonoBehaviour
         LargeClothUnfolding.gameObject.SetActive(true);
     }
 
+    private IEnumerator DisableClampsAfterTime()
+    {
+        yield return new WaitForSeconds(0.5f);
+        clamps.SetActive(false);
+    }
+
     private IEnumerator MoveClothUnfolding(CycleThroughBlendShapes cloth)
     {
         float duration = 1.0f;
@@ -87,6 +94,7 @@ public class ClothController : MonoBehaviour
         else
         {
             clothToUnfold = LargeClothUnfolding;
+            StartCoroutine(DisableClampsAfterTime());
         }
         
         clothToUnfold.gameObject.SetActive(true);
