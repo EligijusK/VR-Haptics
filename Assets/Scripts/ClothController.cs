@@ -2,12 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class ClothController : MonoBehaviour
 {
     [SerializeField] public List<CycleThroughBlendShapes> clothItems;
     [SerializeField] public CycleThroughBlendShapes SmallClothUnfolding;
     [SerializeField] public CycleThroughBlendShapes LargeClothUnfolding;
+    [SerializeField] public GameObject towelSeparate;
+    [SerializeField] public XRSimpleInteractable spintelNoTowel;
     [SerializeField] public GameObject clamps;
     public float delayBeforeStart = 3.0f;
     public int currentClothIndex = 0;
@@ -95,6 +98,8 @@ public class ClothController : MonoBehaviour
         {
             clothToUnfold = LargeClothUnfolding;
             StartCoroutine(DisableClampsAfterTime());
+            towelSeparate.SetActive(false);
+            spintelNoTowel.enabled = false;
         }
         
         clothToUnfold.gameObject.SetActive(true);

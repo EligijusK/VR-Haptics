@@ -7104,6 +7104,71 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClothController
       objectReference: {fileID: 0}
+    - target: {fileID: 5369727745535633021, guid: a68fe70efb6e70c47a18cb2df7406b51,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5369727745535633021, guid: a68fe70efb6e70c47a18cb2df7406b51,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5369727745535633021, guid: a68fe70efb6e70c47a18cb2df7406b51,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5369727745535633021, guid: a68fe70efb6e70c47a18cb2df7406b51,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5369727745535633021, guid: a68fe70efb6e70c47a18cb2df7406b51,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1479351337}
+    - target: {fileID: 5369727745535633021, guid: a68fe70efb6e70c47a18cb2df7406b51,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1830329802}
+    - target: {fileID: 5369727745535633021, guid: a68fe70efb6e70c47a18cb2df7406b51,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 2073280251}
+    - target: {fileID: 5369727745535633021, guid: a68fe70efb6e70c47a18cb2df7406b51,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InteractWithCabinet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5369727745535633021, guid: a68fe70efb6e70c47a18cb2df7406b51,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 5369727745535633021, guid: a68fe70efb6e70c47a18cb2df7406b51,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 5369727745535633021, guid: a68fe70efb6e70c47a18cb2df7406b51,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ClothController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5369727745535633021, guid: a68fe70efb6e70c47a18cb2df7406b51,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5369727745535633021, guid: a68fe70efb6e70c47a18cb2df7406b51,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20754,6 +20819,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 558969429}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
+--- !u!114 &1479351337 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 776043243275265621, guid: a68fe70efb6e70c47a18cb2df7406b51,
+    type: 3}
+  m_PrefabInstance: {fileID: 407736786}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45b8d88fe65b04c4887c026e34aa7470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1480259214
 GameObject:
   m_ObjectHideFlags: 0
@@ -24510,6 +24587,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1044151471}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1830329802 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8987993332412242039, guid: a68fe70efb6e70c47a18cb2df7406b51,
+    type: 3}
+  m_PrefabInstance: {fileID: 407736786}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1840164360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27043,6 +27126,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c696bc48a7466782875f87ea02979d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2073280251 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5369727745535633021, guid: a68fe70efb6e70c47a18cb2df7406b51,
+    type: 3}
+  m_PrefabInstance: {fileID: 407736786}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2091635569
