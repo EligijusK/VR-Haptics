@@ -6682,6 +6682,7 @@ GameObject:
   - component: {fileID: 3006430201764272482}
   - component: {fileID: 1477325343251557139}
   - component: {fileID: 6918915302563338468}
+  - component: {fileID: 701554308024416668}
   m_Layer: 0
   m_Name: Mesh_206 (3)
   m_TagString: Untagged
@@ -7192,6 +7193,21 @@ MonoBehaviour:
     fingerPositions: []
     fingerRotations: []
     fingerScales: []
+--- !u!114 &701554308024416668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268616652179752578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bc6ec2a4f704a944a3e40238dc20744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interpolationDuration: 1
+  _grabInteractable: {fileID: 6482238971354734962}
+  _rigidbody: {fileID: 526113242392086609}
 --- !u!1 &1309696817536851757
 GameObject:
   m_ObjectHideFlags: 0
@@ -29398,6 +29414,7 @@ GameObject:
   - component: {fileID: 6197664736319728723}
   - component: {fileID: 7897138476802473793}
   - component: {fileID: 5879512462694938875}
+  - component: {fileID: 1985054916064534232}
   m_Layer: 0
   m_Name: Mesh_206 (1)
   m_TagString: Untagged
@@ -29908,6 +29925,21 @@ MonoBehaviour:
     fingerPositions: []
     fingerRotations: []
     fingerScales: []
+--- !u!114 &1985054916064534232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297684435902390986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bc6ec2a4f704a944a3e40238dc20744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interpolationDuration: 1
+  _grabInteractable: {fileID: 7126991546007901667}
+  _rigidbody: {fileID: 2675035180862894296}
 --- !u!1 &3311816912426981206
 GameObject:
   m_ObjectHideFlags: 0
@@ -32007,6 +32039,7 @@ GameObject:
   - component: {fileID: 5807384651943910158}
   - component: {fileID: 6309356344086860433}
   - component: {fileID: 5590009744509252329}
+  - component: {fileID: 7631298561294885409}
   m_Layer: 0
   m_Name: Mesh_206 (2)
   m_TagString: Untagged
@@ -32517,6 +32550,21 @@ MonoBehaviour:
     fingerPositions: []
     fingerRotations: []
     fingerScales: []
+--- !u!114 &7631298561294885409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3738983740619021404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bc6ec2a4f704a944a3e40238dc20744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interpolationDuration: 1
+  _grabInteractable: {fileID: 4668939907231491688}
+  _rigidbody: {fileID: 4347058050046614361}
 --- !u!1 &3742011856598414709
 GameObject:
   m_ObjectHideFlags: 0
@@ -53850,6 +53898,7 @@ GameObject:
   - component: {fileID: 3388321163775530642}
   - component: {fileID: 4922396738104922690}
   - component: {fileID: 4985039293284056347}
+  - component: {fileID: 7361284009598484024}
   m_Layer: 0
   m_Name: Mesh_206
   m_TagString: Untagged
@@ -54360,6 +54409,21 @@ MonoBehaviour:
     fingerPositions: []
     fingerRotations: []
     fingerScales: []
+--- !u!114 &7361284009598484024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137610556408237228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bc6ec2a4f704a944a3e40238dc20744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interpolationDuration: 1
+  _grabInteractable: {fileID: 5859209652087248227}
+  _rigidbody: {fileID: 4783358085341943823}
 --- !u!1 &6149321821040165751
 GameObject:
   m_ObjectHideFlags: 0

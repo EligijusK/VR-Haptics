@@ -14,7 +14,8 @@ public class ClothController : MonoBehaviour
     [SerializeField] public GameObject clamps;
     public float delayBeforeStart = 3.0f;
     public int currentClothIndex = 0;
-
+    private bool isClothInAction = false;
+    private bool allClampsAreInPlace = false;
     private Transform largeClothInitialTransform;
     private Transform smallClothInitialTransform;
     CycleThroughBlendShapes clothToUnfold;
@@ -30,7 +31,7 @@ public class ClothController : MonoBehaviour
         smallClothInitialTransform.position = SmallClothUnfolding.transform.position;
         smallClothInitialTransform.localScale = SmallClothUnfolding.transform.localScale;
         smallClothInitialTransform.rotation = SmallClothUnfolding.transform.rotation;
-        StartCoroutine(CycleThroughCloths());
+        //StartCoroutine(CycleThroughCloths());
     }
 
     private IEnumerator CycleThroughCloths()
@@ -45,20 +46,29 @@ public class ClothController : MonoBehaviour
 
     public void InteractWithCabinet()
     {
-        if (clothItems.Count < currentClothIndex)
+        if (!isClothInAction && clothItems.Count > currentClothIndex)
         {
+            isClothInAction = true;
             StartCoroutine(PlayClothSelectionSequence(clothItems[currentClothIndex++]));
         }
     }
 
+
     private IEnumerator PlayClothSelectionSequence(CycleThroughBlendShapes cloth)
     {
-        //yield return new WaitForSeconds(delayBeforeStart);
-        yield return StartCoroutine(MoveClothUnfolding(cloth));
-        yield return StartCoroutine(clothToUnfold.PlayBlendShapeAnimation());
-        ChangeAnimation(cloth);
-        yield return StartCoroutine(cloth.PlayBlendShapeAnimation());
+        try
+        {
+            yield return StartCoroutine(MoveClothUnfolding(cloth));
+            yield return StartCoroutine(clothToUnfold.PlayBlendShapeAnimation());
+            ChangeAnimation(cloth);
+            yield return StartCoroutine(cloth.PlayBlendShapeAnimation());
+        }
+        finally
+        {
+            isClothInAction = false;
+        }
     }
+
 
     public void ChangeAnimation(CycleThroughBlendShapes cloth)
     {
@@ -128,5 +138,10 @@ public class ClothController : MonoBehaviour
         clothToUnfold.transform.position = targetPosition;
         clothToUnfold.transform.rotation = targetRotation;
         clothToUnfold.transform.localScale = targetScale;
+    }
+
+    public void SetClampsInPlaceFlag(bool value)
+    {
+        allClampsAreInPlace = value;
     }
 }

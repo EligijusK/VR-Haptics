@@ -1,11 +1,12 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class ClampController : MonoBehaviour
 {
     [SerializeField] private float interpolationDuration = 1.0f;
-    [SerializeField] private XRSimpleInteractable _simpleInteractable;
+    [SerializeField] private XRGrabInteractable _grabInteractable;
     [SerializeField] private Rigidbody _rigidbody;
     private Transform targetCorner; 
     private bool isClamping = false;
@@ -17,7 +18,7 @@ public class ClampController : MonoBehaviour
 
         if (cornerController != null && !isClamping)
         {
-            _simpleInteractable.enabled = false;
+            _grabInteractable.enabled = false;
             _rigidbody.isKinematic = true;
             targetCorner = cornerController.GetTargetTransform();
             StartCoroutine(InterpolateToCorner());
