@@ -221,7 +221,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &5968218630736829923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -538,6 +538,7 @@ GameObject:
   - component: {fileID: 8069668329220234079}
   - component: {fileID: 7253052119394747420}
   - component: {fileID: 1600168067471824303}
+  - component: {fileID: 4664975134620024178}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -733,10 +734,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4664975134620024178}
+        m_TargetAssemblyTypeName: HoverScale, Assembly-CSharp
+        m_MethodName: OnPointerEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4664975134620024178}
+        m_TargetAssemblyTypeName: HoverScale, Assembly-CSharp
+        m_MethodName: OnPointerExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -827,6 +852,20 @@ MonoBehaviour:
     OPERACIN\u0116S APRANG\u0104"
   incorrectMessage: "REKOMENDUOJAME PRAD\u0116TI DARB\u0104 NUO PERSIRENGIMO \u012E
     OPERACIN\u0116S APRANG\u0104"
+--- !u!114 &4664975134620024178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2743760640314580628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3456df32d5e30c74697aefd1fc15ca77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleFactor: 1.2
+  transitionSpeed: 10
 --- !u!1 &3557677282862321837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,6 +1155,7 @@ GameObject:
   - component: {fileID: 4849791214024121592}
   - component: {fileID: 4046510208048550669}
   - component: {fileID: 1556759598932209197}
+  - component: {fileID: 3768406398199111188}
   m_Layer: 0
   m_Name: Button1
   m_TagString: Untagged
@@ -1311,10 +1351,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3768406398199111188}
+        m_TargetAssemblyTypeName: HoverScale, Assembly-CSharp
+        m_MethodName: OnPointerEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3768406398199111188}
+        m_TargetAssemblyTypeName: HoverScale, Assembly-CSharp
+        m_MethodName: OnPointerExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -1405,6 +1469,20 @@ MonoBehaviour:
     OPERACIN\u0116S APRANG\u0104"
   incorrectMessage: "REKOMENDUOJAME PRAD\u0116TI DARB\u0104 NUO PERSIRENGIMO \u012E
     OPERACIN\u0116S APRANG\u0104"
+--- !u!114 &3768406398199111188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5780307271146702885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3456df32d5e30c74697aefd1fc15ca77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleFactor: 1.2
+  transitionSpeed: 10
 --- !u!1 &5907820378036683318
 GameObject:
   m_ObjectHideFlags: 0
@@ -1689,6 +1767,7 @@ GameObject:
   - component: {fileID: 5941208576031127872}
   - component: {fileID: 3122247871087578020}
   - component: {fileID: 6813643139866915718}
+  - component: {fileID: 1689341942684362234}
   m_Layer: 0
   m_Name: Button2
   m_TagString: Untagged
@@ -1884,10 +1963,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1689341942684362234}
+        m_TargetAssemblyTypeName: HoverScale, Assembly-CSharp
+        m_MethodName: OnPointerEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1689341942684362234}
+        m_TargetAssemblyTypeName: HoverScale, Assembly-CSharp
+        m_MethodName: OnPointerExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -1988,6 +2091,20 @@ MonoBehaviour:
   label: {fileID: 2636188205851777120}
   correctMessage: Good job!
   incorrectMessage: Bad job!
+--- !u!114 &1689341942684362234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7768747810438102379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3456df32d5e30c74697aefd1fc15ca77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleFactor: 1.2
+  transitionSpeed: 10
 --- !u!1 &8042157015553596147
 GameObject:
   m_ObjectHideFlags: 0

@@ -360,6 +360,7 @@ GameObject:
   - component: {fileID: 7129385932388403608}
   - component: {fileID: 7897226635904551727}
   - component: {fileID: 5772148101601654991}
+  - component: {fileID: 5604234887228531190}
   m_Layer: 0
   m_Name: Button (5)
   m_TagString: Untagged
@@ -515,8 +516,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.3859334, y: 0.3496669, z: 0}
-  m_Center: {x: 0.0006428957, y: -0.00074341893, z: 0}
+  m_Size: {x: 0.75026375, y: 0.3496669, z: 0}
+  m_Center: {x: 0.0035991967, y: -0.00074341893, z: 0}
 --- !u!114 &7897226635904551727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -555,10 +556,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5604234887228531190}
+        m_TargetAssemblyTypeName: HoverScale, Assembly-CSharp
+        m_MethodName: OnPointerEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5604234887228531190}
+        m_TargetAssemblyTypeName: HoverScale, Assembly-CSharp
+        m_MethodName: OnPointerExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -671,6 +696,20 @@ MonoBehaviour:
   label: {fileID: 7859365984791535443}
   correctMessage: PASIRINKITE KUR EISITE
   incorrectMessage: PASIRINKITE KUR EISITE
+--- !u!114 &5604234887228531190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542903012849816013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3456df32d5e30c74697aefd1fc15ca77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleFactor: 1.2
+  transitionSpeed: 10
 --- !u!1 &831491040227133318
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,6 +2004,7 @@ GameObject:
   - component: {fileID: 7443182287436081029}
   - component: {fileID: 8864502196294616011}
   - component: {fileID: 3805138880527855605}
+  - component: {fileID: 9162360312158820047}
   m_Layer: 0
   m_Name: Button (3)
   m_TagString: Untagged
@@ -2120,8 +2160,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.3882911, y: 0.34984392, z: 0}
-  m_Center: {x: -0.00027680397, y: -0.0010724366, z: 0}
+  m_Size: {x: 0.7386734, y: 0.34984392, z: 0}
+  m_Center: {x: -0.0021098554, y: -0.0010724366, z: 0}
 --- !u!114 &8864502196294616011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2160,10 +2200,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9162360312158820047}
+        m_TargetAssemblyTypeName: HoverScale, Assembly-CSharp
+        m_MethodName: OnPointerEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9162360312158820047}
+        m_TargetAssemblyTypeName: HoverScale, Assembly-CSharp
+        m_MethodName: OnPointerExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -2256,6 +2320,20 @@ MonoBehaviour:
   incorrectMessage: "\u012E OPERACINI\u0172 BLOK\u0104 REKOMENDUOJAMA ATEITI SU \u0160VARIA
     MEDICINOS PI\u017DAMA, MEDICINOS AVALYNE ARBA APSAUGIN\u0116S BACHILAIS. PRA\u0160OME
     PERSIRENGTI."
+--- !u!114 &9162360312158820047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2691968780076956505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3456df32d5e30c74697aefd1fc15ca77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleFactor: 1.2
+  transitionSpeed: 10
 --- !u!1 &3191802982457006014
 GameObject:
   m_ObjectHideFlags: 0
@@ -4955,6 +5033,7 @@ GameObject:
   - component: {fileID: 5722914910900141656}
   - component: {fileID: 6849654133080733168}
   - component: {fileID: 895647984145664819}
+  - component: {fileID: 6106467055068255343}
   m_Layer: 0
   m_Name: Button (1)
   m_TagString: Untagged
@@ -5110,8 +5189,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.3889078, y: 0.34744275, z: 0}
-  m_Center: {x: -0.0024436116, y: -0.000508368, z: 0}
+  m_Size: {x: 0.75496995, y: 0.34744275, z: 0}
+  m_Center: {x: -0.0012168139, y: -0.000508368, z: 0}
 --- !u!114 &6849654133080733168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5150,10 +5229,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6106467055068255343}
+        m_TargetAssemblyTypeName: HoverScale, Assembly-CSharp
+        m_MethodName: OnPointerEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6106467055068255343}
+        m_TargetAssemblyTypeName: HoverScale, Assembly-CSharp
+        m_MethodName: OnPointerExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -5246,6 +5349,20 @@ MonoBehaviour:
   incorrectMessage: "\u012E OPERACINI\u0172 BLOK\u0104 REKOMENDUOJAMA ATEITI SU \u0160VARIA
     MEDICINOS PI\u017DAMA, MEDICINOS AVALYNE ARBA APSAUGIN\u0116S BACHILAIS. PRA\u0160OME
     PERSIRENGTI."
+--- !u!114 &6106467055068255343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4816857160548775501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3456df32d5e30c74697aefd1fc15ca77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleFactor: 1.2
+  transitionSpeed: 10
 --- !u!1 &4871022507414925988
 GameObject:
   m_ObjectHideFlags: 0
@@ -5262,6 +5379,7 @@ GameObject:
   - component: {fileID: 2820576421451017371}
   - component: {fileID: 9182916786622712152}
   - component: {fileID: 1018443878773539556}
+  - component: {fileID: 802318710894384961}
   m_Layer: 0
   m_Name: Button (2)
   m_TagString: Untagged
@@ -5417,8 +5535,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.3857175, y: 0.35190153, z: 0}
-  m_Center: {x: -0.00071805716, y: -0.0014246106, z: 0}
+  m_Size: {x: 0.7507255, y: 0.35190153, z: 0}
+  m_Center: {x: -0.009561896, y: -0.0014246106, z: 0}
 --- !u!114 &9182916786622712152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5457,10 +5575,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 802318710894384961}
+        m_TargetAssemblyTypeName: HoverScale, Assembly-CSharp
+        m_MethodName: OnPointerEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 802318710894384961}
+        m_TargetAssemblyTypeName: HoverScale, Assembly-CSharp
+        m_MethodName: OnPointerExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -5553,6 +5695,20 @@ MonoBehaviour:
   incorrectMessage: "\u012E OPERACINI\u0172 BLOK\u0104 REKOMENDUOJAMA ATEITI SU \u0160VARIA
     MEDICINOS PI\u017DAMA, MEDICINOS AVALYNE ARBA APSAUGIN\u0116S BACHILAIS. PRA\u0160OME
     PERSIRENGTI."
+--- !u!114 &802318710894384961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4871022507414925988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3456df32d5e30c74697aefd1fc15ca77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleFactor: 1.2
+  transitionSpeed: 10
 --- !u!1 &5169975555557659907
 GameObject:
   m_ObjectHideFlags: 0
@@ -5569,6 +5725,7 @@ GameObject:
   - component: {fileID: 3404559163264988972}
   - component: {fileID: 5954642094893384008}
   - component: {fileID: 8843463689736441779}
+  - component: {fileID: 5054141699645150403}
   m_Layer: 0
   m_Name: Button (4)
   m_TagString: Untagged
@@ -5724,8 +5881,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.3851938, y: 0.34806454, z: 0}
-  m_Center: {x: 0.00095042586, y: 0.0003297925, z: 0}
+  m_Size: {x: 0.7545276, y: 0.34806454, z: 0}
+  m_Center: {x: -0.0029734075, y: 0.0003297925, z: 0}
 --- !u!114 &5954642094893384008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5764,10 +5921,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5054141699645150403}
+        m_TargetAssemblyTypeName: HoverScale, Assembly-CSharp
+        m_MethodName: OnPointerEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5054141699645150403}
+        m_TargetAssemblyTypeName: HoverScale, Assembly-CSharp
+        m_MethodName: OnPointerExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -5880,6 +6061,20 @@ MonoBehaviour:
   label: {fileID: 7859365984791535443}
   correctMessage: PASIRINKITE KUR EISITE
   incorrectMessage: PASIRINKITE KUR EISITE
+--- !u!114 &5054141699645150403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5169975555557659907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3456df32d5e30c74697aefd1fc15ca77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleFactor: 1.2
+  transitionSpeed: 10
 --- !u!1 &5277564409131441072
 GameObject:
   m_ObjectHideFlags: 0
