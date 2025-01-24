@@ -1,34 +1,55 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class XRTrackingParent : MonoBehaviour
 {
-    [SerializeField] Transform target;
-
-    private int layer;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    [SerializeField] private Transform target;
+    [SerializeField] private int _newLayer;
+    private Transform oldParent;
+    private int oldLayer;
+    
     public void ChangeParent(SelectEnterEventArgs args)
     {
-        args.interactableObject.transform.SetParent(target);
-        layer = args.interactableObject.transform.gameObject.layer;
-        args.interactableObject.transform.gameObject.layer = 7;
+        
+        XRGrabInteractable grabInteractable = args.interactableObject.transform.gameObject
+                                              .GetComponent<XRGrabInteractable>();
+        if (grabInteractable == null)
+        {
+            return; 
+        }
+
+        Transform grabbedTransform = args.interactableObject.transform;
+
+        oldParent = grabbedTransform.parent;
+        oldLayer  = grabbedTransform.gameObject.layer;
+        
+        grabbedTransform.SetParent(target);
+
+        SetLayerRecursively(grabbedTransform, _newLayer);
     }
-    
+
     public void RestoreParent(SelectExitEventArgs args)
     {
-        args.interactableObject.transform.gameObject.layer = layer;
+        XRGrabInteractable grabInteractable = args.interactableObject.transform.gameObject
+                                              .GetComponent<XRGrabInteractable>();
+        if (grabInteractable == null)
+        {
+            return;
+        }
+
+        Transform grabbedTransform = args.interactableObject.transform;
+
+        grabbedTransform.SetParent(oldParent);
+
+        SetLayerRecursively(grabbedTransform, oldLayer);
+    }
+
+    private void SetLayerRecursively(Transform obj, int newLayer)
+    {
+        obj.gameObject.layer = newLayer;
+        for (int i = 0; i < obj.childCount; i++)
+        {
+            SetLayerRecursively(obj.GetChild(i), newLayer);
+        }
     }
 }

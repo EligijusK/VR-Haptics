@@ -8,6 +8,8 @@ public class ClampController : MonoBehaviour
     [SerializeField] private float interpolationDuration = 1.0f;
     [SerializeField] private XRGrabInteractable _grabInteractable;
     [SerializeField] private Rigidbody _rigidbody;
+    [SerializeField] private CornerManager _cornerManager;
+    [SerializeField] private ClothController _clothController;
     private Transform targetCorner; 
     private bool isClamping = false;
 
@@ -16,12 +18,13 @@ public class ClampController : MonoBehaviour
         // Check if the other collider is part of a CornerController
         CornerController cornerController = other.GetComponentInParent<CornerController>();
 
-        if (cornerController != null && !isClamping)
+        if (cornerController != null && !isClamping && _clothController.currentClothIndex>3)
         {
             _grabInteractable.enabled = false;
             _rigidbody.isKinematic = true;
             targetCorner = cornerController.GetTargetTransform();
             StartCoroutine(InterpolateToCorner());
+            _cornerManager.AddedClamp();
         }
     }
 

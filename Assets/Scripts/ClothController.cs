@@ -46,7 +46,7 @@ public class ClothController : MonoBehaviour
 
     public void InteractWithCabinet()
     {
-        if (!isClothInAction && clothItems.Count > currentClothIndex)
+        if (!isClothInAction && clothItems.Count > currentClothIndex && (currentClothIndex <= 3 || allClampsAreInPlace))
         {
             isClothInAction = true;
             StartCoroutine(PlayClothSelectionSequence(clothItems[currentClothIndex++]));
@@ -92,7 +92,7 @@ public class ClothController : MonoBehaviour
 
     private IEnumerator DisableClampsAfterTime()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         clamps.SetActive(false);
     }
 

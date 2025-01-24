@@ -6,7 +6,7 @@ namespace DefaultNamespace
     {
         public static InstrumentProgressTracker _instance;
         public bool bowlHasBeenPlaced;
-        
+        public bool bowlForCleaningAntisepticHasBeenPlaced;
         private void Start()
         {
             if (_instance == null)
