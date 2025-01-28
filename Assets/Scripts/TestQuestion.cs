@@ -26,11 +26,11 @@ public class TestQuestion : MonoBehaviour
         StartCoroutine(PopErrorMessage());
     }
 
-    public void AnsweredCorrectly()
-    {
-        errorMessageLabel.text = "";
-        StartCoroutine(TransitionToNextQuestion());
-    }
+    // public void AnsweredCorrectly()
+    // {
+    //     errorMessageLabel.text = "";
+    //     StartCoroutine(TransitionToNextQuestion());
+    // }
 
     public void AnsweredWrong()
     {
@@ -55,47 +55,47 @@ public class TestQuestion : MonoBehaviour
         errorMessageLabel.transform.localScale = originalScale;
     }
 
-    private IEnumerator TransitionToNextQuestion()
-    {
-        Vector3 originalPosition = transform.position;
-        Vector3 flyAwayPosition = originalPosition + new Vector3(0, flyAwayHeight, 0);  
-        yield return StartCoroutine(MoveIntoPosition(flyAwayPosition));
-        nextQuestion.gameObject.SetActive(true);
-        yield return StartCoroutine(nextQuestion.MoveIntoPosition(originalPosition));
-        gameObject.SetActive(false);
-    }
+    // private IEnumerator TransitionToNextQuestion()
+    // {
+    //     Vector3 originalPosition = transform.position;
+    //     Vector3 flyAwayPosition = originalPosition + new Vector3(0, flyAwayHeight, 0);  
+    //     yield return StartCoroutine(MoveIntoPosition(flyAwayPosition));
+    //     nextQuestion.gameObject.SetActive(true);
+    //     yield return StartCoroutine(nextQuestion.MoveIntoPosition(originalPosition));
+    //     gameObject.SetActive(false);
+    // }
 
-    public IEnumerator MoveIntoPosition(Vector3 targetPosition)
-    {
-        float elapsedTime = 0f;
-        Vector3 startPosition = transform.position;
+    // public IEnumerator MoveIntoPosition(Vector3 targetPosition)
+    // {
+    //     float elapsedTime = 0f;
+    //     Vector3 startPosition = transform.position;
+    //
+    //     while (elapsedTime < transitionDuration)
+    //     {
+    //         elapsedTime += Time.deltaTime;
+    //         float t = Mathf.Clamp01(elapsedTime / transitionDuration);
+    //         transform.position = Vector3.Lerp(startPosition, targetPosition, t);
+    //         yield return null;
+    //     }
+    //     transform.position = targetPosition;
+    // }
 
-        while (elapsedTime < transitionDuration)
-        {
-            elapsedTime += Time.deltaTime;
-            float t = Mathf.Clamp01(elapsedTime / transitionDuration);
-            transform.position = Vector3.Lerp(startPosition, targetPosition, t);
-            yield return null;
-        }
-        transform.position = targetPosition;
-    }
+    // public void SuccessfullyFinishTest()
+    // {
+    //     StartCoroutine(CompleteTestRoutine());
+    // }
 
-    public void SuccessfullyFinishTest()
-    {
-        StartCoroutine(CompleteTestRoutine());
-    }
-
-    private IEnumerator CompleteTestRoutine()
-    {
-        completionMessageLabel.gameObject.SetActive(true);
-        Vector3 originalPosition = transform.position;
-        Vector3 flyAwayPosition = originalPosition + new Vector3(0, 10f, 0);  
-        yield return StartCoroutine(MoveIntoPosition(flyAwayPosition));
-        completionMessageLabel.CrossFadeAlpha(1f,0.3f,false);
-        yield return new WaitForSeconds(2.0f);
-        yield return StartCoroutine(FadeOutCanvas());
-        testGameobject.SetActive(false);
-    }
+    // private IEnumerator CompleteTestRoutine()
+    // {
+    //     completionMessageLabel.gameObject.SetActive(true);
+    //     Vector3 originalPosition = transform.position;
+    //     Vector3 flyAwayPosition = originalPosition + new Vector3(0, 10f, 0);  
+    //     yield return StartCoroutine(MoveIntoPosition(flyAwayPosition));
+    //     completionMessageLabel.CrossFadeAlpha(1f,0.3f,false);
+    //     yield return new WaitForSeconds(2.0f);
+    //     yield return StartCoroutine(FadeOutCanvas());
+    //     testGameobject.SetActive(false);
+    // }
     
 
     private IEnumerator FadeOutCanvas()
