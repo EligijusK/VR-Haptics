@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 #if BURST_PRESENT
 using Unity.Burst;
 #endif
@@ -2478,8 +2479,10 @@ namespace UnityEngine.XR.Interaction.Toolkit
         {
             if (currentNearestValidTarget == interactable && m_AutoDeselect && hasSelection && m_PassedHoverTimeToSelect && m_PassedTimeToAutoDeselect)
                 return false;
-
             if (m_HoverToSelect && m_PassedHoverTimeToSelect && currentNearestValidTarget != interactable)
+                return false;
+
+            if (selectAction.action.bindings.Count > 0 && !selectAction.action.controls.Contains(m_ActionBasedController.selectAction.action.activeControl))
                 return false;
 
             return base.CanSelect(interactable) && (!hasSelection || IsSelecting(interactable));

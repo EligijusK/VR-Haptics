@@ -1,5 +1,8 @@
 using System.Collections.Generic;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Controls;
 using UnityEngine.Serialization;
+using UnityEngine.XR.Interaction.Toolkit.Inputs;
 using UnityEngine.XR.Interaction.Toolkit.Utilities.Pooling;
 
 namespace UnityEngine.XR.Interaction.Toolkit
@@ -68,6 +71,49 @@ namespace UnityEngine.XR.Interaction.Toolkit
         {
             get => m_SelectActionTrigger;
             set => m_SelectActionTrigger = value;
+        }
+        
+        [SerializeField]
+        InputActionProperty m_SelectAction = new InputActionProperty(new InputAction("Select", type: InputActionType.Button));
+
+        
+        /// <summary>
+        /// The Input System action to use for selecting an Interactable.
+        /// Must be an action with a button-like interaction where phase equals performed when pressed.
+        /// Typically a <see cref="ButtonControl"/> Control or a Value type action with a Press or Sector interaction.
+        /// </summary>
+        /// <seealso cref="selectActionValue"/>
+        public InputActionProperty selectAction
+        {
+            get => m_SelectAction;
+            set => SetInputActionProperty(ref m_SelectAction, value);
+        }
+        
+        [SerializeField]
+        InputActionProperty m_SelectActionValue = new InputActionProperty(new InputAction("Select Value", expectedControlType: "Axis"));
+        /// <summary>
+        /// The Input System action to read values for selecting an Interactable.
+        /// Must be an <see cref="AxisControl"/> Control or <see cref="Vector2Control"/> Control.
+        /// </summary>
+        /// <remarks>
+        /// Optional, Unity uses <see cref="selectAction"/> when not set.
+        /// </remarks>
+        /// <seealso cref="selectAction"/>
+        public InputActionProperty selectActionValue
+        {
+            get => m_SelectActionValue;
+            set => SetInputActionProperty(ref m_SelectActionValue, value);
+        }
+        
+        void SetInputActionProperty(ref InputActionProperty property, InputActionProperty value)
+        {
+            if (Application.isPlaying)
+                property.DisableDirectAction();
+
+            property = value;
+
+            if (Application.isPlaying && isActiveAndEnabled)
+                property.EnableDirectAction();
         }
 
         [SerializeField]
