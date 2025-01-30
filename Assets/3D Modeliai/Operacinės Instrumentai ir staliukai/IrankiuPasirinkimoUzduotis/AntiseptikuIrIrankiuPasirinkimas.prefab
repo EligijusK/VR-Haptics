@@ -73344,6 +73344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bowlHasBeenPlaced: 0
+  bowlForCleaningAntisepticHasBeenPlaced: 0
 --- !u!1 &8108433715133673788
 GameObject:
   m_ObjectHideFlags: 0
@@ -73360,11 +73361,6 @@ GameObject:
   - component: {fileID: 3095540798764474475}
   - component: {fileID: 9096131911702238007}
   - component: {fileID: 7612504517871093197}
-  - component: {fileID: 5718768888057700940}
-  - component: {fileID: 953067431797862725}
-  - component: {fileID: 693081159354092338}
-  - component: {fileID: 7145890933467045695}
-  - component: {fileID: 9193163457811947822}
   m_Layer: 0
   m_Name: Mesh_231
   m_TagString: Untagged
@@ -73795,147 +73791,6 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!65 &5718768888057700940
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8108433715133673788}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 11.4, y: 1.5499475, z: 60.157593}
-  m_Center: {x: 0.8274508, y: -0.24546242, z: -29.453611}
---- !u!114 &953067431797862725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8108433715133673788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 069cd92d9583f1b4cb42711563eb8a22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  origin: {fileID: 17811459564404148}
-  handType: 0
-  handSkeletonDriver: {fileID: 0}
-  fingerObjects: []
-  originlaPoseDataLeft:
-    originPosition: {x: 0, y: 0, z: 0}
-    originRotation: {x: 0, y: 0, z: 0, w: 0}
-    fingerPositions: []
-    fingerRotations: []
-    fingerScales: []
-  poseDataLeft:
-    originPosition: {x: 0, y: 0, z: 0}
-    originRotation: {x: 0, y: 0, z: 0, w: 0}
-    fingerPositions: []
-    fingerRotations: []
-    fingerScales: []
-  originlaPoseDataRight:
-    originPosition: {x: 0, y: 0, z: 0}
-    originRotation: {x: 0, y: 0, z: 0, w: 0}
-    fingerPositions: []
-    fingerRotations: []
-    fingerScales: []
-  poseDataRight:
-    originPosition: {x: 0, y: 0, z: 0}
-    originRotation: {x: 0, y: 0, z: 0, w: 0}
-    fingerPositions: []
-    fingerRotations: []
-    fingerScales: []
-  editorIsEnabled: 0
-  handPose: {fileID: 0}
-  prefab: {fileID: 0}
-  currentHandType: 0
-  useDefaultPose: 0
-  poseDefaultDataLeft:
-    originPosition: {x: 0, y: 0, z: 0}
-    originRotation: {x: 0, y: 0, z: 0, w: 0}
-    fingerPositions: []
-    fingerRotations: []
-    fingerScales: []
-  poseDefaultDataRight:
-    originPosition: {x: 0, y: 0, z: 0}
-    originRotation: {x: 0, y: 0, z: 0, w: 0}
-    fingerPositions: []
-    fingerRotations: []
-    fingerScales: []
---- !u!65 &693081159354092338
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8108433715133673788}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 9.006635, y: 1.5499483, z: 26.760267}
-  m_Center: {x: -0.36926526, y: -0.048579104, z: 13.963484}
---- !u!65 &7145890933467045695
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8108433715133673788}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 7.4356318, y: 1.1561201, z: 32.280205}
-  m_Center: {x: -0.4176379, y: -0.048579104, z: 43.425232}
---- !u!65 &9193163457811947822
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8108433715133673788}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 6.6927986, y: 1.1561201, z: 6.453863}
-  m_Center: {x: -0.35118684, y: -0.048579104, z: 62.802826}
 --- !u!1 &8144894489691166614
 GameObject:
   m_ObjectHideFlags: 0

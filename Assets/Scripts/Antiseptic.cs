@@ -17,7 +17,7 @@ namespace DefaultNamespace
                 StartCoroutine(TextNotification._instance.ShowNotification("Wrong disinfectant chosen", 3.0f));
                 return;
             }
-            if (InstrumentProgressTracker._instance.bowlHasBeenPlaced)
+            //if (InstrumentProgressTracker._instance.bowlHasBeenPlaced)
             {
                 StartCoroutine(GetComponent<PouringAnimation>().PerformPouringAnimation(
                     targetPositionObject, 
@@ -27,10 +27,10 @@ namespace DefaultNamespace
                 SimpleInteractable.enabled = false;
                 StartCoroutine(ReenableAfterCooldown());
             }
-            else
-            {
-                StartCoroutine(TextNotification._instance.ShowNotification("Please select bowl first", 3.0f));
-            }
+            //else
+            //{
+            //    StartCoroutine(TextNotification._instance.ShowNotification("Please select bowl first", 3.0f));
+            //}
         }
 
         private IEnumerator ReenableAfterCooldown()

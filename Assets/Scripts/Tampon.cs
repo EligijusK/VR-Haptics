@@ -10,15 +10,15 @@ namespace DefaultNamespace
         public override void InteractWithItem()
         {
             if (isMoving) return;
-            if (InstrumentProgressTracker._instance.bowlHasBeenPlaced)
+            //if (InstrumentProgressTracker._instance.bowlHasBeenPlaced)
             {
                 StartCoroutine(MoveInstrumentToSpot(predeterminedSpot.position));
                 OnPlace();
             }
-            else
-            {
-                StartCoroutine(TextNotification._instance.ShowNotification("Pirmiausia pasirinkine dubenėlį", 3.0f));
-            }
+            //else
+           // {
+           //     StartCoroutine(TextNotification._instance.ShowNotification("Pirmiausia pasirinkine dubenėlį", 3.0f));
+           // }
         }
     }
 }

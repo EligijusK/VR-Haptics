@@ -57,6 +57,11 @@ public class InstrumentTableListController : MonoBehaviour
     
     private void PlaceInstrument(Instrument instrumentToPlace)
     {
+        if (instrumentToPlace.predeterminedSpot != null)
+        {
+            StartCoroutine(instrumentToPlace.MoveInstrumentToSpot(instrumentToPlace.predeterminedSpot.transform.position));
+            instrumentToPlace.OnPlace();
+        }
         foreach (var spot in spotsForInstruments)
         {
             if (spot.CanPlaceInSpot())
