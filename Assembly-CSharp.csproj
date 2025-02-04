@@ -93,16 +93,19 @@
     <Compile Include="Assets\Scripts\BowlForCleaningAntiseptic.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\BlendHapticInteraction.cs" />
     <Compile Include="Assets\InkPainter\Script\Effective\GrabArea.cs" />
+    <Compile Include="Assets\_Aurimas\PlayAudioOnTrigger.cs" />
     <Compile Include="Assets\Scripts\InstrumentProgressTracker.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\CoolDownTouchables.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\RotationSlider.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\_Aurimas\AudioManager.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.11.0\Meshing Subsystem Feature\MeshingBehaviour.cs" />
     <Compile Include="Assets\Scripts\ScalpelBlendShapeCutter.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.11.0\Intercept Feature\InterceptCreateSessionFeature.cs" />
     <Compile Include="Assets\Scripts\MaterialController.cs" />
     <Compile Include="Assets\Scripts\TextNotification.cs" />
+    <Compile Include="Assets\Scripts\ScalpelCutScript.cs" />
     <Compile Include="Assets\Scripts\HandData.cs" />
     <Compile Include="Assets\Scripts\TamponInAntyseptics.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\ExitApplication.cs" />
@@ -178,6 +181,7 @@
     <Compile Include="Assets\InkPainter\Sample\Script\TextureRecovery.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\DrawLineRender.cs" />
+    <Compile Include="Assets\TriggerAudioPlayer.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\SpherePulseInteraction.cs" />
     <Compile Include="Assets\InkPainter\Sample\Script\MousePainter.cs" />
     <Compile Include="Assets\Scripts\CornerController.cs" />
@@ -222,6 +226,7 @@
     <None Include="Assets\InkPainter\Shader\Paint\PaintNormal.shader" />
     <None Include="Packages\com.unity.xr.openxr@1.11.0\package.json" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationLegacyRoomXRay.shader" />
+    <None Include="Assets\Shaders\IndentShader.shader" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\GizmoSolidColor.shader" />
     <None Include="Assets\InkPainter\Shader\Paint\PaintHeight.shader" />
     <None Include="Assets\Resources\BillingMode.json" />
