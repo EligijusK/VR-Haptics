@@ -7,6 +7,7 @@ namespace DefaultNamespace
         public static InstrumentProgressTracker _instance;
         public bool bowlHasBeenPlaced;
         public bool bowlForCleaningAntisepticHasBeenPlaced;
+        private int instrumentsOnTableCount = 0;
         private void Start()
         {
             if (_instance == null)
@@ -16,6 +17,16 @@ namespace DefaultNamespace
             else
             {
                 Destroy(this);
+            }
+        }
+        public void InstrumentPlaced()
+        {
+            instrumentsOnTableCount++;
+            Debug.Log("Instrument placed. Count = " + instrumentsOnTableCount);
+            
+            if (instrumentsOnTableCount == 3)
+            {
+                AudioManager.Instance.TakeTampon();
             }
         }
     }
