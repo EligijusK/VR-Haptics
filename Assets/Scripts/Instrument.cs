@@ -77,5 +77,6 @@ public class Instrument : MonoBehaviour
     {
         SimpleInteractable.enabled = false;
         GrabInteractable.enabled = true;
+        InstrumentProgressTracker._instance.InstrumentPlaced();
     }
 }

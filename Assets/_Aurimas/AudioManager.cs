@@ -60,44 +60,44 @@ public class AudioManager : MonoBehaviour
         return audioClips[index].isPlaying;
     }
 
-    public void ChooseTools(AudioClip clip)
+    public void ChooseTools()
     {
-        
+        audioClips[2].Play();
     }
 
-    public void TakeTampon(AudioClip clip)
+    public void TakeTampon()
     {
-        
+        audioClips[3].Play();
     }
 
-    public void DisinfectRoom(AudioClip clip)
+    public void DisinfectRoom()
     {
-        
+        audioClips[4].Play();
     }
 
-    public void CoverThePatient(AudioClip clip)
+    public void CoverThePatient()
     {
-        
+        audioClips[5].Play();
     }
 
-    public void AttachTheCloth(AudioClip clip)
+    public void AttachTheCloth()
     {
-        
+        audioClips[6].Play();
     }
 
-    public void ChooseLastCloth(AudioClip clip)
+    public void ChooseLastCloth()
     {
-        
+        audioClips[7].Play();
     }
 
-    public void DisinfectRoomAgain(AudioClip clip)
+    public void DisinfectRoomAgain()
     {
-        
+        audioClips[8].Play();
     }
 
-    public void PerformIncision(AudioClip clip)
+    public void PerformIncision()
     {
-        
+        audioClips[9].Play();
     }
 
 }

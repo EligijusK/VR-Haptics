@@ -46,6 +46,7 @@ public class PouringAnimation : MonoBehaviour
         capObject.transform.parent = capOriginalParent;
         yield return MoveCap(new Vector3(-capMoveSideDistance, -capMoveUpDistance, 0f), capMoveDuration);
         SetRigidbodyConstraints(false);
+        AudioManager.Instance.ChooseTools();
         isMoving = false;
     }
 
