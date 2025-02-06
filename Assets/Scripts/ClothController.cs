@@ -138,10 +138,20 @@ public class ClothController : MonoBehaviour
         clothToUnfold.transform.position = targetPosition;
         clothToUnfold.transform.rotation = targetRotation;
         clothToUnfold.transform.localScale = targetScale;
+        if (currentClothIndex == 4)
+        {
+            AudioManager.Instance.AttachTheCloth();
+        }
+
+        if (currentClothIndex == 5)
+        {
+            AudioManager.Instance.DisinfectRoom();
+        }
     }
 
     public void SetClampsInPlaceFlag(bool value)
     {
         allClampsAreInPlace = value;
+        AudioManager.Instance.ChooseLastCloth();
     }
 }

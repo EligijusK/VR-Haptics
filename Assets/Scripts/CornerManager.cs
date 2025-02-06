@@ -14,6 +14,7 @@ public class CornerManager : MonoBehaviour
         if (numberOfAddedClamps == 4)
         {
             _clothController.SetClampsInPlaceFlag(true);
+            AudioManager.Instance.ChooseLastCloth();
         }
     }
 }
