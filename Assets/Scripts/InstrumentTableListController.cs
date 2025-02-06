@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DefaultNamespace;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class InstrumentTableListController : MonoBehaviour
@@ -11,6 +12,7 @@ public class InstrumentTableListController : MonoBehaviour
     [SerializeField] private List<InstrumentSpot> spotsForInstruments;
     [SerializeField] public List<InstrumentCategory> categories;
     [SerializeField] public int attemptsLeft = 3;
+    [SerializeField] public UnityEvent OnInstrumentsSelected;
     private int totalRequired = 0;
     private int currentTotalCount = 0;
 
@@ -44,6 +46,7 @@ public class InstrumentTableListController : MonoBehaviour
                             SuccessfullyPlacedAllInstruments();
                         }
                     }
+                    OnInstrumentsSelected.Invoke();
                     return true;
                 }
                 //picked too many objects of the same category

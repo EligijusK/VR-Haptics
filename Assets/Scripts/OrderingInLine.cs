@@ -11,6 +11,7 @@ public class OrderingInLine : MonoBehaviour
     [SerializeField] private HandWashingTest handWashingTest;
     
     public OrderElement firstElement;
+    [SerializeField] UnityEvent onFinishEvent;
     
     
     // Start is called before the first frame update
@@ -47,6 +48,7 @@ public class OrderingInLine : MonoBehaviour
         if (orderIsCorrect)
         {
             _openDoors.AddForce();
+            onFinishEvent.Invoke();
         }
     }
 

@@ -4705,6 +4705,116 @@ PrefabInstance:
       propertyPath: m_connectedRigidbody
       value: 
       objectReference: {fileID: 5500790751293917522}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 60b8a8d7-f393-4eb4-baff-006e8835dd22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 61e87bbc-cf22-4abe-b698-2d7c916323b0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[2].m_Id
+      value: 61e87bbc-cf22-4abe-b698-2d7c916323b0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <XRController>{LeftHand}/{GripButton}
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <MetaAimHand>{LeftHand}/indexPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[2].m_Path
+      value: <MetaAimHand>{LeftHand}/indexPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Select
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[0].m_Groups
+      value: Generic XR Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Select
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Groups
+      value: Generic XR Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[2].m_Action
+      value: Select
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[2].m_Groups
+      value: Generic XR Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[0].m_Id
+      value: aeb25c20-37fd-4c86-972f-c4d17cc14bef
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[1].m_Id
+      value: dba98433-5ce8-447b-bbe9-f071a61df9d6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <XRController>{LeftHand}/{Grip}
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <MetaAimHand>{LeftHand}/pinchStrengthIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Select Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[0].m_Groups
+      value: Generic XR Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Select Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 3242345075065592695, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[1].m_Groups
+      value: Generic XR Controller
+      objectReference: {fileID: 0}
     - target: {fileID: 3348249319605127093, guid: b3ed8a0a703ebd34a9e44ed3d9f1fcf6,
         type: 3}
       propertyPath: m_Layer
@@ -7043,6 +7153,116 @@ PrefabInstance:
       propertyPath: m_connectedRigidbody
       value: 
       objectReference: {fileID: 4132047402326854306}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 84877a81-576d-49a7-93ce-b15ea9c77881
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Id
+      value: c00da178-4a8b-4783-af3a-64df04e255e6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <XRController>{RightHand}/{GripButton}
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <MetaAimHand>{RightHand}/indexPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Select
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[0].m_Groups
+      value: Generic XR Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Select
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Groups
+      value: Generic XR Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 86975c95-8ccd-4108-84d4-d9cf32939c6c
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[1].m_Id
+      value: a14be52a-0484-4a08-9304-46bac9aac995
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[2].m_Id
+      value: a14be52a-0484-4a08-9304-46bac9aac995
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <XRController>{RightHand}/{Grip}
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <MetaAimHand>{RightHand}/pinchStrengthIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[2].m_Path
+      value: <MetaAimHand>{RightHand}/pinchStrengthIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Select Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[0].m_Groups
+      value: Generic XR Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Select Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[1].m_Groups
+      value: Generic XR Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[2].m_Action
+      value: Select Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 3471448088564865034, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
+        type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_SingletonActionBindings.Array.data[2].m_Groups
+      value: Generic XR Controller
+      objectReference: {fileID: 0}
     - target: {fileID: 3825817118877560594, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
         type: 3}
       propertyPath: m_Layer
