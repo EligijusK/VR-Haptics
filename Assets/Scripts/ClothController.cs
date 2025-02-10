@@ -145,7 +145,7 @@ public class ClothController : MonoBehaviour
 
         if (currentClothIndex == 5)
         {
-            AudioManager.Instance.DisinfectRoom();
+            AudioManager.Instance.DisinfectRoomAgainAndIncision();
         }
     }
 

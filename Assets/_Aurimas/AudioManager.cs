@@ -70,34 +70,24 @@ public class AudioManager : MonoBehaviour
         audioClips[3].Play();
     }
 
-    public void DisinfectRoom()
+    public void DisinfectRoomAndCover()
     {
         audioClips[4].Play();
     }
-
-    public void CoverThePatient()
+    
+    public void AttachTheCloth()
     {
         audioClips[5].Play();
     }
 
-    public void AttachTheCloth()
+    public void ChooseLastCloth()
     {
         audioClips[6].Play();
     }
 
-    public void ChooseLastCloth()
+    public void DisinfectRoomAgainAndIncision()
     {
         audioClips[7].Play();
     }
-
-    public void DisinfectRoomAgain()
-    {
-        audioClips[8].Play();
-    }
-
-    public void PerformIncision()
-    {
-        audioClips[9].Play();
-    }
-
+    
 }

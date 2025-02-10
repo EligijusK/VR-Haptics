@@ -48,7 +48,7 @@ public class RaycastPainting : MonoBehaviour
     public void AttachedObject(GameObject attachedObject)
     {
         tamponInAntyseptics = attachedObject.GetComponent<TamponInAntyseptics>();
-        AudioManager.Instance.DisinfectRoom();
+        AudioManager.Instance.DisinfectRoomAndCover();
         MousePainter.painter.SetAvailableDistance(tamponInAntyseptics.GetAvailableDistance());
         MousePainter.painter.SetRaycastPainting(this);
     }
