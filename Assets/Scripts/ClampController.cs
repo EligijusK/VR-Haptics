@@ -18,7 +18,7 @@ public class ClampController : MonoBehaviour
         // Check if the other collider is part of a CornerController
         CornerController cornerController = other.GetComponentInParent<CornerController>();
 
-        if (cornerController != null && !isClamping && _clothController.currentClothIndex>3)
+        if (cornerController != null && !isClamping && _clothController.currentClothIndex>3 && !cornerController.isTaken)
         {
             _grabInteractable.enabled = false;
             _rigidbody.isKinematic = true;

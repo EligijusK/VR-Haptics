@@ -46,6 +46,10 @@ public class ClothController : MonoBehaviour
 
     public void InteractWithCabinet()
     {
+        if (currentClothIndex == 2)
+        {
+            currentClothIndex++; //removed third cloth quick fix
+        }
         if (!isClothInAction && clothItems.Count > currentClothIndex && (currentClothIndex <= 3 || allClampsAreInPlace))
         {
             isClothInAction = true;
