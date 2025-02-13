@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestAudioOnTrigger : MonoBehaviour
+public class TestTwoAudioTrigger : MonoBehaviour
 {
     public AudioSource audioSource;
     
