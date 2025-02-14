@@ -660,33 +660,31 @@ MonoBehaviour:
   _defaultVideoClip: {fileID: 0}
   _videoClips:
   - index: 0
-    _videoClip: {fileID: 32900000, guid: 13d6266053a823f458493709571a5c11, type: 3}
+    _videoClip: {fileID: 32900000, guid: c688970a02d516242941f7dcd5bc3d15, type: 3}
   - index: 1
-    _videoClip: {fileID: 32900000, guid: 13d6266053a823f458493709571a5c11, type: 3}
+    _videoClip: {fileID: 32900000, guid: d00ea5a136a28894fa79d79f3de4523f, type: 3}
   - index: 2
-    _videoClip: {fileID: 32900000, guid: 13d6266053a823f458493709571a5c11, type: 3}
+    _videoClip: {fileID: 32900000, guid: c6e2d844c67b2ce43b0d82c8a50365c0, type: 3}
   - index: 3
-    _videoClip: {fileID: 32900000, guid: 13d6266053a823f458493709571a5c11, type: 3}
+    _videoClip: {fileID: 32900000, guid: 8ede0f382a0650340a124198d0a613ec, type: 3}
   - index: 4
-    _videoClip: {fileID: 32900000, guid: 13d6266053a823f458493709571a5c11, type: 3}
+    _videoClip: {fileID: 32900000, guid: 608796824462b6044bcd921993dde4da, type: 3}
   - index: 5
-    _videoClip: {fileID: 32900000, guid: 13d6266053a823f458493709571a5c11, type: 3}
+    _videoClip: {fileID: 32900000, guid: 219e0bb9274348b4a98239ec865c17ba, type: 3}
   - index: 6
-    _videoClip: {fileID: 32900000, guid: 13d6266053a823f458493709571a5c11, type: 3}
+    _videoClip: {fileID: 32900000, guid: 9c06dfc157e4fd24b91e323eb029cd22, type: 3}
   - index: 7
-    _videoClip: {fileID: 32900000, guid: 13d6266053a823f458493709571a5c11, type: 3}
+    _videoClip: {fileID: 32900000, guid: 3eedd4d19fa835945be758f08f3a4942, type: 3}
   - index: 8
-    _videoClip: {fileID: 32900000, guid: 13d6266053a823f458493709571a5c11, type: 3}
+    _videoClip: {fileID: 32900000, guid: fab01f2db47323a438517cd58bb56e7f, type: 3}
   - index: 9
-    _videoClip: {fileID: 32900000, guid: 13d6266053a823f458493709571a5c11, type: 3}
+    _videoClip: {fileID: 32900000, guid: 381f1f408391f3741b77af90d379bfe4, type: 3}
   - index: 10
-    _videoClip: {fileID: 32900000, guid: 13d6266053a823f458493709571a5c11, type: 3}
+    _videoClip: {fileID: 32900000, guid: fa40da9d601afdd479a964d0ea798292, type: 3}
   - index: 11
-    _videoClip: {fileID: 32900000, guid: 13d6266053a823f458493709571a5c11, type: 3}
+    _videoClip: {fileID: 0}
   - index: 12
-    _videoClip: {fileID: 32900000, guid: 13d6266053a823f458493709571a5c11, type: 3}
-  - index: 13
-    _videoClip: {fileID: 32900000, guid: 13d6266053a823f458493709571a5c11, type: 3}
+    _videoClip: {fileID: 32900000, guid: b7fcdcd51e39ca34a941cc1b065a7b42, type: 3}
 --- !u!1 &7416499862894164100
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,6 +869,9 @@ MonoBehaviour:
   _openDoors: {fileID: 0}
   handWashingTest: {fileID: 276612212827708230}
   firstElement: {fileID: 1783292968603784881}
+  onFinishEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &276612212827708230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -903,10 +904,12 @@ MonoBehaviour:
   - {fileID: 5959010243674322248}
   - {fileID: 165214110829340980}
   - {fileID: 3717860448964722408}
+  correctTexts: []
+  continueText: "Teskite lenteli\u0173 rikiavim\u0105"
   wrongText: "Per\u017Ei\u016Br\u0117kite vaizdo \u012Fra\u0161\u0105 ir pabandykite
     dar kart\u0105"
   allowedMistakes: 3
-  playVideoIfMistake: 1
+  playVideoIfMistake: 0
   playVideoIfNotMistakes: 1
 --- !u!114 &5251515887464617432
 MonoBehaviour:

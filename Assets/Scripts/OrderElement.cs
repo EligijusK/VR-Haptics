@@ -131,7 +131,6 @@ public class OrderElement : MonoBehaviour
                      }
                      Debug.Log("Next element");
               }
-
               if (nextElement == null && transform.position.x > previousElement.transform.position.x)
               {
                      // end
