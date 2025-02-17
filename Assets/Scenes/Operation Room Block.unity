@@ -2416,8 +2416,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
-  triggeredColor: {r: 1, g: 0, b: 0, a: 1}
-  objectsToChange: []
+  triggeredColor: {r: 0, g: 0.19600534, b: 1, a: 1}
+  objectsToChange:
+  - {fileID: 386317119}
+  - {fileID: 386317118}
 --- !u!82 &238348723
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8056,6 +8058,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+--- !u!1 &386317118 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4714852112479942451, guid: 895f6f3c2d334633b5800312285058d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 386317117}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &386317119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6922949379013105476, guid: 895f6f3c2d334633b5800312285058d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 386317117}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &402357087
 GameObject:
   m_ObjectHideFlags: 0
