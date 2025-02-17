@@ -44,6 +44,8 @@ public class Instrument : MonoBehaviour
         transform.rotation = originalRotation;
         GrabInteractable.enabled = false;
         SimpleInteractable.enabled = true;
+        onTable = false;
+        table.RemoveInstrument(this);
     }
 
     public virtual void InteractWithItem()

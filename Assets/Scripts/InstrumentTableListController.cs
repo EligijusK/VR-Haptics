@@ -26,9 +26,23 @@ public class InstrumentTableListController : MonoBehaviour
             }
         }
     }
-    
 
-    public bool TryPlaceInstrument(Instrument instrumentToPlace)
+    public void RemoveInstrument(Instrument instrumentToRemove)
+    {
+        foreach (var category in categories)
+        {
+            if (category.category.Equals(instrumentToRemove.category))
+            {
+                category.currentCount--;
+                currentTotalCount--;
+                return;
+            }
+        }
+    }
+
+
+
+public bool TryPlaceInstrument(Instrument instrumentToPlace)
     {
         foreach (var category in categories)
         {
