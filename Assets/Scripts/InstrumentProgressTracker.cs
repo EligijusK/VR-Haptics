@@ -22,8 +22,6 @@ namespace DefaultNamespace
         public void InstrumentPlaced()
         {
             instrumentsOnTableCount++;
-            Debug.Log("Instrument placed. Count = " + instrumentsOnTableCount);
-            
             if (instrumentsOnTableCount == 3)
             {
                 AudioManager.Instance.TakeTampon();

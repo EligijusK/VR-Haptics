@@ -28,6 +28,23 @@ public class Instrument : MonoBehaviour
         originalRotation = transform.rotation;
         _rigidbody = GetComponent<Rigidbody>();
     }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("FloorAndWalls"))
+        {
+            ResetInstrumentPosition();
+        }
+    }
+    private void ResetInstrumentPosition()
+    {
+        _rigidbody.velocity = Vector3.zero;
+        _rigidbody.angularVelocity = Vector3.zero;
+        transform.position = originalPosition;
+        transform.rotation = originalRotation;
+        GrabInteractable.enabled = false;
+        SimpleInteractable.enabled = true;
+    }
 
     public virtual void InteractWithItem()
     {

@@ -9,6 +9,7 @@ TagManager:
   - Antiseptics
   - Scalpel
   - Indentable
+  - FloorAndWalls
   layers:
   - Default
   - TransparentFX

@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class CornerController : MonoBehaviour
 {
-    [SerializeField] private Transform targetTransform; // The exact transform for the clamp to move to
-    [SerializeField] private Collider cornerTrigger; // The child collider that detects proximity
+    [SerializeField] private Transform targetTransform;
+    [SerializeField] private Collider cornerTrigger;
+    [SerializeField] public bool isForClamps = true;
     public bool isTaken = false;
+
     public Transform GetTargetTransform()
     {
         return targetTransform;
