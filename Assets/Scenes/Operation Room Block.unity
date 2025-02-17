@@ -8242,6 +8242,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1830329803}
+    - targetCorrespondingSourceObject: {fileID: 8987993332412242039, guid: a68fe70efb6e70c47a18cb2df7406b51,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1830329807}
   m_SourcePrefab: {fileID: 100100000, guid: a68fe70efb6e70c47a18cb2df7406b51, type: 3}
 --- !u!114 &407736787 stripped
 MonoBehaviour:
@@ -27714,6 +27718,27 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+--- !u!65 &1830329807
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830329802}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.1799574, y: 4.612479, z: 1.0099285}
+  m_Center: {x: 0.37478507, y: 0.57874143, z: 0.3496785}
 --- !u!1001 &1840164360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30807,17 +30832,17 @@ PrefabInstance:
     - target: {fileID: 2877058009502416729, guid: 8a7d97f515817aa43a64042062e9fcc0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.89431125
+      value: -0.8942
       objectReference: {fileID: 0}
     - target: {fileID: 2877058009502416729, guid: 8a7d97f515817aa43a64042062e9fcc0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.059602
+      value: 1.0605
       objectReference: {fileID: 0}
     - target: {fileID: 2877058009502416729, guid: 8a7d97f515817aa43a64042062e9fcc0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.99504
+      value: 14.9906
       objectReference: {fileID: 0}
     - target: {fileID: 2877058009502416729, guid: 8a7d97f515817aa43a64042062e9fcc0,
         type: 3}
@@ -30858,6 +30883,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wound
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217414739519153635, guid: 8a7d97f515817aa43a64042062e9fcc0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5900080756233681367, guid: 8a7d97f515817aa43a64042062e9fcc0,
         type: 3}
