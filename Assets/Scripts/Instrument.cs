@@ -46,6 +46,7 @@ public class Instrument : MonoBehaviour
         SimpleInteractable.enabled = true;
         onTable = false;
         table.RemoveInstrument(this);
+        AudioManager.Instance.FallenInstrument();
     }
 
     public virtual void InteractWithItem()

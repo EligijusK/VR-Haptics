@@ -89,5 +89,10 @@ public class AudioManager : MonoBehaviour
     {
         audioClips[7].Play();
     }
+
+    public void FallenInstrument()
+    {
+        audioClips[8].Play();
+    }
     
 }
