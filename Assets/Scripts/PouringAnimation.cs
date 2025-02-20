@@ -84,16 +84,44 @@ public class PouringAnimation : MonoBehaviour
     particleSystem.SetActive(false);
 }
 
-public IEnumerator FillCup()
-{
-    liquidMesh.SetActive(true);  
-    Renderer renderer = liquidMesh.GetComponent<Renderer>();
-    renderer.material.renderQueue = 3000;    
-    Vector3 originalScale = liquidMesh.transform.localScale;
-    Vector3 targetScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
-    liquidMesh.transform.localScale = new Vector3(originalScale.x, originalScale.y, 0);
-    yield return LerpScale(liquidMesh.transform, new Vector3(originalScale.x, originalScale.y, 0), targetScale, fillDuration);
-}
+    public IEnumerator FillCup()
+    {
+        liquidMesh.SetActive(true);  
+        Renderer renderer = liquidMesh.GetComponent<Renderer>();
+
+        // Get ParticleSystem color
+        Color liquidColor = GetParticleSystemColor();
+        renderer.material.color = liquidColor;
+        renderer.material.renderQueue = 3000;    
+
+        Vector3 originalScale = liquidMesh.transform.localScale;
+        Vector3 targetScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
+        liquidMesh.transform.localScale = new Vector3(originalScale.x, originalScale.y, 0);
+        yield return LerpScale(liquidMesh.transform, new Vector3(originalScale.x, originalScale.y, 0), targetScale, fillDuration);
+    }
+
+    private Color GetParticleSystemColor()
+    {
+        ParticleSystem ps = particleSystem.GetComponent<ParticleSystem>();
+    
+        if (ps == null)
+        {
+            return Color.white; // Default color
+        }
+
+        // Get the main module to access Start Color
+        var mainModule = ps.main;
+        Color startColor = mainModule.startColor.color;
+
+        // Get Trail Color Over Lifetime if available
+        var trails = ps.trails;
+        if (trails.enabled)
+        {
+            return trails.colorOverLifetime.color; 
+        }
+
+        return startColor; // Fallback to start color if no trail color is available
+    }
 
 
 
