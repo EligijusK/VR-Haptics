@@ -20,12 +20,7 @@ public class TestManager : MonoBehaviour
         }
         _instance = this;
         DontDestroyOnLoad(gameObject);
-
-        // If you want to play an audio on awake from the separate source, you can do so here.
-        if (audioOnAwake != null)
-        {
-            audioOnAwake.Play();
-        }
+        
     }
 
     public static TestManager Instance
@@ -41,11 +36,12 @@ public class TestManager : MonoBehaviour
         }
     }
     
-    private void StopAllAudio()
+    public void StopAllAudio()
     {
         if (audioOnAwake != null && audioOnAwake.isPlaying)
         {
             audioOnAwake.Stop();
+            audioClips[10].Stop();
             Console.WriteLine("sustoja");
         }
         
@@ -54,18 +50,13 @@ public class TestManager : MonoBehaviour
             if (clip.isPlaying)
             {
                 clip.Stop();
+                Console.WriteLine("kazkas juda");
             }
         }
     }
     
-    private void PlayClip(int index)
+    public void PlayClip(int index)
     {
-        if (index < 0 || index >= audioClips.Length)
-        {
-            Debug.LogWarning("Invalid audio clip index: " + index);
-            return;
-        }
-        
         StopAllAudio();
         audioClips[index].Play();
     }
@@ -73,6 +64,7 @@ public class TestManager : MonoBehaviour
     public void PatientCanOnly()
     {
         PlayClip(0);
+        Console.WriteLine("Gucci");
     }
 
     public void VisitorsCannotVisit()
