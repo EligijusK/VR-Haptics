@@ -11,6 +11,8 @@ public class Bandage : MonoBehaviour
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private Transform targetTransform;
     [SerializeField] private CycleThroughBlendShapes bandage;
+    [SerializeField] private GameObject wound; 
+
     private void OnTriggerEnter(Collider other)
     {
         CornerController bandagePositionCollider = other.GetComponentInParent<CornerController>();
@@ -24,11 +26,9 @@ public class Bandage : MonoBehaviour
 
     private IEnumerator InterpolateToCorner()
     {
-
         Vector3 startPosition = transform.position;
         Quaternion startRotation = transform.rotation;
 
-        // Target transform values
         Vector3 targetPosition = targetTransform.position;
         Quaternion targetRotation = targetTransform.rotation;
 
@@ -47,8 +47,36 @@ public class Bandage : MonoBehaviour
 
         transform.position = targetPosition;
         transform.rotation = targetRotation;
-        yield return StartCoroutine(bandage.PlayBlendShapeAnimation());
 
+        Coroutine bandageCoroutine = StartCoroutine(bandage.PlayBlendShapeAnimation());
+        Coroutine woundCoroutine = StartCoroutine(LowerWound());
+
+        yield return bandageCoroutine;
+        yield return woundCoroutine;
+    }
+
+    private IEnumerator LowerWound()
+    {
+        if (wound == null)
+        {
+            Debug.LogError("Wound GameObject is not assigned.");
+            yield break;
+        }
+
+        Vector3 startPosition = wound.transform.position;
+        Vector3 targetPosition = startPosition + Vector3.down;
+
+        float elapsedTime = 0f;
+        float animationDuration = 1f; 
+
+        while (elapsedTime < animationDuration)
+        {
+            float t = elapsedTime / animationDuration;
+            wound.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        wound.transform.position = targetPosition;
     }
 }
-
