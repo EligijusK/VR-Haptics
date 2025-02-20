@@ -40,16 +40,29 @@ public class AudioManager : MonoBehaviour
         _instance = this;
         DontDestroyOnLoad(gameObject);
     }
+    
+    public void StopAllAudio()
+    {
+        foreach (var source in audioClips)
+        {
+            if (source != null && source.isPlaying)
+            {
+                source.Stop();
+            }
+        }
+    }
+
     public void EnterOperationRoom()
     {
-        // Plays audioClips[0]
+        StopAllAudio();
         if (audioClips[0] != null)
             audioClips[0].Play();
     }
 
+
     public void ChooseAntiseptic()
     {
-        // Plays audioClips[1]
+        StopAllAudio();
         if (audioClips[1] != null)
             audioClips[1].Play();
     }
@@ -62,37 +75,51 @@ public class AudioManager : MonoBehaviour
 
     public void ChooseTools()
     {
-        audioClips[2].Play();
+        StopAllAudio();
+        if (audioClips[2] != null)
+            audioClips[2].Play();
     }
 
     public void TakeTampon()
     {
-        audioClips[3].Play();
+        StopAllAudio();
+        if (audioClips[3] != null)
+            audioClips[3].Play();
     }
 
     public void DisinfectRoomAndCover()
     {
-        audioClips[4].Play();
+        StopAllAudio();
+        if (audioClips[4] != null)
+            audioClips[4].Play();
     }
-    
+
     public void AttachTheCloth()
     {
-        audioClips[5].Play();
+        StopAllAudio();
+        if (audioClips[5] != null)
+            audioClips[5].Play();
     }
 
     public void ChooseLastCloth()
     {
-        audioClips[6].Play();
+        StopAllAudio();
+        if (audioClips[6] != null)
+            audioClips[6].Play();
     }
 
     public void DisinfectRoomAgainAndIncision()
     {
-        audioClips[7].Play();
+        StopAllAudio();
+        if (audioClips[7] != null)
+            audioClips[7].Play();
     }
 
     public void FallenInstrument()
     {
-        audioClips[8].Play();
+        StopAllAudio();
+        if (audioClips[8] != null)
+            audioClips[8].Play();
     }
     
 }
