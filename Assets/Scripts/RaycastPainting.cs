@@ -84,6 +84,4 @@ public class RaycastPainting : MonoBehaviour
     {
         return hitPoint;
     }
-    
-    
 }
