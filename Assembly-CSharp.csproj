@@ -57,6 +57,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\InkPainter\Script\Effective\HeightFluid.cs" />
     <Compile Include="Assets\InkPainter\Script\Util\SceneViewCamera.cs" />
+    <Compile Include="Assets\Scripts\Bandage.cs" />
     <Compile Include="Assets\Scripts\RandomCleaningPiositions.cs" />
     <Compile Include="Assets\Scripts\XRInputController.cs" />
     <Compile Include="Assets\Scripts\TrackMainCamera.cs" />
@@ -146,6 +147,7 @@
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\ScaleSlider.cs" />
     <Compile Include="Assets\Scripts\SelectedItem.cs" />
     <Compile Include="Assets\Scripts\TrackHandPhysics.cs" />
+    <Compile Include="Assets\TestManager.cs" />
     <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\BunsenActivation.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\InkPainter\Script\Core\MeshOperator.cs" />
@@ -190,7 +192,6 @@
     <Compile Include="Assets\Scripts\CornerController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\VideoManager.cs" />
-    <Compile Include="Assets\PleistrasController.cs" />
     <Compile Include="Assets\Scripts\AttachObject.cs" />
     <Compile Include="Assets\InkPainter\Script\Core\InkCanvas.cs" />
     <None Include="Library\PackageCache\com.unity.settings-manager@2.0.1\package.json" />

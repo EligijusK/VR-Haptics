@@ -28,7 +28,14 @@ public class RaycastPainting : MonoBehaviour
         
         // Debug.DrawRay(raycastOrigin.position, raycastOrigin.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
         if (Physics.Raycast(raycastOrigin.position, raycastOrigin.TransformDirection(Vector3.forward), out hit, Mathf.Infinity)
-        && hit.distance < hitDistance && hit.transform.CompareTag("PaintObject") && !wasHit && tamponInAntyseptics != null && tamponInAntyseptics.CanTamponBeUsed())
+        && hit.distance < hitDistance && hit.transform.CompareTag("PaintObject")&& !wasHit && tamponInAntyseptics != null && tamponInAntyseptics.CanTamponBeUsed())
+        {
+            wasHit = true;
+            // Debug.Log("Hit PaintObject");
+            hitPoint = hit.point;
+        }
+        else if (Physics.Raycast(raycastOrigin.position, raycastOrigin.TransformDirection(Vector3.forward), out hit, Mathf.Infinity)
+                 && hit.distance < hitDistance && hit.transform.CompareTag("Indentable")&& !wasHit && tamponInAntyseptics != null && tamponInAntyseptics.CanTamponBeUsed())
         {
             wasHit = true;
             // Debug.Log("Hit PaintObject");
