@@ -98,6 +98,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faceSetNames:
   - 
+--- !u!1 &2354457535681721168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1609502717689826924}
+  m_Layer: 0
+  m_Name: Drip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1609502717689826924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2354457535681721168}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5272706787912949200}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3999453851397361087
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,6 +284,7 @@ Transform:
   - {fileID: 6268875343614697469}
   - {fileID: 4479383804459250649}
   - {fileID: 972024000310085728}
+  - {fileID: 1609502717689826924}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4370910049315578800
@@ -503,9 +535,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   meshRenderer: {fileID: 461713618271188231}
   scalpel: {fileID: 0}
-  liquidAlembic: {fileID: 9046564862931829571}
-  playAlembicOnceCutIsHalfDone: 1
-  alembicPlaybackSpeed: 1
+  liquidAlembic1: {fileID: 0}
+  startFraction1: 0.3
+  alembicPlaybackSpeed1: 1
+  liquidAlembic2: {fileID: 0}
+  startFraction2: 0.5
+  alembicPlaybackSpeed2: 1
   maxCutDistance: 0.04
 --- !u!1 &6875904810034783520
 GameObject:

@@ -10,6 +10,7 @@ TagManager:
   - Scalpel
   - Indentable
   - FloorAndWalls
+  - Wound
   layers:
   - Default
   - TransparentFX

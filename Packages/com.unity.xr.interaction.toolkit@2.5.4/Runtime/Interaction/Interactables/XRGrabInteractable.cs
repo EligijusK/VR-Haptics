@@ -892,7 +892,7 @@ namespace UnityEngine.XR.Interaction.Toolkit
                             else if (m_CurrentMovementType == MovementType.PhysicsTracking)
                                 PerformVelocityTrackingUpdateForTempPosition(updatePhase, Time.deltaTime);
                             
-                            Debug.Log(interactorsSelecting.Count);
+                            //Debug.Log(interactorsSelecting.Count);
                         }
                         
                     }
