@@ -149,6 +149,7 @@ public class SyringeActionController : MonoBehaviour
         if (timesCleaned >= 2)
         {
             drip.SetActive(false);
+            AudioManager.Instance.UseBandage();
         }
     }
 

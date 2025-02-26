@@ -91,7 +91,7 @@ public bool TryPlaceInstrument(Instrument instrumentToPlace)
 
     private void SuccessfullyPlacedAllInstruments()
     {
-        StartCoroutine(TextNotification._instance.ShowNotification("All items chosen correctly", 4.0f));
+        StartCoroutine(TextNotification._instance.ShowNotification("Pasirinkti visi reikiami įrankiai", 4.0f));
     }
 
 
@@ -101,12 +101,14 @@ public bool TryPlaceInstrument(Instrument instrumentToPlace)
         float displayTime;
         if (attemptsLeft < 1)
         {
-            displayText = "You have failed";
+            displayText = "Pasirinkote neteisingus įrankius";
+            AudioManager.Instance.ListNeededInstruments();
             displayTime = 1000.0f;
         }
         else
         {
-            displayText = "Picked wrong instrument " + --attemptsLeft + " attempts left.";
+            displayText = "Pasirinkote neteisingą įrankį. Bandykite dar kartą.";
+            AudioManager.Instance.OnlySelectNeededInstruments();
             displayTime = 4.0f;
         }
         StartCoroutine(TextNotification._instance.ShowNotification(displayText, displayTime));

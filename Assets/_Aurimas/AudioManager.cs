@@ -7,17 +7,7 @@ public class AudioManager : MonoBehaviour
     private static AudioManager _instance;
 
     [SerializeField] private AudioSource[] audioClips;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public static AudioManager Instance
     {
         get
@@ -120,6 +110,26 @@ public class AudioManager : MonoBehaviour
         StopAllAudio();
         if (audioClips[8] != null)
             audioClips[8].Play();
+    }
+
+    public void OnlySelectNeededInstruments()
+    {
+        
+    }
+
+    public void ListNeededInstruments()
+    {
+        
+    }
+
+    public void UseSyringe()
+    {
+        
+    }
+
+    public void UseBandage()
+    {
+        
     }
     
 }

@@ -30,6 +30,9 @@ public class AccumulateBlendShapesWhileCutting : MonoBehaviour
     private float accumulatedDistance = 0f;
     private Vector3 lastScalpelPosition;
 
+    // Track if we've completed the cut (blend shapes at 100%) so we only print once.
+    private bool cutIsComplete = false;
+
     void Start()
     {
         if (meshRenderer == null)
@@ -56,7 +59,7 @@ public class AccumulateBlendShapesWhileCutting : MonoBehaviour
         // Reset each Alembic to time=0
         if (liquidAlembic1 != null)
             liquidAlembic1.CurrentTime = 0f;
-
+        
         if (liquidAlembic2 != null)
             liquidAlembic2.CurrentTime = 0f;
     }
@@ -90,14 +93,19 @@ public class AccumulateBlendShapesWhileCutting : MonoBehaviour
             if (!hasStartedAlembic1 && currentCutFraction >= startFraction1 && liquidAlembic1 != null)
             {
                 hasStartedAlembic1 = true;
-                Debug.Log("Alembic #1 started at fraction " + startFraction1);
             }
 
             // 6) Check if alembic #2 should start
             if (!hasStartedAlembic2 && currentCutFraction >= startFraction2 && liquidAlembic2 != null)
             {
                 hasStartedAlembic2 = true;
-                Debug.Log("Alembic #2 started at fraction " + startFraction2);
+            }
+
+            // 7) If fraction is fully 1.0 and we haven't yet reported, call debug function
+            if (currentCutFraction >= 1f && !cutIsComplete)
+            {
+                cutIsComplete = true;
+                OnCutComplete();
             }
 
             lastScalpelPosition = currentPos;
@@ -106,7 +114,7 @@ public class AccumulateBlendShapesWhileCutting : MonoBehaviour
 
     void LateUpdate()
     {
-        // If Alembic #1 started, increment its CurrentTime
+        // Update Alembic playback in LateUpdate
         if (hasStartedAlembic1 && liquidAlembic1 != null)
         {
             float newTime = liquidAlembic1.CurrentTime + Time.deltaTime * alembicPlaybackSpeed1;
@@ -115,7 +123,6 @@ public class AccumulateBlendShapesWhileCutting : MonoBehaviour
             liquidAlembic1.CurrentTime = newTime;
         }
 
-        // If Alembic #2 started, increment its CurrentTime
         if (hasStartedAlembic2 && liquidAlembic2 != null)
         {
             float newTime = liquidAlembic2.CurrentTime + Time.deltaTime * alembicPlaybackSpeed2;
@@ -125,7 +132,6 @@ public class AccumulateBlendShapesWhileCutting : MonoBehaviour
         }
     }
 
-    // This function is same as before
     private void UpdateBlendShapes(float fraction)
     {
         float totalBlendIndex = fraction * (blendShapeCount - 1);
@@ -133,22 +139,22 @@ public class AccumulateBlendShapesWhileCutting : MonoBehaviour
         int upperIndex = Mathf.Min(lowerIndex + 1, blendShapeCount - 1);
         float weightFraction = totalBlendIndex - lowerIndex;
 
-        // Clear weights
+        // Reset all
         for (int i = 0; i < blendShapeCount; i++)
         {
             meshRenderer.SetBlendShapeWeight(i, 0f);
         }
 
-        // Full 100% for all shapes below lowerIndex
+        // Fully set any shapes below lowerIndex
         for (int i = 0; i < lowerIndex; i++)
         {
             meshRenderer.SetBlendShapeWeight(i, 100f);
         }
 
-        // Partial for 'lowerIndex'
+        // Partially set lowerIndex
         meshRenderer.SetBlendShapeWeight(lowerIndex, (1f - weightFraction) * 100f);
 
-        // Partial for 'upperIndex'
+        // Partially set upperIndex
         if (upperIndex != lowerIndex)
         {
             meshRenderer.SetBlendShapeWeight(upperIndex, weightFraction * 100f);
@@ -158,5 +164,11 @@ public class AccumulateBlendShapesWhileCutting : MonoBehaviour
     public void SetCuttingActive(bool active)
     {
         isCuttingActive = active;
+    }
+
+
+    private void OnCutComplete()
+    {
+        AudioManager.Instance.UseSyringe();
     }
 }
