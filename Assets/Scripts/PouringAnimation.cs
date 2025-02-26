@@ -34,6 +34,7 @@ public class PouringAnimation : MonoBehaviour
         originalRotation = transform.rotation;
 
         SetRigidbodyConstraints(true);
+        AudioManager.Instance.AntisepticBottleScrew();
         yield return MoveCap(new Vector3(capMoveSideDistance, capMoveUpDistance, 0f), capMoveDuration);
         capObject.transform.parent = null;
         Vector3 targetPosition = targetObject.transform.position;
@@ -45,6 +46,7 @@ public class PouringAnimation : MonoBehaviour
         yield return MoveToPosition(originalPosition, moveDuration);
         capObject.transform.parent = capOriginalParent;
         yield return MoveCap(new Vector3(-capMoveSideDistance, -capMoveUpDistance, 0f), capMoveDuration);
+        AudioManager.Instance.AntisepticBottleScrew();
         SetRigidbodyConstraints(false);
         AudioManager.Instance.ChooseTools();
         isMoving = false;
@@ -72,6 +74,7 @@ public class PouringAnimation : MonoBehaviour
     yield return RotateToAngle(pourRotation, pourRotationDuration);
     
     particleSystem.SetActive(true);
+    AudioManager.Instance.AntisepticFlow();
 
     yield return new WaitForSeconds(fillStartDelay);
 

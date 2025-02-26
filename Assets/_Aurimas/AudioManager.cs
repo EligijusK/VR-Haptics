@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
     private static AudioManager _instance;
 
     [SerializeField] private AudioSource[] audioClips;
+    [SerializeField] private AudioSource[] sfxList;
 
     public static AudioManager Instance
     {
@@ -132,4 +133,35 @@ public class AudioManager : MonoBehaviour
         
     }
     
+    //  V V VSFX SOUND FUNCTION CALLS V V V
+
+    public void OpenDoor()
+    {
+        
+    }
+
+    public void HoverTestSelection()
+    {
+        
+    }
+
+    public void TestSelectionWrong()
+    {
+        
+    }
+
+    public void TestSelectionCorrect()
+    {
+        
+    }
+
+    public void AntisepticBottleScrew()
+    {
+        
+    }
+
+    public void AntisepticFlow()
+    {
+        
+    }
 }

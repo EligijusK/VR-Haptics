@@ -13,16 +13,10 @@ public class OpenDoors : MonoBehaviour
     [SerializeField]
     UnityEvent openDoorsEvent;
     Rigidbody rb;
-    // Start is called before the first frame update
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
     
     public void AddForce()
@@ -30,6 +24,7 @@ public class OpenDoors : MonoBehaviour
         rb.constraints = RigidbodyConstraints.None;
         rb.AddForce(addForce, ForceMode.Impulse);
         openDoorsEvent.Invoke();
+        AudioManager.Instance.OpenDoor();
     }
 }
 

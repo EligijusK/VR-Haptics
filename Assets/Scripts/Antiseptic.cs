@@ -16,7 +16,7 @@ namespace DefaultNamespace
         {
             if (!correct)
             {
-                StartCoroutine(TextNotification._instance.ShowNotification("Wrong disinfectant chosen", 3.0f));
+                StartCoroutine(TextNotification._instance.ShowNotification("Pasirinktas netinkamas antiseptikas.", 3.0f));
                 return;
             }
             //if (InstrumentProgressTracker._instance.bowlHasBeenPlaced)

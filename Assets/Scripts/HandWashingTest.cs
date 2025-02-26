@@ -48,7 +48,7 @@ namespace DefaultNamespace
                 if(!isCorrect && !incorrectOnce && playVideoIfMistake)
                 {
                     mistakes++;
-                    StartCoroutine(TextNotification._instance.ShowNotification("Mistakes: " + mistakes + " / " + allowedMistakes, 1f));
+                    StartCoroutine(TextNotification._instance.ShowNotification("Klaidos: " + mistakes + " / " + allowedMistakes, 1f));
                 }
             }
             if (playVideoIfMistake && mistakes >= allowedMistakes && !incorrectOnce)
@@ -64,7 +64,7 @@ namespace DefaultNamespace
             {
                 incorrectOnce = false;
                 mistakes = 0;
-                StartCoroutine(TextNotification._instance.ShowNotification("Try one more time", 1f));
+                StartCoroutine(TextNotification._instance.ShowNotification("Bandykite dar kartą.", 1f));
             }
         }
         
