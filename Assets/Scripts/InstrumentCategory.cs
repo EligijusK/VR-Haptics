@@ -32,6 +32,8 @@ namespace DefaultNamespace
         Bowl,
         Secret,
         SkalpelioAntgalis,
-        Vice
+        Vice,
+        Svirkstas,
+        Pleistras
     }
 }
