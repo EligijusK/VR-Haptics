@@ -115,22 +115,30 @@ public class AudioManager : MonoBehaviour
 
     public void OnlySelectNeededInstruments()
     {
-        
+        StopAllAudio();
+        if (audioClips[9] != null)
+            audioClips[9].Play();
     }
 
     public void ListNeededInstruments()
     {
-        
+        StopAllAudio();
+        if (audioClips[10] != null)
+            audioClips[10].Play();
     }
 
     public void UseSyringe()
     {
-        
+        StopAllAudio();
+        if (audioClips[11] != null)
+            audioClips[11].Play();
     }
 
     public void UseBandage()
     {
-        
+        StopAllAudio();
+        if (audioClips[12] != null)
+            audioClips[12].Play();
     }
     
     //  V V VSFX SOUND FUNCTION CALLS V V V
