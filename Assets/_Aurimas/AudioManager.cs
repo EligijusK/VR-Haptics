@@ -145,31 +145,40 @@ public class AudioManager : MonoBehaviour
 
     public void OpenDoor()
     {
-        
+        if (sfxList[6] != null)
+            sfxList[6].Play();
     }
 
     public void HoverTestSelection()
     {
-        
-    }
-
-    public void TestSelectionWrong()
-    {
-        
+        if (sfxList[7] != null)
+            sfxList[7].Play();
     }
 
     public void TestSelectionCorrect()
     {
-        
+        if (sfxList[5] != null)
+            sfxList[5].Play();
     }
 
     public void AntisepticBottleScrew()
     {
-        
+        if (sfxList[4] != null)
+            sfxList[4].Play();
     }
 
-    public void AntisepticFlow()
+    public int AntisepticFlow()
     {
-        
+        if (sfxList.Length < 4) return 3;
+
+        int randomIndex = Random.Range(0, 4);
+    
+        if (sfxList[randomIndex] != null)
+        {
+            sfxList[randomIndex].Play();
+        }
+
+        return (randomIndex == 3) ? 5 : 3;
     }
+
 }
