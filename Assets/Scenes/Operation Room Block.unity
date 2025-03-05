@@ -7915,7 +7915,7 @@ PrefabInstance:
     - target: {fileID: 5467336393978625099, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: brush.brushColor.a
-      value: 0.019607844
+      value: 0.09803922
       objectReference: {fileID: 0}
     - target: {fileID: 5467336393978625099, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
@@ -12699,6 +12699,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 181822761887610276, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: _painter
+      value: 
+      objectReference: {fileID: 1338384601}
+    - target: {fileID: 181822761887610276, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: cuttableWoundMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b5e4cde62a0e5946978d0aba6b3a217, type: 2}
+    - target: {fileID: 333361797954384228, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: _painter
+      value: 
+      objectReference: {fileID: 1338384601}
+    - target: {fileID: 333361797954384228, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: cuttableWoundMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b5e4cde62a0e5946978d0aba6b3a217, type: 2}
     - target: {fileID: 701554308024416668, guid: d95f2a514592cc849a6d7f36ea460eed,
         type: 3}
       propertyPath: _cornerManager
@@ -12719,6 +12739,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 195.4099
       objectReference: {fileID: 0}
+    - target: {fileID: 1888246259515892460, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: _painter
+      value: 
+      objectReference: {fileID: 1338384601}
+    - target: {fileID: 1888246259515892460, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: cuttableWoundMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b5e4cde62a0e5946978d0aba6b3a217, type: 2}
     - target: {fileID: 1985054916064534232, guid: d95f2a514592cc849a6d7f36ea460eed,
         type: 3}
       propertyPath: _cornerManager
@@ -12729,6 +12759,26 @@ PrefabInstance:
       propertyPath: _clothController
       value: 
       objectReference: {fileID: 1479351337}
+    - target: {fileID: 2222804917440059476, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: _painter
+      value: 
+      objectReference: {fileID: 1338384601}
+    - target: {fileID: 2222804917440059476, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: cuttableWoundMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b5e4cde62a0e5946978d0aba6b3a217, type: 2}
+    - target: {fileID: 2989211554346690005, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: _painter
+      value: 
+      objectReference: {fileID: 1338384601}
+    - target: {fileID: 2989211554346690005, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: cuttableWoundMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b5e4cde62a0e5946978d0aba6b3a217, type: 2}
     - target: {fileID: 4078605775368616465, guid: d95f2a514592cc849a6d7f36ea460eed,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12814,6 +12864,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: AntiseptikuIrIrankiuPasirinkimas
       objectReference: {fileID: 0}
+    - target: {fileID: 6566758531619675975, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: isBrown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6566758531619675975, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: _painter
+      value: 
+      objectReference: {fileID: 1338384601}
+    - target: {fileID: 6566758531619675975, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: cuttableWoundMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b5e4cde62a0e5946978d0aba6b3a217, type: 2}
+    - target: {fileID: 7023983804040122765, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: isBrown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7023983804040122765, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: _painter
+      value: 
+      objectReference: {fileID: 1338384601}
+    - target: {fileID: 7023983804040122765, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: cuttableWoundMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b5e4cde62a0e5946978d0aba6b3a217, type: 2}
     - target: {fileID: 7361284009598484024, guid: d95f2a514592cc849a6d7f36ea460eed,
         type: 3}
       propertyPath: _cornerManager
@@ -12874,6 +12954,26 @@ PrefabInstance:
       propertyPath: _clothController
       value: 
       objectReference: {fileID: 1479351337}
+    - target: {fileID: 7839970199610527562, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: _painter
+      value: 
+      objectReference: {fileID: 1338384601}
+    - target: {fileID: 7839970199610527562, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: cuttableWoundMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b5e4cde62a0e5946978d0aba6b3a217, type: 2}
+    - target: {fileID: 8365088617664137181, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: _painter
+      value: 
+      objectReference: {fileID: 1338384601}
+    - target: {fileID: 8365088617664137181, guid: d95f2a514592cc849a6d7f36ea460eed,
+        type: 3}
+      propertyPath: cuttableWoundMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b5e4cde62a0e5946978d0aba6b3a217, type: 2}
     - target: {fileID: 9028305032346068442, guid: d95f2a514592cc849a6d7f36ea460eed,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22661,6 +22761,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 453388845}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1338384601 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5467336393978625099, guid: 895f6f3c2d334633b5800312285058d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 386317117}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1532b32c9929ea141974a1e47a80bb2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1340412199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29427,6 +29539,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NonPaintable body
+      objectReference: {fileID: 0}
+    - target: {fileID: 455439091854829081, guid: 311963205ceb7c44cb0c6068febba62e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4032755160961171414, guid: 311963205ceb7c44cb0c6068febba62e,
         type: 3}
@@ -36613,6 +36730,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 9222954549497699001, guid: ce4a144782d6492478410fc7bfd926df,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b5e4cde62a0e5946978d0aba6b3a217, type: 2}
     - target: {fileID: 9222954549497699001, guid: ce4a144782d6492478410fc7bfd926df,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[0]

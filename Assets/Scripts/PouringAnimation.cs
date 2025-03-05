@@ -1,4 +1,5 @@
 using System.Collections;
+using Es.InkPainter.Sample;
 using UnityEngine;
 
 public class PouringAnimation : MonoBehaviour
@@ -11,7 +12,9 @@ public class PouringAnimation : MonoBehaviour
     [SerializeField] private GameObject liquidMesh;
     [SerializeField] private float fillDuration = 3.0f;
     [SerializeField] private float fillStartDelay = 1.0f;
-
+    [SerializeField] private MousePainter _painter;
+    [SerializeField] private Material cuttableWoundMaterial;
+    [SerializeField] private bool isBrown;
     private Vector3 originalPosition;
     private Quaternion originalRotation;
     private Transform capOriginalParent;
@@ -94,8 +97,21 @@ public class PouringAnimation : MonoBehaviour
 
         // Get ParticleSystem color
         Color liquidColor = GetParticleSystemColor();
+        float initialAlpha = _painter.brush.brushColor.a; 
+        _painter.brush.brushColor = liquidColor;
+        _painter.brush.brushColor.a = initialAlpha;
         renderer.material.color = liquidColor;
-        renderer.material.renderQueue = 3000;    
+        renderer.material.renderQueue = 3000;
+
+        if (isBrown)
+        {
+            cuttableWoundMaterial.color = new Color32(0xFF, 0xD0, 0xEB, 0xFF); // FFD0EB with full alpha
+        }
+        else
+        {
+            cuttableWoundMaterial.SetFloat("_Metallic", 0f);
+            cuttableWoundMaterial.SetFloat("_Smoothness", 0.5f);
+        }
 
         Vector3 originalScale = liquidMesh.transform.localScale;
         Vector3 targetScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
