@@ -74613,13 +74613,9 @@ GameObject:
   - component: {fileID: 3095540798764474475}
   - component: {fileID: 9096131911702238007}
   - component: {fileID: 7612504517871093197}
-  - component: {fileID: 9133296928693395721}
   - component: {fileID: 3777381107843760161}
-  - component: {fileID: 5694808083709625300}
   - component: {fileID: 4710521954259355911}
-  - component: {fileID: 379466513305739413}
   - component: {fileID: 4230575806912012330}
-  - component: {fileID: 5373507823638711972}
   - component: {fileID: 9211287941181707210}
   m_Layer: 0
   m_Name: Mesh_231
@@ -75050,22 +75046,6 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!114 &9133296928693395721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8108433715133673788}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 657491747b1b457fafbc4fef465a689d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  indentMaterial: {fileID: 2100000, guid: f0932b84cbd77d24a9f15b6a03c6e86d, type: 2}
-  displacementTexture: {fileID: 0}
-  brushRadius: 1
-  indentAmount: 0.1
 --- !u!65 &3777381107843760161
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75087,22 +75067,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.200228, y: 1.1561315, z: 125.46321}
   m_Center: {x: 0.82748145, y: -0.04845678, z: 3.1878266}
---- !u!114 &5694808083709625300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8108433715133673788}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 657491747b1b457fafbc4fef465a689d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  indentMaterial: {fileID: 2100000, guid: f0932b84cbd77d24a9f15b6a03c6e86d, type: 2}
-  displacementTexture: {fileID: 0}
-  brushRadius: 1
-  indentAmount: 0.1
 --- !u!65 &4710521954259355911
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75124,22 +75088,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.200228, y: 1.1561315, z: 125.46321}
   m_Center: {x: 0.82748145, y: -0.04845678, z: 3.1878266}
---- !u!114 &379466513305739413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8108433715133673788}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 657491747b1b457fafbc4fef465a689d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  indentMaterial: {fileID: 2100000, guid: f0932b84cbd77d24a9f15b6a03c6e86d, type: 2}
-  displacementTexture: {fileID: 0}
-  brushRadius: 1
-  indentAmount: 0.1
 --- !u!65 &4230575806912012330
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75161,22 +75109,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.200228, y: 1.1561315, z: 125.46321}
   m_Center: {x: 0.82748145, y: -0.04845678, z: 3.1878266}
---- !u!114 &5373507823638711972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8108433715133673788}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 657491747b1b457fafbc4fef465a689d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  indentMaterial: {fileID: 2100000, guid: f0932b84cbd77d24a9f15b6a03c6e86d, type: 2}
-  displacementTexture: {fileID: 0}
-  brushRadius: 1
-  indentAmount: 0.1
 --- !u!65 &9211287941181707210
 BoxCollider:
   m_ObjectHideFlags: 0
