@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TestAudioOnTrigger : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class TestAudioOnTrigger : MonoBehaviour
         {
             audioSource.Play();
             hasPlayed = true;
+            SceneManager.LoadScene("ExitScene");
         }
     }
 }
