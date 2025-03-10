@@ -24,7 +24,6 @@ public class TestAudioOnTrigger : MonoBehaviour
         {
             audioSource.Play();
             hasPlayed = true;
-            SceneManager.LoadScene("ExitScene");
         }
     }
 }
