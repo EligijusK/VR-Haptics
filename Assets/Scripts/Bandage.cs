@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class Bandage : MonoBehaviour
@@ -53,6 +54,16 @@ public class Bandage : MonoBehaviour
 
         yield return bandageCoroutine;
         yield return woundCoroutine;
+    
+        // Wait for 5 seconds before proceeding with the if statement
+        yield return new WaitForSeconds(5f);
+
+        if (TimerManager.Instance != null)
+        {
+            TimerManager.Instance.StopTimer();
+            Debug.Log("Veikia galimai");
+        }
+        SceneManager.LoadScene("ExitScene");
     }
 
     private IEnumerator LowerWound()

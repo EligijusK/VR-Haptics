@@ -16209,7 +16209,7 @@ PrefabInstance:
     - target: {fileID: 730962093505063949, guid: 25d5ca5d90991684b91c031e3817a80d,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0.26
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 730962093505063949, guid: 25d5ca5d90991684b91c031e3817a80d,
         type: 3}
@@ -16390,6 +16390,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1818575162707653799, guid: 25d5ca5d90991684b91c031e3817a80d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.186
       objectReference: {fileID: 0}
     - target: {fileID: 1862388848813839312, guid: 25d5ca5d90991684b91c031e3817a80d,
         type: 3}
@@ -16774,22 +16779,22 @@ PrefabInstance:
     - target: {fileID: 6008470213591950740, guid: 25d5ca5d90991684b91c031e3817a80d,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6008470213591950740, guid: 25d5ca5d90991684b91c031e3817a80d,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6008470213591950740, guid: 25d5ca5d90991684b91c031e3817a80d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6008470213591950740, guid: 25d5ca5d90991684b91c031e3817a80d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.84499997
+      value: -0.585
       objectReference: {fileID: 0}
     - target: {fileID: 6067140274746438597, guid: 25d5ca5d90991684b91c031e3817a80d,
         type: 3}
@@ -16951,6 +16956,11 @@ PrefabInstance:
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: TestManager, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 7859365984791535443, guid: 25d5ca5d90991684b91c031e3817a80d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7887623586389663333, guid: 25d5ca5d90991684b91c031e3817a80d,
         type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -17050,6 +17060,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: TestManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021190350454829048, guid: 25d5ca5d90991684b91c031e3817a80d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8049835657515296707, guid: 25d5ca5d90991684b91c031e3817a80d,
         type: 3}
@@ -17326,7 +17341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &979914627
 Transform:
   m_ObjectHideFlags: 0
@@ -29388,7 +29403,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b5a34c73b355841a626434f8ca21e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeText: {fileID: 0}
 --- !u!1 &1751154968
 GameObject:
   m_ObjectHideFlags: 0
@@ -31567,17 +31581,17 @@ PrefabInstance:
     - target: {fileID: 4321979714569578542, guid: 0a98a0dc27c63c6468056165545fc7c9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.629
+      value: -0.6183
       objectReference: {fileID: 0}
     - target: {fileID: 4321979714569578542, guid: 0a98a0dc27c63c6468056165545fc7c9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.171
+      value: -0.1805
       objectReference: {fileID: 0}
     - target: {fileID: 4321979714569578542, guid: 0a98a0dc27c63c6468056165545fc7c9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.567
+      value: 17.5558
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
