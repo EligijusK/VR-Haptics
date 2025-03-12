@@ -17319,6 +17319,7 @@ GameObject:
   - component: {fileID: 979914630}
   - component: {fileID: 979914629}
   - component: {fileID: 979914628}
+  - component: {fileID: 979914631}
   m_Layer: 0
   m_Name: AfterTestOneAudio
   m_TagString: Untagged
@@ -17335,7 +17336,7 @@ Transform:
   m_GameObject: {fileID: 979914626}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.381}
+  m_LocalPosition: {x: 0.158, y: 0, z: -0.381}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17444,7 +17445,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979914626}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05e9dcbffa215cb41bc0b55ae8925703, type: 3}
   m_Name: 
@@ -17471,6 +17472,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0769815, y: 2.9249406, z: 0.20414591}
   m_Center: {x: 0.14377427, y: 0.9624698, z: 1.0760183}
+--- !u!114 &979914631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979914626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db859b80d264f9745b62f1774138a436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &982206236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20265,6 +20278,7 @@ Transform:
   - {fileID: 1516451310}
   - {fileID: 1407723647}
   - {fileID: 492194377}
+  - {fileID: 1750565061}
   m_Father: {fileID: 1577555075}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1149886252
@@ -29330,6 +29344,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1730530238}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1750565060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1750565061}
+  - component: {fileID: 1750565062}
+  m_Layer: 0
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1750565061
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750565060}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1146816465}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1750565062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750565060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b5a34c73b355841a626434f8ca21e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeText: {fileID: 0}
 --- !u!1 &1751154968
 GameObject:
   m_ObjectHideFlags: 0

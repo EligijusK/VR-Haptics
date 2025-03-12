@@ -5,91 +5,49 @@ using TMPro;
 public class TimerManager : MonoBehaviour
 {
     public static TimerManager Instance;
-
-    private float timer;
-    private bool isRunning;
-
-    // Reference to the TextMeshPro UI element.
-    public TMP_Text timeText;
+    private float elapsedTime;
+    private bool timerRunning = false;
 
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);  // Persist this object across scenes
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            Destroy(gameObject); // Avoid duplicates in new scenes
+            Destroy(gameObject);
+            return;
         }
     }
-
     private void Start()
     {
-        // Only start the timer if we're not in the ExitScene.
-        if (SceneManager.GetActiveScene().name != "ExitScene")
-        {
-            StartTimer();
-        }
+        StartTimer();
     }
-
     private void Update()
     {
-        if (isRunning)
-            timer += Time.deltaTime;
-    }
-
-    public void StartTimer()
-    {
-        isRunning = true;
-    }
-
-    public void StopTimer()
-    {
-        isRunning = false;
-    }
-
-    public float GetElapsedTime()
-    {
-        return timer;
-    }
-    
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        // When ExitScene loads, stop the timer and update the UI.
-        if (scene.name == "ExitScene")
+        if (timerRunning)
         {
-            StopTimer();
-            
-            // Attempt to find the TextMeshPro component if it's not already assigned.
-            if (timeText == null)
-            {
-                GameObject timerObj = GameObject.Find("TimerText");
-                if (timerObj != null)
-                {
-                    timeText = timerObj.GetComponent<TMP_Text>();
-                }
-                else
-                {
-                    Debug.LogError("TimerText object not found in the ExitScene.");
-                }
-            }
-            
-            if (timeText != null)
-            {
-                timeText.text = "Time: " + timer.ToString("F2") + " seconds";
-            }
+            elapsedTime += Time.deltaTime;
         }
     }
     
-    private void OnEnable()
+    public void StartTimer()
     {
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        timerRunning = true;
     }
-
-    private void OnDisable()
+    
+    public void StopTimer()
     {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
+        timerRunning = false;
+    }
+    public void ResetTimer()
+    {
+        elapsedTime = 0f;
+    }
+    public float GetElapsedTime()
+    {
+        return elapsedTime;
     }
 }
