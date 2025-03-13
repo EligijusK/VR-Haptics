@@ -118,7 +118,7 @@
     },
     "com.unity.nuget.newtonsoft-json": {
       "version": "3.2.1",
-      "depth": 1,
+      "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -334,11 +334,10 @@
       }
     },
     "com.weart.sdk": {
-      "version": "file:../WEART-UNITY-SDK",
+      "version": "file:C:/Users/Patrikas/Desktop/WEART_SDK_Unity_v2.0.0",
       "depth": 0,
       "source": "local",
       "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "3.2.1",
         "com.unity.textmeshpro": ""
       }
     },

@@ -45,25 +45,29 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.35f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Aurimas\DisplayTime.cs" />
     <Compile Include="Assets\Scripts\HandPose.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\CountDownTimer.cs" />
+    <Compile Include="Assets\_Aurimas\TimerManager.cs" />
     <Compile Include="Assets\Scripts\CycleThroughBlendShapes.cs" />
     <Compile Include="Assets\_Aurimas\TestTwoAudioTrigger.cs" />
     <Compile Include="Assets\Scripts\PathTracking.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Scripts_Painting\MoveCamera.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\VariableTemperatureInteraction.cs" />
     <Compile Include="Assets\Scripts\InstrumentSpot.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+    <Compile Include="Assets\Samples\WEART SDK\2.0.0\Sample Demo\Scripts\AbacusManager.cs" />
     <Compile Include="Assets\InkPainter\Script\Effective\HeightFluid.cs" />
     <Compile Include="Assets\InkPainter\Script\Util\SceneViewCamera.cs" />
     <Compile Include="Assets\Scripts\Bandage.cs" />
     <Compile Include="Assets\Scripts\RandomCleaningPiositions.cs" />
+    <Compile Include="Assets\Scripts\SyringeActionController.cs" />
     <Compile Include="Assets\Scripts\XRInputController.cs" />
     <Compile Include="Assets\Scripts\TrackMainCamera.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\InkPainter\Script\Extenision\GameObjectExtension.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\WeArtSlider.cs" />
+    <Compile Include="Assets\Scripts\AccumulateBlendShapes.cs" />
+    <Compile Include="Assets\Samples\WEART SDK\2.0.0\Sample Demo\Scripts\ResetRigidbodies.cs" />
+    <Compile Include="Assets\_Aurimas\FollowPlayer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.11.0\Meshing Subsystem Feature\MeshingTeapotFeature.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
@@ -72,8 +76,9 @@
     <Compile Include="Assets\Scripts\Instrument.cs" />
     <Compile Include="Assets\Scripts\LineColorChange.cs" />
     <Compile Include="Assets\InkPainter\Script\Effective\TextureMorphing.cs" />
+    <Compile Include="Assets\Scripts\AccumulateBlendShapesWhileCutting.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\HapticObjectTemperatureChange.cs" />
+    <Compile Include="Assets\Samples\WEART SDK\2.0.0\Sample Demo\Scripts\ExitApplication.cs" />
     <Compile Include="Assets\Scripts\VideoClipController.cs" />
     <Compile Include="Assets\Scripts\OrderingInLine.cs" />
     <Compile Include="Assets\Scripts\CreateNewMesh.cs" />
@@ -81,10 +86,8 @@
     <Compile Include="Assets\Scripts\RaycastPainting.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\ClosureDislpay.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\GestureManager.cs" />
+    <Compile Include="Assets\Samples\WEART SDK\2.0.0\Sample Demo\Scripts\GestureRotationController.cs" />
     <Compile Include="Assets\Scripts\PouringAnimation.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\WeArtButton.cs" />
     <Compile Include="Assets\Scripts_Painting\InputUIManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
@@ -92,16 +95,15 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\IndexControllerDetection.cs" />
     <Compile Include="Assets\Scripts\AutoSelector.cs" />
+    <Compile Include="Assets\Samples\WEART SDK\2.0.0\Sample Demo\Scripts\WeArtSlider.cs" />
     <Compile Include="Assets\InkPainter\Sample\Script\ReflectPainter.cs" />
     <Compile Include="Assets\_Aurimas\TestAudioOnTrigger.cs" />
     <Compile Include="Assets\Scripts\BowlForCleaningAntiseptic.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\BlendHapticInteraction.cs" />
     <Compile Include="Assets\InkPainter\Script\Effective\GrabArea.cs" />
     <Compile Include="Assets\_Aurimas\PlayAudioOnTrigger.cs" />
     <Compile Include="Assets\Scripts\InstrumentProgressTracker.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\CoolDownTouchables.cs" />
+    <Compile Include="Assets\Scripts\DisableOnTriggerOnce.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\RotationSlider.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\_Aurimas\AudioManager.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.11.0\Meshing Subsystem Feature\MeshingBehaviour.cs" />
@@ -110,23 +112,25 @@
     <Compile Include="Assets\Scripts\MaterialController.cs" />
     <Compile Include="Assets\Scripts\TextNotification.cs" />
     <Compile Include="Assets\Scripts\ScalpelCutScript.cs" />
+    <Compile Include="Assets\Samples\WEART SDK\2.0.0\Sample Demo\Scripts\WeArtButton.cs" />
     <Compile Include="Assets\Scripts\HandData.cs" />
     <Compile Include="Assets\Scripts\TamponInAntyseptics.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\ExitApplication.cs" />
     <Compile Include="Assets\InkPainter\Script\Core\Math.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.11.0\Intercept Feature\InterceptMessageHandler.cs" />
+    <Compile Include="Assets\_Aurimas\ButtonUses.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.11.0\Meshing Subsystem Feature\FallingSphere.cs" />
     <Compile Include="Assets\Scripts\MeshDeformerWithShader.cs" />
     <Compile Include="Assets\Scripts\Antiseptic.cs" />
     <Compile Include="Assets\InkPainter\Sample\Script\CollisionReflectionPainter.cs" />
+    <Compile Include="Assets\Scripts\TriggerAudioPlayer.cs" />
     <Compile Include="Assets\Scripts\Bowl.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\GestureRotationController.cs" />
+    <Compile Include="Assets\_Aurimas\TestThreeAudio.cs" />
     <Compile Include="Assets\Scripts\InstrumentCategory.cs" />
     <Compile Include="Assets\Scripts\ClampController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
+    <Compile Include="Assets\Samples\WEART SDK\2.0.0\Sample Demo\Scripts\RotationSlider.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\Scripts\AntisepticsDip.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\GestureScaleController.cs" />
     <Compile Include="Assets\Scripts\CornerManager.cs" />
     <Compile Include="Assets\Scripts\TriggerWashingHandTutorial.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -138,209 +142,151 @@
     <Compile Include="Assets\Scripts\TestSelector.cs" />
     <Compile Include="Assets\Scripts\Outline.cs" />
     <Compile Include="Assets\Scripts\LineController.cs" />
+    <Compile Include="Assets\Scripts\WoundCutTrigger.cs" />
     <Compile Include="Assets\Scripts\HandWashingTest.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\AbacusManager.cs" />
+    <Compile Include="Assets\_Aurimas\InteractAndLoadScene.cs" />
     <Compile Include="Assets\Scripts\LineColorChangeHandler.cs" />
     <Compile Include="Assets\InkPainter\Script\Effective\ReverseUV.cs" />
     <Compile Include="Assets\Scripts\Tampon.cs" />
     <Compile Include="Assets\InkPainter\Sample\Script\CollisionPainter.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\ScaleSlider.cs" />
     <Compile Include="Assets\Scripts\SelectedItem.cs" />
     <Compile Include="Assets\Scripts\TrackHandPhysics.cs" />
-    <Compile Include="Assets\TestManager.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\BunsenActivation.cs" />
+    <Compile Include="Assets\Scripts\MaterialFader.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+    <Compile Include="Assets\Scripts\TestManager.cs" />
     <Compile Include="Assets\InkPainter\Script\Core\MeshOperator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\WeArtTemperatureVolume.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\Scripts\TestQuestion.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\Samples\WEART SDK\2.0.0\Sample Demo\Scripts\GestureScaleController.cs" />
     <Compile Include="Assets\Scripts\InstrumentTableListController.cs" />
     <Compile Include="Assets\Scripts_Painting\TexturePaint.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\Samples\WEART SDK\2.0.0\Sample Demo\Scripts\ScaleSlider.cs" />
     <Compile Include="Assets\Scripts\PlungerColliderEvents.cs" />
     <Compile Include="Assets\Scripts\OrderElement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scripts\MeshDeformer.cs" />
+    <Compile Include="Assets\Samples\WEART SDK\2.0.0\Sample Demo\Scripts\BunsenActivation.cs" />
     <Compile Include="Assets\InkPainter\Script\Core\Brush.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\Scripts\ClothController.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\TouchableObjectTemperatureChange.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\Commons.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\FeedbackDebugger.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\VariableTemperature.cs" />
     <Compile Include="Assets\Scripts\LineCollisionHandler.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\PlayerController.cs" />
     <Compile Include="Assets\_Aurimas\HoverScale.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\ResetRigidbodies.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\ActiveEffect.cs" />
     <Compile Include="Assets\InkPainter\Sample\Script\ClipPainter.cs" />
     <Compile Include="Assets\InkPainter\Sample\Script\TextureRecovery.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\SimpleCameraController.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\DrawLineRender.cs" />
-    <Compile Include="Assets\TriggerAudioPlayer.cs" />
-    <Compile Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Scripts\SpherePulseInteraction.cs" />
     <Compile Include="Assets\InkPainter\Sample\Script\MousePainter.cs" />
     <Compile Include="Assets\Scripts\CornerController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\VideoManager.cs" />
     <Compile Include="Assets\Scripts\AttachObject.cs" />
     <Compile Include="Assets\InkPainter\Script\Core\InkCanvas.cs" />
-    <None Include="Library\PackageCache\com.unity.settings-manager@2.0.1\package.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Library\PackageCache\com.unity.inputsystem@1.7.0\package.json" />
     <None Include="Assets\InkPainter\Shader\Effective\HeightDrip.shader" />
-    <None Include="Library\PackageCache\com.unity.inputsystem@1.7.0\ValidationConfig.json" />
-    <None Include="Library\PackageCache\com.unity.polybrush@1.1.8\Content\ThirdPartyLicenses.txt" />
     <None Include="Assets\InkPainter\Shader\Effective\InvertAlpha.shader" />
-    <None Include="Library\PackageCache\com.unity.analytics@3.8.1\package.json" />
+    <None Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\package.json" />
     <None Include="Assets\InkPainter\Shader\Effective\SingleColorFill.shader" />
-    <None Include="Library\PackageCache\com.unity.polybrush@1.1.8\Content\ComputeShader\MeshRaycastCS.compute" />
-    <None Include="Library\PackageCache\com.unity.ext.nunit@1.0.6\package.json" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\SkinShader_Variants_3D_Tessellation.shader" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationRoomXRay.shader" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\HairShader_2nd_Pass_Variants_3D_Tessellation.shader" />
     <None Include="Packages\com.unity.xr.legacyinputhelpers@2.1.10\package.json" />
     <None Include="Assets\InkPainter\Shader\Effective\TextureMorphing.shader" />
-    <None Include="Library\PackageCache\com.unity.services.analytics@5.0.0\package.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="WEART-UNITY-SDK\package.json" />
-    <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.9\package.json" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\XRayURPForwardPass.hlsl" />
     <None Include="Assets\Scripts_Painting\ColorPicker.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
-    <None Include="Library\PackageCache\com.unity.timeline@1.7.6\package.json" />
-    <None Include="Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Editor.xml" />
     <None Include="Assets\3D\Shaders\TearlineShader_3D.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\XRayCommon.cginc" />
-    <None Include="Library\PackageCache\com.unity.purchasing@4.11.0\ValidationExceptions.json" />
     <None Include="Assets\InkPainter\Shader\Effective\ReverseUV.shader" />
-    <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\ValidationConfig.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\Scripts_Painting\TexturePaint.shader" />
-    <None Include="Library\PackageCache\com.unity.mathematics@1.2.6\package.json" />
     <None Include="Assets\Scripts_Painting\BrushShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Shaders\OutlineMask.shader" />
-    <None Include="Library\PackageCache\com.unity.editorcoroutines@1.0.0\package.json" />
-    <None Include="Library\PackageCache\com.unity.timeline@1.7.6\ValidationExceptions.json" />
     <None Include="Assets\Scripts_Painting\FixIlsandEdges.shader" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.3.1\package.json" />
     <None Include="Assets\InkPainter\Shader\Paint\PaintMain.shader" />
     <None Include="Assets\InkPainter\Sample\Shader\TessellateHeightTransform.shader" />
     <None Include="Assets\Shaders\CutShaderWithMask.shader" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\HairShader_1st_Pass_Variants_3D_Tessellation.shader" />
-    <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.9\PackageConversionData.json" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\TongueShader_3D_Tessellation.shader" />
-    <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\package.json" />
     <None Include="Assets\InkPainter\readme_en.txt" />
     <None Include="Assets\3D\Shaders\EyeShaderParallax_Dummy_3D.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\InkPainter\Shader\Effective\HeightToColor.shader" />
-    <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.9\ValidationExceptions.json" />
     <None Include="Assets\InkPainter\Shader\Paint\PaintNormal.shader" />
-    <None Include="Library\PackageCache\com.unity.ide.rider@3.0.31\package.json" />
     <None Include="Packages\com.unity.xr.openxr@1.11.0\package.json" />
-    <None Include="Library\PackageCache\com.unity.searcher@4.9.2\package.json" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationLegacyRoomXRay.shader" />
-    <None Include="Library\PackageCache\com.unity.test-framework@1.1.33\package.json" />
     <None Include="Assets\Shaders\IndentShader.shader" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\GizmoSolidColor.shader" />
     <None Include="Assets\InkPainter\Shader\Paint\PaintHeight.shader" />
-    <None Include="Library\PackageCache\com.unity.purchasing@4.11.0\package.json" />
-    <None Include="Library\PackageCache\com.unity.services.analytics@5.0.0\ValidationConfig.json" />
-    <None Include="Library\PackageCache\com.unity.services.analytics@5.0.0\iso4217.json" />
     <None Include="Assets\Resources\BillingMode.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\package.json" />
-    <None Include="Library\PackageCache\com.unity.services.core@1.12.5\package.json" />
     <None Include="Packages\com.unity.xr.hands@1.4.1\package.json" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.22\ValidationExceptions.json" />
     <None Include="Packages\com.unity.xr.management@4.4.0\package.json" />
-    <None Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\link.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\Lit_AlphaClipped_3D_Tessellation.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\package.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\CorneaShaderParallax_3D_Tessellation.shader" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationURPRoomXRay.shader" />
     <None Include="Assets\3D\Shaders\shaser\Lit_AlphaBlend_DblSided_3D.shader" />
     <None Include="Assets\InkPainter\readme_jp.txt" />
-    <None Include="Library\PackageCache\com.unity.polybrush@1.1.8\Content\Shader\Hidden\Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Library\PackageCache\com.unity.inputsystem@1.7.0\ValidationExceptions.json" />
     <None Include="Assets\Scripts_Painting\MarkIlsands.shader" />
-    <None Include="Library\PackageCache\com.unity.ads@4.4.2\LICENSE.txt" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\HairShader_Clipped_3D_Tessellation.shader" />
     <None Include="Assets\3D Modeliai\Pleistras\TextureWithDarkness.shader" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationURPSynthetic.shader" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationBackgroundSimple.shader" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\TeethShader_3D_Tessellation.shader" />
-    <None Include="Library\PackageCache\com.unity.purchasing@4.11.0\ValidationConfig.json" />
-    <None Include="Library\PackageCache\com.unity.polybrush@1.1.8\Content\ComputeShader\ColorLerpCS.compute" />
     <None Include="Packages\com.unity.xr.interaction.toolkit@2.5.4\package.json" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationSyntheticLit.shader" />
-    <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.9\Editor Resources\Shaders\TMP_SDF_SSD.cginc" />
     <None Include="Assets\Scripts_Painting\CombineMetalicSmoothness.shader" />
-    <None Include="Library\PackageCache\com.unity.collab-proxy@2.3.1\ValidationConfig.json" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationLegacyStandard.shader" />
     <None Include="Assets\Samples\Polybrush\1.0.2\Shader Examples (Standard)\Shader\StandardVertexColor.shader" />
-    <None Include="Library\PackageCache\com.unity.ai.navigation@1.1.5\package.json" />
     <None Include="Packages\com.unity.xr.hands@1.4.1\ValidationExceptions.json" />
     <None Include="Assets\MeshingFeaturePlugin\UnitySubsystemsManifest.json" />
-    <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.9\Editor Resources\Shaders\TMP_Properties.cginc" />
-    <None Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\AOT\Newtonsoft.Json.xml" />
     <None Include="Packages\com.unity.xr.core-utils@2.3.0\package.json" />
-    <None Include="Assets\Samples\WEART SDK\1.3.0\Sample Demo\Sprites\Candle_Flame.shader" />
+    <None Include="Assets\Samples\WEART SDK\2.0.0\Sample Demo\Sprites\Candle_Flame.shader" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationStandardLit.shader" />
     <None Include="Packages\com.unity.xr.oculus@4.2.0\package.json" />
-    <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.9\Editor Resources\Shaders\TMP_SDF Internal Editor.shader" />
-    <None Include="Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.StandardEvents.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\InkPainter\Sample\Shader\VTFHeightTransform.shader" />
-    <None Include="Library\PackageCache\com.unity.ads@4.4.2\package.json" />
-    <None Include="Library\PackageCache\com.unity.ide.vscode@1.2.5\ValidationExceptions.json" />
     <None Include="Assets\InkPainter\Shader\Effective\HeightToNormal.shader" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationLegacySynthetic.shader" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationURPLit.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\3D\Shaders\EyeOcclusionShader_3D.shader" />
-    <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.9\PackageConversionData_Assets.json" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\Lit_AlphaBlend_3D_Tessellation.shader" />
     <None Include="Assets\InkPainter\Shader\Effective\GrabArea.shader" />
     <None Include="Assets\Shaders\OutlineFill.shader" />
-    <None Include="Library\PackageCache\com.unity.mathematics@1.2.6\ValidationExceptions.json" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Packages\com.unity.xr.interaction.toolkit@2.5.4\ValidationExceptions.json" />
-    <None Include="Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Runtime\UnitySubsystemsManifest.json" />
     <None Include="Assets\LearningVideo\UnlitVideoShader.shader" />
-    <None Include="Library\PackageCache\com.unity.polybrush@1.1.8\Content\Shader\Hidden\VertexBillboard.shader" />
-    <None Include="Library\PackageCache\com.unity.polybrush@1.1.8\package.json" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
     <None Include="Assets\Shaders\AlphaTested.shader" />
     <None Include="Assets\InkPainter\Shader\Lib\InkPainterFoundation.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\Samples\Polybrush\1.0.2\Shader Examples (Standard)\Shader\StandardTextureBlend.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
-    <None Include="Library\PackageCache\com.unity.ide.vscode@1.2.5\package.json" />
+    <None Include="Assets\3D Modeliai\Žmonių Modeliai\Žaizda su animacija\SimplecolorShader.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.35f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -591,19 +537,37 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.35f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json">
+      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\System.Text.Json.dll</HintPath>
     </Reference>
     <Reference Include="WeartMiddleware">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\WEART-UNITY-SDK\Runtime\Plugin\Windows\WeartMiddleware.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\WeartMiddleware.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web">
+      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\PackageCache\com.unity.analytics@3.8.1\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.analytics@3.8.1\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.35f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.35f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.35f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -980,32 +944,146 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.35f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Services.Analytics.Editor">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.Services.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Stores">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\UnityEngine.Purchasing.Stores.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Polybrush.Editor">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.Polybrush.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Environments">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityCore">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Codeless">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Analytics">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Formats.Alembic.Editor">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.Formats.Alembic.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityStub">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Purchasing.Common">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Purchasing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Analytics">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements.Editor">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Polybrush">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.Polybrush.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem.ForUI">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Analytics">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.Services.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Formats.Alembic.Runtime">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.Formats.Alembic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:\Users\eligijus\Documents\Projektai\VR-Haptics\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -1021,10 +1099,6 @@
       <Project>{01cc9b73-70c2-0d9b-e794-ab262d2db779}</Project>
       <Name>Unity.XR.Management</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Services.Analytics.Editor.csproj">
-      <Project>{f8c95635-c926-d646-b2fb-cd8b34691212}</Project>
-      <Name>Unity.Services.Analytics.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.Hands.csproj">
       <Project>{23cae5e7-dcb9-435f-9a0e-f155e49e79c7}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.Hands</Name>
@@ -1033,33 +1107,13 @@
       <Project>{b5ea975b-27e8-408d-b3a3-1187ca182282}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.Stores.csproj">
-      <Project>{7d7882dd-08cd-fc2e-900f-c10a93536468}</Project>
-      <Name>UnityEngine.Purchasing.Stores</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.AI.Navigation.csproj">
-      <Project>{0b2a7fba-d34b-1305-76ed-83202424757a}</Project>
-      <Name>Unity.AI.Navigation</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Analytics.DataPrivacy.csproj">
-      <Project>{16031a33-e5ae-01ff-d039-e9bdececc22b}</Project>
-      <Name>Unity.Analytics.DataPrivacy</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.XR.Hands.csproj">
       <Project>{a8ff1c85-aa2b-983a-77c7-deba2b4ccc79}</Project>
       <Name>Unity.XR.Hands</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.csproj">
-      <Project>{431380cd-1734-dca3-4184-a1888b00d90c}</Project>
-      <Name>Unity.Services.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.XR.ARFoundation.VisualScripting.Editor.csproj">
       <Project>{22d06b64-d879-f460-b9b6-c060a7f72e6e}</Project>
       <Name>Unity.XR.ARFoundation.VisualScripting.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{02e4b6e8-2c36-019d-a669-ff49c10698ea}</Project>
-      <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.OpenXR.Features.ConformanceAutomation.csproj">
       <Project>{529e2490-e233-e509-9f2a-cf88ead3e587}</Project>
@@ -1081,10 +1135,6 @@
       <Project>{b56539bc-a07d-c6f2-1f4b-51313f8a6aac}</Project>
       <Name>WeArtSDK.Runtime</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
-      <Project>{ceb94ead-7655-f613-aca8-a71eb6451b85}</Project>
-      <Name>Unity.Mathematics.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.XR.CoreUtils.csproj">
       <Project>{a23f54b7-ad1e-17d9-d269-ef57336d2af9}</Project>
       <Name>Unity.XR.CoreUtils</Name>
@@ -1105,14 +1155,6 @@
       <Project>{a0a10290-0e22-360e-2ae9-c9523e680f96}</Project>
       <Name>Unity.XR.OpenXR</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Polybrush.Editor.csproj">
-      <Project>{abb3da3e-b819-d421-3074-dd3ac214fce5}</Project>
-      <Name>Unity.Polybrush.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Environments.csproj">
-      <Project>{b7ecdd41-c545-7e3b-c126-7c2b7132649b}</Project>
-      <Name>Unity.Services.Core.Environments</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.XR.ARSubsystems.csproj">
       <Project>{b08c06a5-be41-2051-a429-b33b64f071cb}</Project>
       <Name>Unity.XR.ARSubsystems</Name>
@@ -1120,10 +1162,6 @@
     <ProjectReference Include="Unity.XR.OpenXR.Features.MetaQuestSupport.csproj">
       <Project>{0869dcc9-83e0-be56-951e-00966b7d6e91}</Project>
       <Name>Unity.XR.OpenXR.Features.MetaQuestSupport</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.SecurityCore.csproj">
-      <Project>{948d7777-6f47-c53a-6df0-c4d39aea6238}</Project>
-      <Name>UnityEngine.Purchasing.SecurityCore</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Management.Editor.csproj">
       <Project>{24d46237-c38c-4b1d-848c-ced835a7c3eb}</Project>
@@ -1137,37 +1175,13 @@
       <Project>{75e3631d-ca7a-36ed-30bb-e9dcc8862847}</Project>
       <Name>Unity.XR.ARFoundation.VisualScripting</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.Codeless.csproj">
-      <Project>{bfd260ec-f4d0-5856-701a-32988bcb8c88}</Project>
-      <Name>UnityEngine.Purchasing.Codeless</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.XR.CoreUtils.Editor.csproj">
       <Project>{35074408-2ad5-ca08-ef8e-06fc9b17d4d9}</Project>
       <Name>Unity.XR.CoreUtils.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{300b2a75-73d5-168a-2ab1-6e7e176f3d6e}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.Purchasing.csproj">
-      <Project>{636c36b3-a4c0-57fa-3c2e-0f449e13147e}</Project>
-      <Name>UnityEditor.Purchasing</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Services.Core.Analytics.csproj">
-      <Project>{03f60288-e5d2-5765-5c65-6442692eb848}</Project>
-      <Name>Unity.Services.Core.Analytics</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.XR.Simulation.Editor.csproj">
       <Project>{379feb6a-58a6-861f-f132-f637367becea}</Project>
       <Name>Unity.XR.Simulation.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.AI.Navigation.Editor.ConversionSystem.csproj">
-      <Project>{21b10271-8183-54c7-6827-c42e0890aa08}</Project>
-      <Name>Unity.AI.Navigation.Editor.ConversionSystem</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{55289c5d-b400-9e61-5e4b-c78b3e31d811}</Project>
-      <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.csproj">
       <Project>{072db5d4-8b5a-2654-01a6-14f0071d1050}</Project>
@@ -1185,14 +1199,6 @@
       <Project>{c81b0d91-59be-095e-182d-1d8f3add3fee}</Project>
       <Name>Unity.XR.Hands.Samples.Gestures</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.csproj">
-      <Project>{ee9bd84e-4aea-458a-c5d2-eaf27723fa50}</Project>
-      <Name>UnityEngine.Purchasing</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
-      <Project>{06ffc2a9-0667-7618-1af7-1fdd35330801}</Project>
-      <Name>Unity.EditorCoroutines.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.XR.ARFoundation.csproj">
       <Project>{ec53a6ff-0de6-1b92-4d6b-60c3aa42d232}</Project>
       <Name>Unity.XR.ARFoundation</Name>
@@ -1205,45 +1211,17 @@
       <Project>{eb1a69d8-8490-ef7f-9a80-7667be1b29f2}</Project>
       <Name>UnityEngine.XR.LegacyInputHelpers</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{7258fc19-a2cc-3485-741d-3104e5684790}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="ControllerSample.csproj">
       <Project>{924c905b-aecd-d5a2-3345-55ea636f9dd5}</Project>
       <Name>ControllerSample</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Purchasing.SecurityStub.csproj">
-      <Project>{ec8b26bb-8a50-bae5-1310-ba0665b00660}</Project>
-      <Name>UnityEngine.Purchasing.SecurityStub</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Advertisements.csproj">
-      <Project>{9a4fbb00-ea11-d866-d36e-fc307a7c6bab}</Project>
-      <Name>UnityEngine.Advertisements</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{9e8ae55d-c465-52e7-7818-22f4664b376b}</Project>
-      <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.SpatialTracking.csproj">
       <Project>{7e99daf0-fbbc-6a3b-369d-a2104efefb4e}</Project>
       <Name>UnityEditor.SpatialTracking</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{dc01b33f-e00b-e6cb-1703-fdb11c0c4536}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Purchasing.Common.csproj">
-      <Project>{1b5ab5f9-a87f-d218-372b-dda5cf3c377e}</Project>
-      <Name>Purchasing.Common</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
       <Project>{bc979d39-69bd-2027-8a9b-fb50ad815e7d}</Project>
       <Name>UnityEngine.SpatialTracking</Name>
-    </ProjectReference>
-    <ProjectReference Include="Analytics.csproj">
-      <Project>{fd436f7f-4f4a-1e16-78df-081ef4c7f10f}</Project>
-      <Name>Analytics</Name>
     </ProjectReference>
     <ProjectReference Include="WeArtSDK.Editor.csproj">
       <Project>{40974b87-4fe9-4892-9903-aec33ec4fea2}</Project>
@@ -1261,26 +1239,6 @@
       <Project>{54ff54ef-025b-1b32-be0a-77b5698e8b19}</Project>
       <Name>Unity.XR.ARFoundation.Editor.CodeSamples.Editor.Tests</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.Advertisements.Editor.csproj">
-      <Project>{2c209c57-ef88-feaf-8fa4-3772f5ee2d6b}</Project>
-      <Name>UnityEngine.Advertisements.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Polybrush.csproj">
-      <Project>{a068ef16-a000-fb1e-63c9-1d87582825ad}</Project>
-      <Name>Unity.Polybrush</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{364202b4-230c-3190-0841-e9e56ffb5bd4}</Project>
-      <Name>Unity.Timeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.InputSystem.csproj">
-      <Project>{9e826356-80a9-4da5-23f8-45b7cb756e56}</Project>
-      <Name>Unity.InputSystem</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.InputSystem.ForUI.csproj">
-      <Project>{c88197fb-6464-fe5e-c2ef-6d82405e5c22}</Project>
-      <Name>Unity.InputSystem.ForUI</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.XR.Oculus.csproj">
       <Project>{70d36a47-d2ff-0814-b34e-eb8a60ef8eaa}</Project>
       <Name>Unity.XR.Oculus</Name>
@@ -1289,17 +1247,9 @@
       <Project>{edc10eff-9546-0009-9c10-f13fe18e0033}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Services.Analytics.csproj">
-      <Project>{3f42f3ec-410b-3864-31e8-59bdcecc701f}</Project>
-      <Name>Unity.Services.Analytics</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.XR.OpenXR.Editor.csproj">
       <Project>{d29ebe79-a540-175e-9989-5513b23f65b6}</Project>
       <Name>Unity.XR.OpenXR.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.AI.Navigation.Updater.csproj">
-      <Project>{203d1bd5-db10-2800-f2f3-5e249a1ddce4}</Project>
-      <Name>Unity.AI.Navigation.Updater</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj">
       <Project>{76d6978c-2213-7cfe-50af-9e631ec2eb2c}</Project>
@@ -1308,22 +1258,6 @@
     <ProjectReference Include="Unity.XR.ARFoundation.InternalUtils.csproj">
       <Project>{494cfb8f-d9ad-c3f0-b1a6-dfab13ddb381}</Project>
       <Name>Unity.XR.ARFoundation.InternalUtils</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.csproj">
-      <Project>{613b98ca-f090-c1a6-e760-694a7e44acf8}</Project>
-      <Name>Unity.Mathematics</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{48530b5f-2ab0-b7c0-cfa1-9ca8491a4f06}</Project>
-      <Name>Unity.TextMeshPro.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Searcher.Editor.csproj">
-      <Project>{f3933859-cbf6-2369-9458-7bd4ef676b43}</Project>
-      <Name>Unity.Searcher.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.AI.Navigation.Editor.csproj">
-      <Project>{a0fcefc4-c7b3-50b3-2be6-1a6058d1fdf1}</Project>
-      <Name>Unity.AI.Navigation.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.csproj">
       <Project>{3f9313f6-4fd8-02fa-dfc3-c032f19c8877}</Project>

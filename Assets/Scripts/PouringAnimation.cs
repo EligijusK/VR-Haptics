@@ -97,20 +97,23 @@ public class PouringAnimation : MonoBehaviour
 
         // Get ParticleSystem color
         Color liquidColor = GetParticleSystemColor();
-        float initialAlpha = _painter.brush.brushColor.a; 
-        _painter.brush.brushColor = liquidColor;
-        _painter.brush.brushColor.a = initialAlpha;
-        renderer.material.color = liquidColor;
-        renderer.material.renderQueue = 3000;
+        if (_painter != null)
+        {
+            float initialAlpha = _painter.brush.brushColor.a;
+            _painter.brush.brushColor = liquidColor;
+            _painter.brush.brushColor.a = initialAlpha;
+            renderer.material.color = liquidColor;
+            renderer.material.renderQueue = 3000;
 
-        if (isBrown)
-        {
-            cuttableWoundMaterial.color = new Color32(0xFF, 0xD0, 0xEB, 0xFF); // FFD0EB with full alpha
-        }
-        else
-        {
-            cuttableWoundMaterial.SetFloat("_Metallic", 0f);
-            cuttableWoundMaterial.SetFloat("_Smoothness", 0.5f);
+            if (isBrown)
+            {
+                cuttableWoundMaterial.color = new Color32(0xFF, 0xD0, 0xEB, 0xFF); // FFD0EB with full alpha
+            }
+            else
+            {
+                cuttableWoundMaterial.SetFloat("_Metallic", 0f);
+                cuttableWoundMaterial.SetFloat("_Smoothness", 0.5f);
+            }
         }
 
         Vector3 originalScale = liquidMesh.transform.localScale;
