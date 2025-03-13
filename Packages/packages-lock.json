@@ -334,7 +334,7 @@
       }
     },
     "com.weart.sdk": {
-      "version": "file:C:/Users/Patrikas/Desktop/WEART_SDK_Unity_v2.0.0",
+      "version": "file:C:/Users/aurimas/Desktop/WEART-UNITY-SDK",
       "depth": 0,
       "source": "local",
       "dependencies": {
