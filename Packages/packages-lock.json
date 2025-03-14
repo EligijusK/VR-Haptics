@@ -334,9 +334,9 @@
       }
     },
     "com.weart.sdk": {
-      "version": "file:C:/Users/aurimas/Desktop/WEART-UNITY-SDK",
+      "version": "file:com.weart.sdk",
       "depth": 0,
-      "source": "local",
+      "source": "embedded",
       "dependencies": {
         "com.unity.textmeshpro": ""
       }
