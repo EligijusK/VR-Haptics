@@ -10,7 +10,7 @@ public class ItemPickup : MonoBehaviour
     public void OnPickup()
     {
         // Check if the item is being picked up in the correct order.
-        if(orderTag == ScoreManager.expectedOrder)
+        if(orderTag <= ScoreManager.expectedOrder)
         {
             // Correct order: gain a point and update expected order.
             ScoreManager.UpdateScore(1);
@@ -24,8 +24,7 @@ public class ItemPickup : MonoBehaviour
             Debug.Log("Wrong order! Penalty applied.");
         }
         
-        // Disable or remove the item after interaction.
-        // (Optionally, you could animate removal, etc.)
+        
         gameObject.SetActive(false);
     }
 }
