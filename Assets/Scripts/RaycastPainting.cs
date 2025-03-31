@@ -15,7 +15,7 @@ public class RaycastPainting : MonoBehaviour
     RaycastHit hit;
     bool wasHit = false;
     Vector3 hitPoint;
-    TamponInAntyseptics tamponInAntyseptics;
+    TamponInAntiseptics tamponInAntyseptics;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +54,7 @@ public class RaycastPainting : MonoBehaviour
 
     public void AttachedObject(GameObject attachedObject)
     {
-        tamponInAntyseptics = attachedObject.GetComponent<TamponInAntyseptics>();
+        tamponInAntyseptics = attachedObject.GetComponent<TamponInAntiseptics>();
         AudioManager.Instance.DisinfectRoomAndCover();
         MousePainter.painter.SetAvailableDistance(tamponInAntyseptics.GetAvailableDistance());
         MousePainter.painter.SetRaycastPainting(this);

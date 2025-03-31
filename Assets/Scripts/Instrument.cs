@@ -38,11 +38,18 @@ public class Instrument : MonoBehaviour
     }
     private void ResetInstrumentPosition()
     {
-        _rigidbody.velocity = Vector3.zero;
-        _rigidbody.angularVelocity = Vector3.zero;
+        if (_rigidbody != null)
+        {
+            _rigidbody.velocity = Vector3.zero;
+            _rigidbody.angularVelocity = Vector3.zero;
+        }
+
         transform.position = originalPosition;
         transform.rotation = originalRotation;
-        GrabInteractable.enabled = false;
+        if (GrabInteractable != null)
+        {
+            GrabInteractable.enabled = false;
+        }
         SimpleInteractable.enabled = true;
         onTable = false;
         table.RemoveInstrument(this);

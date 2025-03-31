@@ -50,7 +50,7 @@ namespace WeArt.Components
         
         #endregion
 
-        [SerializeField] internal bool _allowGestures;
+        [SerializeField] public bool _allowGestures;
         
         [SerializeField]
         internal int _clientPort = 13031;

@@ -45,54 +45,54 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.35f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Utils\WeArtStatusDisplayEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Properties\WeArtClosurePropertyDrawer.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtHandGraspingSystemEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Utils\WeArtDeviceStatusDisplayEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Utils\BuildFailTDPro.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Utils\WeArtPrefabMenuItem.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtTrackingCalibrationEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Properties\WeArtPropertyDrawer.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Utils\WeArtPlayerControllerEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtChildColliderEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtStatusTrackerEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtVolumeEffectsEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\TouchUI\TouchButtonEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtAnchoredObjectEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\TouchUI\StartPanelEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Properties\WeArtForcePropertyDrawer.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtFollowTargetEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtTouchableObjectEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Utils\WeArtShortcutsEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtHandControllerEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Properties\WeArtTexturePropertyDrawer.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtThimbleSensorObjectEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtSceneManagerEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\TouchUI\TouchToggleEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Utils\WeArtUIToolkitExtensions.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\TouchUI\WristPanelEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtHandSurfaceExplorationEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtDeviceTrackingObjectEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Utils\WeArtEasyGraspRecorderMenuItem.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtThimbleTrackingObjectEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Utils\WeArtDebuggerMenuItem.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtSpawnPointEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Utils\WeArtTouchableObjectMenuItem.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtWristOrientationObjectEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Properties\WeArtTemperaturePropertyDrawer.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Utils\WeArtFinderMenuItem.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Utils\WeArtBillboardEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtControllerEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\TouchUI\TouchDiverInfolEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtEasyGraspPoseEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtComponentEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtGhostHandControllerEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtHapticObjectEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Features\TeleportationProviderEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\WeArtDeviceEditor.cs" />
-    <Compile Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Components\TouchUI\BleConnectionPanelEditor.cs" />
-    <None Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\WeArtSDK.Editor.asmdef" />
-    <None Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Editor\Resources\Styles\WeArtStyle.uss" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Utils\WeArtStatusDisplayEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Properties\WeArtClosurePropertyDrawer.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtHandGraspingSystemEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Utils\WeArtDeviceStatusDisplayEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Utils\BuildFailTDPro.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Utils\WeArtPrefabMenuItem.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtTrackingCalibrationEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Properties\WeArtPropertyDrawer.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Utils\WeArtPlayerControllerEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtChildColliderEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtStatusTrackerEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtVolumeEffectsEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\TouchUI\TouchButtonEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtAnchoredObjectEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\TouchUI\StartPanelEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Properties\WeArtForcePropertyDrawer.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtFollowTargetEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtTouchableObjectEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Utils\WeArtShortcutsEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtHandControllerEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Properties\WeArtTexturePropertyDrawer.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtThimbleSensorObjectEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtSceneManagerEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\TouchUI\TouchToggleEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Utils\WeArtUIToolkitExtensions.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\TouchUI\WristPanelEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtHandSurfaceExplorationEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtDeviceTrackingObjectEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Utils\WeArtEasyGraspRecorderMenuItem.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtThimbleTrackingObjectEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Utils\WeArtDebuggerMenuItem.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtSpawnPointEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Utils\WeArtTouchableObjectMenuItem.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtWristOrientationObjectEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Properties\WeArtTemperaturePropertyDrawer.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Utils\WeArtFinderMenuItem.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Utils\WeArtBillboardEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtControllerEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\TouchUI\TouchDiverInfolEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtEasyGraspPoseEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtComponentEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtGhostHandControllerEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtHapticObjectEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Features\TeleportationProviderEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\WeArtDeviceEditor.cs" />
+    <Compile Include="Packages\com.weart.sdk\Editor\Components\TouchUI\BleConnectionPanelEditor.cs" />
+    <None Include="Packages\com.weart.sdk\Editor\WeArtSDK.Editor.asmdef" />
+    <None Include="Packages\com.weart.sdk\Editor\Resources\Styles\WeArtStyle.uss" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.35f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -373,28 +373,28 @@
       <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Json">
-      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\System.Text.Json.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Packages\com.weart.sdk\Runtime\Plugin\Windows\System.Text.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="WeartMiddleware">
-      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\WeartMiddleware.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Packages\com.weart.sdk\Runtime\Plugin\Windows\WeartMiddleware.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces">
-      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Packages\com.weart.sdk\Runtime\Plugin\Windows\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Packages\com.weart.sdk\Runtime\Plugin\Windows\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Encodings.Web">
-      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\System.Text.Encodings.Web.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Packages\com.weart.sdk\Runtime\Plugin\Windows\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.analytics@3.8.1\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>

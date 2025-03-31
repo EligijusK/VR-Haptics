@@ -327,28 +327,28 @@
       <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Json">
-      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\System.Text.Json.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Packages\com.weart.sdk\Runtime\Plugin\Windows\System.Text.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="WeartMiddleware">
-      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\WeartMiddleware.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Packages\com.weart.sdk\Runtime\Plugin\Windows\WeartMiddleware.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces">
-      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Packages\com.weart.sdk\Runtime\Plugin\Windows\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Packages\com.weart.sdk\Runtime\Plugin\Windows\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Encodings.Web">
-      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\System.Text.Encodings.Web.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Packages\com.weart.sdk\Runtime\Plugin\Windows\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.analytics@3.8.1\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>

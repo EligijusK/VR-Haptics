@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Es.InkPainter.Sample;
 using UnityEngine;
 
-public class TamponInAntyseptics : MonoBehaviour
+public class TamponInAntiseptics : MonoBehaviour
 {
     [SerializeField]
     float availableDistance = 0.1f;

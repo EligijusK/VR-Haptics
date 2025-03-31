@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\AccumulateBlendShapesWhileCutting.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\Samples\WEART SDK\2.0.0\Sample Demo\Scripts\ExitApplication.cs" />
+    <Compile Include="Assets\Scripts\ActivationProvider.cs" />
     <Compile Include="Assets\Scripts\VideoClipController.cs" />
     <Compile Include="Assets\Scripts\OrderingInLine.cs" />
     <Compile Include="Assets\Scripts\CreateNewMesh.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Assets\Scripts\RaycastPainting.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\_Aurimas\ItemPickup.cs" />
     <Compile Include="Assets\Samples\WEART SDK\2.0.0\Sample Demo\Scripts\GestureRotationController.cs" />
     <Compile Include="Assets\Scripts\PouringAnimation.cs" />
     <Compile Include="Assets\Scripts_Painting\InputUIManager.cs" />
@@ -114,14 +116,15 @@
     <Compile Include="Assets\Scripts\ScalpelCutScript.cs" />
     <Compile Include="Assets\Samples\WEART SDK\2.0.0\Sample Demo\Scripts\WeArtButton.cs" />
     <Compile Include="Assets\Scripts\HandData.cs" />
-    <Compile Include="Assets\Scripts\TamponInAntyseptics.cs" />
     <Compile Include="Assets\InkPainter\Script\Core\Math.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.11.0\Intercept Feature\InterceptMessageHandler.cs" />
     <Compile Include="Assets\_Aurimas\ButtonUses.cs" />
     <Compile Include="Assets\Samples\OpenXR Plugin\1.11.0\Meshing Subsystem Feature\FallingSphere.cs" />
     <Compile Include="Assets\Scripts\MeshDeformerWithShader.cs" />
+    <Compile Include="Assets\_Aurimas\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\Antiseptic.cs" />
     <Compile Include="Assets\InkPainter\Sample\Script\CollisionReflectionPainter.cs" />
+    <Compile Include="Assets\_Aurimas\ButtonHandler.cs" />
     <Compile Include="Assets\Scripts\TriggerAudioPlayer.cs" />
     <Compile Include="Assets\Scripts\Bowl.cs" />
     <Compile Include="Assets\_Aurimas\TestThreeAudio.cs" />
@@ -180,6 +183,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\LineCollisionHandler.cs" />
+    <Compile Include="Assets\Scripts\TamponInAntiseptics.cs" />
     <Compile Include="Assets\_Aurimas\HoverScale.cs" />
     <Compile Include="Assets\InkPainter\Sample\Script\ClipPainter.cs" />
     <Compile Include="Assets\InkPainter\Sample\Script\TextureRecovery.cs" />
@@ -193,7 +197,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\InkPainter\Shader\Effective\HeightDrip.shader" />
     <None Include="Assets\InkPainter\Shader\Effective\InvertAlpha.shader" />
-    <None Include="C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\package.json" />
+    <None Include="Packages\com.weart.sdk\package.json" />
     <None Include="Assets\InkPainter\Shader\Effective\SingleColorFill.shader" />
     <None Include="Assets\3D\Shaders\shaser\Tessellation\SkinShader_Variants_3D_Tessellation.shader" />
     <None Include="Packages\com.unity.xr.arfoundation@5.1.5\Assets\Shaders\SimulationRoomXRay.shader" />
@@ -543,22 +547,22 @@
       <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Json">
-      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\System.Text.Json.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Packages\com.weart.sdk\Runtime\Plugin\Windows\System.Text.Json.dll</HintPath>
     </Reference>
     <Reference Include="WeartMiddleware">
-      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\WeartMiddleware.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Packages\com.weart.sdk\Runtime\Plugin\Windows\WeartMiddleware.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces">
-      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Packages\com.weart.sdk\Runtime\Plugin\Windows\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Packages\com.weart.sdk\Runtime\Plugin\Windows\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Encodings.Web">
-      <HintPath>C:\Users\Patrikas\Desktop\WEART_SDK_Unity_v2.0.0\Runtime\Plugin\Windows\System.Text.Encodings.Web.dll</HintPath>
+      <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Packages\com.weart.sdk\Runtime\Plugin\Windows\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>C:\Users\Patrikas\Documents\GitHub\VR-Haptics\Library\PackageCache\com.unity.analytics@3.8.1\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>

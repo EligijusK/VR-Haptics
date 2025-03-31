@@ -8,6 +8,8 @@ namespace WeArt.GestureInteractions.Gestures
         InvertedPalmIndexStraight,
         InvertedPalmAllStraight,
         OkWithMiddleStraight,
-        OkWithMiddleClosed
+        OkWithMiddleClosed,
+        PointWithThumbUp,
+        PointWithThumbDown
     }
 }
