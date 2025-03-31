@@ -17,6 +17,7 @@ namespace DefaultNamespace
             if (!correct)
             {
                 StartCoroutine(TextNotification._instance.ShowNotification("Pasirinktas netinkamas antiseptikas.", 3.0f));
+                ScoreManager.UpdateScore(-1);
                 return;
             }
             //if (InstrumentProgressTracker._instance.bowlHasBeenPlaced)
@@ -29,6 +30,7 @@ namespace DefaultNamespace
                 SimpleInteractable.enabled = false;
                 StartCoroutine(ReenableAfterCooldown());
                 correctEvent.Invoke();
+                ScoreManager.UpdateScore(1);
             // }
             //else
             //{

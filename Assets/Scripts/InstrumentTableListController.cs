@@ -51,6 +51,7 @@ public bool TryPlaceInstrument(Instrument instrumentToPlace)
                 if (category.currentCount < category.requiredCount)
                 {
                     PlaceInstrument(instrumentToPlace);
+                    ScoreManager.UpdateScore(1);
                     if (!category.optional)
                     {
                         category.currentCount++;
@@ -65,10 +66,12 @@ public bool TryPlaceInstrument(Instrument instrumentToPlace)
                 }
                 //picked too many objects of the same category
                 FailedToPickInstrument();
+                ScoreManager.UpdateScore(-1);
                 return false;
             }
         }
         FailedToPickInstrument();
+        ScoreManager.UpdateScore(-1);
         return false;
     }
     
