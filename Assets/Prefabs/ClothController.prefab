@@ -518,6 +518,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3882948015596221009}
   - component: {fileID: 776043243275265621}
+  - component: {fileID: 7100162974907251917}
   m_Layer: 0
   m_Name: ClothController
   m_TagString: Untagged
@@ -576,6 +577,19 @@ MonoBehaviour:
   clamps: {fileID: 0}
   delayBeforeStart: 3
   currentClothIndex: 0
+--- !u!114 &7100162974907251917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5178691568916441419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18e78398183a85f4baa86a264f5f5e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orderTag: 1
 --- !u!1 &6354314310971426019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,7 +1396,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0838df05ebe83724c9bc20535e293c2c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.2372327
+      value: -3.036
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0838df05ebe83724c9bc20535e293c2c,
         type: 3}
@@ -1392,7 +1406,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0838df05ebe83724c9bc20535e293c2c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.0929995
+      value: -2.094
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0838df05ebe83724c9bc20535e293c2c,
         type: 3}
@@ -1860,7 +1874,7 @@ PrefabInstance:
     - target: {fileID: -3887185075125053422, guid: bdf7544a31055c14098f032a5e10c65e,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[24]
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bdf7544a31055c14098f032a5e10c65e,
         type: 3}
@@ -2028,6 +2042,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4753846063349429186}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5eb80737a9940ae49b93b9e4519c41bf,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7458011915715660376}
   m_SourcePrefab: {fileID: 100100000, guid: 5eb80737a9940ae49b93b9e4519c41bf, type: 3}
 --- !u!4 &8642430758103974605 stripped
 Transform:
@@ -2196,6 +2214,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7458011915715660376}
+        m_TargetAssemblyTypeName: ItemPickup, Assembly-CSharp
+        m_MethodName: OnPickup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
@@ -2248,8 +2278,21 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.1799574, y: 4.612479, z: 1.0099285}
-  m_Center: {x: 0.37478507, y: 0.57874143, z: 0.3496785}
+  m_Size: {x: 5.1799574, y: 4.612479, z: 1.7382164}
+  m_Center: {x: 0.37478507, y: 0.57874143, z: 0.713819}
+--- !u!114 &7458011915715660376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8987993332412242039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18e78398183a85f4baa86a264f5f5e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orderTag: 1
 --- !u!1001 &8721428165205354831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2801,7 +2844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smallCloth: 1
   destinationTransform: {fileID: 7179030558354058285}
-  animationDuration: 5
+  animationDuration: 2
   meshRenderer: {fileID: 3560467409624511517}
 --- !u!4 &9002161873277406180 stripped
 Transform:
