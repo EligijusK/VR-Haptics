@@ -30129,6 +30129,21 @@ PrefabInstance:
       propertyPath: _openDoors
       value: 
       objectReference: {fileID: 1087814111}
+    - target: {fileID: 1783292968603784881, guid: c5c2af7c8f008f84d8f93f45ebe6dc71,
+        type: 3}
+      propertyPath: previousElement
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2118002607390825382, guid: c5c2af7c8f008f84d8f93f45ebe6dc71,
+        type: 3}
+      propertyPath: nextElement
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244249505967233387, guid: c5c2af7c8f008f84d8f93f45ebe6dc71,
+        type: 3}
+      propertyPath: m_MovementType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7629578737570150389, guid: c5c2af7c8f008f84d8f93f45ebe6dc71,
         type: 3}
       propertyPath: m_Name

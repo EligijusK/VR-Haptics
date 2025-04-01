@@ -92,7 +92,7 @@ namespace DefaultNamespace
                 interactables[i].enabled = false;
             }
             text.gameObject.SetActive(true);
-            text.text = correctTexts[index];
+            //text.text = correctTexts[index];
             text.CrossFadeAlpha(1f, 2f, false);
             yield return new WaitForSeconds(11f);
             text.CrossFadeAlpha(0f, 2f, false);
