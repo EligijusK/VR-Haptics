@@ -49,6 +49,7 @@ public class OrderingInLine : MonoBehaviour
         {
             _openDoors.AddForce();
             onFinishEvent.Invoke();
+            ScoreManager.UpdateScore(1);
         }
     }
 

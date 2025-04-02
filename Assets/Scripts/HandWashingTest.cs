@@ -65,6 +65,7 @@ namespace DefaultNamespace
                 incorrectOnce = false;
                 mistakes = 0;
                 StartCoroutine(TextNotification._instance.ShowNotification("Bandykite dar kartą.", 1f));
+                ScoreManager.UpdateScore(-1);
             }
         }
         
