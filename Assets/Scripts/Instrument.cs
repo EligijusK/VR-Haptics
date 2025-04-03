@@ -5,7 +5,6 @@ using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.XR.Interaction.Toolkit;
-// using UnityEngine.XR.Interaction.Toolkit.Inputs.;
 
 public class Instrument : MonoBehaviour
 {
@@ -103,7 +102,10 @@ public class Instrument : MonoBehaviour
     public virtual void OnPlace()
     {
         SimpleInteractable.enabled = false;
-        GrabInteractable.enabled = true;
+        if (GrabInteractable != null)
+        {
+            GrabInteractable.enabled = true;
+        }
         InstrumentProgressTracker._instance.InstrumentPlaced();
     }
 }

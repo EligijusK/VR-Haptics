@@ -162,7 +162,6 @@ GameObject:
   - component: {fileID: 4032755160961171414}
   - component: {fileID: 2153687862270832391}
   - component: {fileID: 4434836867483268298}
-  - component: {fileID: 6754580213214399309}
   m_Layer: 0
   m_Name: Body_Geo
   m_TagString: PaintObject
@@ -305,37 +304,10 @@ MonoBehaviour:
     _textureType: 18
     _active: 1
     _forcedVelocity: 0
-  _volumeTexture: 100
-  _forcedVelocity: 0
+    _volume: 100
   _graspable: 0
   _surfaceExploration: 1
---- !u!54 &6754580213214399309
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1784352879709233029}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 0
-  m_ImplicitTensor: 0
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  _graspingType: 0
 --- !u!1 &2005470914687701287
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,10 +709,10 @@ MonoBehaviour:
     _textureType: 18
     _active: 1
     _forcedVelocity: 0
-  _volumeTexture: 100
-  _forcedVelocity: 0
+    _volume: 100
   _graspable: 0
   _surfaceExploration: 1
+  _graspingType: 0
 --- !u!54 &7234379228150746414
 Rigidbody:
   m_ObjectHideFlags: 0
