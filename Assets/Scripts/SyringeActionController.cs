@@ -40,6 +40,9 @@ public class SyringeActionController : MonoBehaviour
         drip.SetActive(true);
     }
 
+    /// <summary>
+    /// Toggle the plunger manually (if not already moving).
+    /// </summary>
     public void TogglePlunger()
     {
         if (isMoving) return;
@@ -85,14 +88,24 @@ public class SyringeActionController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // When entering a wound, ensure the plunger is down and initiate cleaning.
         if (other.CompareTag("Wound"))
         {
             inWound = true;
-
-            // If the plunger is retracted => initiate cleaning
+            // If not already extended (down), toggle it.
+            if (isExtended)
+            {
+                TogglePlunger();
+            }
+            CleanWound();
+        }
+        // When entering an antiseptic trigger, retract the plunger.
+        else if (other.CompareTag("Antiseptics"))
+        {
+            // If currently extended (down), toggle to retract.
             if (!isExtended)
             {
-                CleanWound();
+                TogglePlunger();
             }
         }
     }
@@ -107,8 +120,7 @@ public class SyringeActionController : MonoBehaviour
 
     private void CleanWound()
     {
-        // If we've already done 2 or more cleans, do nothing
-        // (the wound is already fully transparent & drip should be disabled)
+        // If we've already cleaned twice, do nothing
         if (timesCleaned >= 2) return;
 
         timesCleaned++;
@@ -145,7 +157,7 @@ public class SyringeActionController : MonoBehaviour
         SetMaterialAlpha(targetAlpha);
         fadeCoroutine = null;
 
-        // If we've just completed the second cleaning, disable the drip
+        // If we've just completed the second cleaning, disable the drip and play a sound.
         if (timesCleaned >= 2)
         {
             drip.SetActive(false);

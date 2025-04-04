@@ -19,7 +19,6 @@ public class Instrument : MonoBehaviour
     public Quaternion originalRotation;
     protected bool onTable;
     protected bool isMoving;
-    
 
     public virtual void Start()
     {
@@ -35,6 +34,7 @@ public class Instrument : MonoBehaviour
             ResetInstrumentPosition();
         }
     }
+    
     private void ResetInstrumentPosition()
     {
         if (_rigidbody != null)
@@ -98,13 +98,17 @@ public class Instrument : MonoBehaviour
         isMoving = false;  
     }
 
-
     public virtual void OnPlace()
     {
         SimpleInteractable.enabled = false;
         if (GrabInteractable != null)
         {
             GrabInteractable.enabled = true;
+        }
+        // Unlock Rigidbody rotation and position along all axes
+        if (_rigidbody != null)
+        {
+            _rigidbody.constraints = RigidbodyConstraints.None;
         }
         InstrumentProgressTracker._instance.InstrumentPlaced();
     }

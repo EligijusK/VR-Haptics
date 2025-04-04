@@ -81,13 +81,18 @@ public bool TryPlaceInstrument(Instrument instrumentToPlace)
         {
             StartCoroutine(instrumentToPlace.MoveInstrumentToSpot(instrumentToPlace.predeterminedSpot.transform.position));
             instrumentToPlace.OnPlace();
+            instrumentToPlace.originalPosition = instrumentToPlace.transform.position;
+            instrumentToPlace.originalRotation = instrumentToPlace.transform.rotation;
         }
-        foreach (var spot in spotsForInstruments)
+        else
         {
-            if (spot.CanPlaceInSpot())
+            foreach (var spot in spotsForInstruments)
             {
-                spot.PlaceInstrumentInSpot(instrumentToPlace);
-                break;
+                if (spot.CanPlaceInSpot())
+                {
+                    spot.PlaceInstrumentInSpot(instrumentToPlace);
+                    break;
+                }
             }
         }
     }

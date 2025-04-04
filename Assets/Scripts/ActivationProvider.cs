@@ -12,7 +12,7 @@ namespace WeArt.GestureInteractions
     /// <summary>
     /// ActivationProvider uses gesture recognition to display a laser pointer from the selected hand.
     /// When the launch gesture is performed—instantly, regardless of prepare state—if a valid target is being hovered
-    /// or was hovered within the last 1 second, the interactable is activated.
+    /// or was hovered within the last 2 seconds, the interactable is activated.
     /// </summary>
     public class ActivationProvider : MonoBehaviour
     {
@@ -51,6 +51,8 @@ namespace WeArt.GestureInteractions
         private Vector3 _targetPos;
         private XRSimpleInteractable _targetInteractable;
         private XRSimpleInteractable _currentHoveredInteractable;
+        // New variable to store the last valid interactable.
+        private XRSimpleInteractable _lastValidInteractable;
         private bool _isActivating;
         private bool _hasExclusiveActivation;
         private WaitForSeconds _reloadWaiter;
@@ -88,11 +90,13 @@ namespace WeArt.GestureInteractions
             // Check for launch gesture instantly regardless of prepare state.
             if (!_isActivating && GestureRecognizer.CheckMatchGesture(launchGesture, _handController))
             {
-                // Use the current hovered target if it was valid within the last second.
-                if (_currentHoveredInteractable != null && (Time.time - _lastValidHoveredTime <= 1f))
+                // Use the last valid interactable if it was valid within the last 2 seconds.
+                if (_lastValidInteractable != null && (Time.time - _lastValidHoveredTime <= 2f))
                 {
-                    _targetInteractable = _currentHoveredInteractable;
+                    _targetInteractable = _lastValidInteractable;
                     ActivateTarget();
+                    // Clear the last valid interactable after activation.
+                    _lastValidInteractable = null;
                 }
             }
         }
@@ -184,11 +188,6 @@ namespace WeArt.GestureInteractions
                     XRSimpleInteractable interactable = hit.transform.GetComponent<XRSimpleInteractable>();
                     if (interactable != null)
                     {
-                        if (hit.normal.y < 1)
-                        {
-                            ShowNoActivation();
-                            return;
-                        }
                         SetLaserColor(Color.green);
                         _targetPos = hit.point;
                         _targetInteractable = interactable;
@@ -196,6 +195,8 @@ namespace WeArt.GestureInteractions
                         _stickyEndpoint = hit.point;
                         _stickyTimer = stickyDuration;
                         _lastValidHoveredTime = Time.time;
+                        // Save the valid interactable globally.
+                        _lastValidInteractable = _targetInteractable;
                     }
                     else
                     {
@@ -269,14 +270,15 @@ namespace WeArt.GestureInteractions
 
                 StartCoroutine(ActivationReloadCor());
                 EndActivation();
+                
+                // Clear the last valid interactable.
+                _lastValidInteractable = null;
             }
             else
             {
                 Debug.LogError("ActivateTarget: No target interactable available.");
             }
         }
-
-
 
         private IEnumerator ActivationReloadCor()
         {
