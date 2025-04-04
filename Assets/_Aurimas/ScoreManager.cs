@@ -13,6 +13,10 @@ public class ScoreManager : MonoBehaviour
     public static void UpdateScore(int value)
         {
             score += value;
+            if(score < 0)
+            {
+                score = 0;
+            }
             Debug.Log("Current Score: " + score);
         }
     
