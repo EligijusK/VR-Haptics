@@ -9,38 +9,26 @@ using WeArt.Utils;
 
 namespace WeArt.GestureInteractions
 {
-    /// <summary>
-    /// ActivationProvider uses gesture recognition to display a laser pointer from the selected hand.
-    /// When the launch gesture is performed—instantly, regardless of prepare state—if a valid target is being hovered
-    /// or was hovered within the last 2 seconds, the interactable is activated.
-    /// </summary>
     public class ActivationProvider : MonoBehaviour
     {
         [Header("Activation Settings")]
-        [Tooltip("Hand (left/right) used to control activation gestures.")]
         [SerializeField] internal HandSide activationHandSide;
-        [Tooltip("Gesture that prepares the activation laser.")]
         [SerializeField] internal GestureName prepareGesture;
-        [Tooltip("Gesture that activates the target interactable.")]
         [SerializeField] internal GestureName launchGesture;
-        [Tooltip("Time (in seconds) to wait while the prepare gesture is held before showing the laser.")]
         [SerializeField] internal float recognitionDelay = 1f;
 
         [Header("Laser Settings")]
-        [Tooltip("Laser origin transform for the left hand.")]
         [SerializeField] internal Transform laserOriginLeft;
-        [Tooltip("Laser origin transform for the right hand.")]
         [SerializeField] internal Transform laserOriginRight;
 
         [Header("Grace & Sticky Settings")]
-        [Tooltip("Delay after the prepare gesture is released before disabling the laser.")]
         [SerializeField] private float graceDelay = 0.1f;
-        [Tooltip("Time (in seconds) for which the laser remains stuck to the last valid interactable.")]
         [SerializeField] private float stickyDuration = 0.3f;
-        [Tooltip("Smoothing factor for laser endpoint movement.")]
         [SerializeField] private float laserSmoothing = 5f;
 
-        // Private variables
+        [Header("HandCleaning Drag Settings")]
+        [SerializeField] private float dragMultiplier = 2f; // 2x distance multiplier
+
         private WeArtHandController _handController;
         private LineRenderer _laser;
         private const int LaserSteps = 50;
@@ -51,16 +39,22 @@ namespace WeArt.GestureInteractions
         private Vector3 _targetPos;
         private XRSimpleInteractable _targetInteractable;
         private XRSimpleInteractable _currentHoveredInteractable;
-        // New variable to store the last valid interactable.
         private XRSimpleInteractable _lastValidInteractable;
+        private float _lastValidHoveredTime = -1f;
+
         private bool _isActivating;
         private bool _hasExclusiveActivation;
         private WaitForSeconds _reloadWaiter;
         private Coroutine _gracePeriodCoroutine;
         private float _stickyTimer = 0f;
         private Vector3 _stickyEndpoint;
-        // Records time of the last valid hover.
-        private float _lastValidHoveredTime = -1f;
+
+        // HandCleaning tracking
+        private bool _isTrackingHandCleaning = false;
+        private OrderElement _currentOrderElement;
+        private bool _wasLaunchGestureHeld = false;
+        private Vector3 _dragOffset;
+        private Transform _dragTargetTransform;
 
         private void Awake() => InitVariables();
 
@@ -79,7 +73,6 @@ namespace WeArt.GestureInteractions
         {
             CheckActivationGesture();
 
-            // Smoothly adjust the laser endpoint toward the sticky endpoint when active.
             if (_stickyTimer > 0 && _laser.enabled)
             {
                 Vector3 currentEndpoint = _laser.GetPosition(_laser.positionCount - 1);
@@ -87,18 +80,69 @@ namespace WeArt.GestureInteractions
                 _laser.SetPosition(_laser.positionCount - 1, smoothed);
             }
 
-            // Check for launch gesture instantly regardless of prepare state.
-            if (!_isActivating && GestureRecognizer.CheckMatchGesture(launchGesture, _handController))
+            bool launchHeld = GestureRecognizer.CheckMatchGesture(launchGesture, _handController);
+
+            if (launchHeld && !_isActivating)
             {
-                // Use the last valid interactable if it was valid within the last 2 seconds.
-                if (_lastValidInteractable != null && (Time.time - _lastValidHoveredTime <= 2f))
+                if (_lastValidInteractable != null &&
+                    (Time.time - _lastValidHoveredTime <= 2f) &&
+                    _lastValidInteractable.CompareTag("HandCleaning"))
+                {
+                    Debug.Log("HandCleaning: Holding launch gesture on valid object.");
+
+                    if (!_isTrackingHandCleaning)
+                    {
+                        _currentOrderElement = _lastValidInteractable.GetComponent<OrderElement>();
+                        if (_currentOrderElement != null)
+                        {
+                            _isTrackingHandCleaning = true;
+                            _laser.enabled = true;
+                            _stickyTimer = stickyDuration;
+                            _currentOrderElement.StartTracking();
+                            _dragTargetTransform = _lastValidInteractable.transform;
+                            _dragOffset = _dragTargetTransform.position - _handController.transform.position;
+                            Debug.Log("HandCleaning: StartTracking() called and drag initialized.");
+                        }
+                        else
+                        {
+                            Debug.LogWarning("HandCleaning: Object is missing OrderElement component.");
+                        }
+                    }
+
+                    // Apply amplified horizontal dragging
+                    if (_isTrackingHandCleaning && _dragTargetTransform != null)
+                    {
+                        Vector3 handPos = _handController.transform.position;
+                        float handX = handPos.x + (_dragOffset.x * dragMultiplier);
+                        Vector3 newPosition = new Vector3(handX, _dragTargetTransform.position.y, _dragTargetTransform.position.z);
+                        _dragTargetTransform.position = newPosition;
+                        Debug.Log("HandCleaning: Dragging to X=" + newPosition.x);
+                    }
+                }
+                else if (_lastValidInteractable != null)
                 {
                     _targetInteractable = _lastValidInteractable;
                     ActivateTarget();
-                    // Clear the last valid interactable after activation.
                     _lastValidInteractable = null;
                 }
             }
+
+            if (!launchHeld && _wasLaunchGestureHeld && _isTrackingHandCleaning)
+            {
+                if (_currentOrderElement != null)
+                {
+                    Debug.Log("HandCleaning: Releasing launch gesture, calling CheckIfCorrect().");
+                    _currentOrderElement.CheckIfCorrect();
+                }
+
+                _isTrackingHandCleaning = false;
+                _currentOrderElement = null;
+                _dragTargetTransform = null;
+                _dragOffset = Vector3.zero;
+                DisableActivationTools();
+            }
+
+            _wasLaunchGestureHeld = launchHeld;
         }
 
         private void CheckActivationGesture()
@@ -110,16 +154,17 @@ namespace WeArt.GestureInteractions
                     StopCoroutine(_gracePeriodCoroutine);
                     _gracePeriodCoroutine = null;
                 }
-                if (!_hasExclusiveActivation)
-                {
-                    if (!BeginActivation())
-                        return;
-                }
+
+                if (!_hasExclusiveActivation && !BeginActivation())
+                    return;
+
                 _recognizeTimer += Time.deltaTime;
                 if (_recognizeTimer < recognitionDelay)
                     return;
+
                 if (!_laser.enabled)
                     _laser.enabled = true;
+
                 CheckActivationConditions();
             }
             else
@@ -133,6 +178,7 @@ namespace WeArt.GestureInteractions
         {
             if (!CheckActivationRequirements())
                 return false;
+
             _hasExclusiveActivation = true;
             return true;
         }
@@ -142,12 +188,14 @@ namespace WeArt.GestureInteractions
         private IEnumerator GracePeriodCoroutine()
         {
             yield return new WaitForSeconds(graceDelay);
+
             if (!GestureRecognizer.CheckMatchGesture(prepareGesture, _handController))
             {
                 _recognizeTimer = 0f;
                 DisableActivationTools();
                 EndActivation();
             }
+
             _gracePeriodCoroutine = null;
         }
 
@@ -158,33 +206,34 @@ namespace WeArt.GestureInteractions
                 DisableActivationTools();
                 return false;
             }
+
             if (_handController.GetGraspingSystem().GraspingState == GraspingState.Grabbed)
             {
                 DisableActivationTools();
                 return false;
             }
-            if (_isActivating)
-                return false;
-            return true;
+
+            return !_isActivating;
         }
 
         private void CheckActivationConditions()
         {
             if (!CheckActivationRequirements())
                 return;
+
             Vector3 origin = _laserOrigin.position;
             _laser.SetPosition(0, origin);
             bool validTargetFound = false;
-            int steps = LaserSteps - 1;
             _targetInteractable = null;
-            // Perform raycast segments.
-            for (int i = 0; i < steps; i++)
+
+            for (int i = 0; i < LaserSteps - 1; i++)
             {
                 Vector3 offset = (_laserOrigin.forward + (Vector3.down * (DropPerSegment * i))).normalized * LaserSegmentDistance;
                 if (Physics.Raycast(origin, offset, out RaycastHit hit, LaserSegmentDistance))
                 {
                     for (int j = i + 1; j < _laser.positionCount; j++)
                         _laser.SetPosition(j, hit.point);
+
                     XRSimpleInteractable interactable = hit.transform.GetComponent<XRSimpleInteractable>();
                     if (interactable != null)
                     {
@@ -195,14 +244,26 @@ namespace WeArt.GestureInteractions
                         _stickyEndpoint = hit.point;
                         _stickyTimer = stickyDuration;
                         _lastValidHoveredTime = Time.time;
-                        // Save the valid interactable globally.
                         _lastValidInteractable = _targetInteractable;
+
+                        if (_targetInteractable != _currentHoveredInteractable)
+                        {
+                            _currentHoveredInteractable?.hoverExited.Invoke(new HoverExitEventArgs { interactorObject = null });
+                            _currentHoveredInteractable = _targetInteractable;
+                            _currentHoveredInteractable.hoverEntered.Invoke(new HoverEnterEventArgs { interactorObject = null });
+                        }
+
+                        if (_targetInteractable.CompareTag("HandCleaning"))
+                        {
+                            Debug.Log("HandCleaning: Hovered over valid HandCleaning object.");
+                        }
                     }
                     else
                     {
                         ShowNoActivation();
                         return;
                     }
+
                     break;
                 }
                 else
@@ -212,32 +273,11 @@ namespace WeArt.GestureInteractions
                     origin = nextPoint;
                 }
             }
-            // If no valid hit this frame, use sticky mode if available.
-            if (!validTargetFound && _currentHoveredInteractable != null && _stickyTimer > 0)
+
+            if (!validTargetFound)
             {
-                validTargetFound = true;
-                _targetInteractable = _currentHoveredInteractable;
-                _targetPos = _stickyEndpoint;
-                _stickyTimer -= Time.deltaTime;
-            }
-            // Process hover events.
-            if (validTargetFound)
-            {
-                if (_targetInteractable != _currentHoveredInteractable)
-                {
-                    if (_currentHoveredInteractable != null)
-                        _currentHoveredInteractable.hoverExited.Invoke(new HoverExitEventArgs { interactorObject = null });
-                    _currentHoveredInteractable = _targetInteractable;
-                    _currentHoveredInteractable.hoverEntered.Invoke(new HoverEnterEventArgs { interactorObject = null });
-                }
-            }
-            else
-            {
-                if (_currentHoveredInteractable != null)
-                {
-                    _currentHoveredInteractable.hoverExited.Invoke(new HoverExitEventArgs { interactorObject = null });
-                    _currentHoveredInteractable = null;
-                }
+                _currentHoveredInteractable?.hoverExited.Invoke(new HoverExitEventArgs { interactorObject = null });
+                _currentHoveredInteractable = null;
                 ShowNoActivation();
             }
         }
@@ -247,31 +287,22 @@ namespace WeArt.GestureInteractions
             if (_targetInteractable != null)
             {
                 _isActivating = true;
-                // Store the current target in a local variable.
-                XRSimpleInteractable target = _targetInteractable;
-        
-                // Optionally, call ResetLaser() before clearing the global variable.
+                var target = _targetInteractable;
+
                 ResetLaser();
 
-                ActivateEventArgs args = new ActivateEventArgs { interactorObject = null };
-
-                // Ensure the activated event is initialized.
                 if (target.activated == null)
                 {
                     target.activated = new ActivateEvent();
-                    Debug.LogWarning("Activated event was null; it has been initialized. Make sure it is set up properly in the Inspector or component.");
+                    Debug.LogWarning("Activated event was null; it has been initialized.");
                 }
-        
-                // Invoke the activation on the local copy.
-                target.activated.Invoke(args);
 
-                // Now disable the activation tools; this clears the globals without affecting our local reference.
+                target.activated.Invoke(new ActivateEventArgs { interactorObject = null });
+
                 DisableActivationTools();
-
                 StartCoroutine(ActivationReloadCor());
                 EndActivation();
-                
-                // Clear the last valid interactable.
+
                 _lastValidInteractable = null;
             }
             else
@@ -298,11 +329,8 @@ namespace WeArt.GestureInteractions
         {
             SetLaserColor(Color.red);
             _targetInteractable = null;
-            if (_currentHoveredInteractable != null)
-            {
-                _currentHoveredInteractable.hoverExited.Invoke(new HoverExitEventArgs { interactorObject = null });
-                _currentHoveredInteractable = null;
-            }
+            _currentHoveredInteractable?.hoverExited.Invoke(new HoverExitEventArgs { interactorObject = null });
+            _currentHoveredInteractable = null;
         }
 
         private void ResetLaser()
@@ -315,12 +343,10 @@ namespace WeArt.GestureInteractions
         {
             if (_laser.enabled)
                 _laser.enabled = false;
+
             _targetInteractable = null;
-            if (_currentHoveredInteractable != null)
-            {
-                _currentHoveredInteractable.hoverExited.Invoke(new HoverExitEventArgs { interactorObject = null });
-                _currentHoveredInteractable = null;
-            }
+            _currentHoveredInteractable?.hoverExited.Invoke(new HoverExitEventArgs { interactorObject = null });
+            _currentHoveredInteractable = null;
         }
 
         private void InitVariables()
