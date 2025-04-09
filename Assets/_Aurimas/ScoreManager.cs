@@ -10,6 +10,7 @@ public class ScoreManager : MonoBehaviour
     
     public TMP_Text scoreText;
     
+    public static List<Texture2D> wrongAnswerScreenshots = new List<Texture2D>();
     public static void UpdateScore(int value)
         {
             score += value;
@@ -25,6 +26,21 @@ public class ScoreManager : MonoBehaviour
         {
             expectedOrder++;
             Debug.Log("Next expected order: " + expectedOrder);
+        }
+        public void HandleWrongAnswer()
+        {
+            UpdateScore(-1);  // Deduct points (will not fall below 0)
+            // Start a coroutine to capture the screenshot.
+            StartCoroutine(CaptureScreenshot());
+        }
+
+        // Capture the screenshot at the end of the frame.
+        private IEnumerator CaptureScreenshot()
+        {
+            yield return new WaitForEndOfFrame();
+            Texture2D screenshot = ScreenCapture.CaptureScreenshotAsTexture();
+            wrongAnswerScreenshots.Add(screenshot);
+            Debug.Log("Screenshot captured for wrong answer.");
         }
     
         // Update UI every frame (if needed).

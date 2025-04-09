@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ButtonHandler : MonoBehaviour
 {
+    public ScoreManager scoreManager;
     public void OnButtonPress(bool isCorrect)
     {
         if (isCorrect)
@@ -12,7 +13,8 @@ public class ButtonHandler : MonoBehaviour
         }
         else
         {
-            ScoreManager.UpdateScore(-1); 
+            //ScoreManager.UpdateScore(-1); 
+            scoreManager.HandleWrongAnswer();
         }
     }
 }

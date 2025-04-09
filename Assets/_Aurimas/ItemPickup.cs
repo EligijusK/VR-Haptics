@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemPickup : MonoBehaviour
 {
     public int orderTag = 1;
+    public ScoreManager ScoreManager;
     
     // This method should be called when the player interacts with the item.
     public void OnPickup()
@@ -20,7 +21,8 @@ public class ItemPickup : MonoBehaviour
         else
         {
             // Incorrect order: lose a point.
-            ScoreManager.UpdateScore(-1);
+            //ScoreManager.UpdateScore(-1);
+            ScoreManager.HandleWrongAnswer();
             Debug.Log("Wrong order! Penalty applied.");
         }
         
