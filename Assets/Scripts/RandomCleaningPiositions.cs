@@ -12,7 +12,7 @@ public class RandomCleaningPiositions : MonoBehaviour
     [SerializeField]
     List<OrderElement> orderInLineElements;
 
-    private List<OrderElement> newOrderList;
+    public List<OrderElement> newOrderList;
     private int index = 0;
 
     private void Awake()
@@ -50,5 +50,27 @@ public class RandomCleaningPiositions : MonoBehaviour
         }
         orderingInLine.firstElement = newOrderList[0];
        
+    }
+    public void CompareLists()
+    {
+        // If sizes differ, automatically incorrect
+        if (newOrderList.Count != orderInLineElements.Count)
+        {
+            Debug.Log("Incorrect");
+            return;
+        }
+
+        // Compare element by element
+        for (int i = 0; i < orderInLineElements.Count; i++)
+        {
+            if (newOrderList[i] != orderInLineElements[i])
+            {
+                Debug.Log("Incorrect");
+                return;
+            }
+        }
+
+        // If we get here, all elements match in order
+        Debug.Log("Correct");
     }
 }
