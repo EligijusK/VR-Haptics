@@ -148,10 +148,12 @@ public class TexturePaint : MonoBehaviour {
 
         if (raycastPaintingRight != null)
         {
+            Debug.Log("raycastPaintingRight not null");
             if (raycastPaintingRight.GetWasHit() && !lerpingStarted)
             {
                 tempPosition = raycastPaintingRight.GetHitPoint();
-                
+                Debug.Log("Was hit");
+
                 if (Vector3.Distance(tempPosition, previousPosition) > 0.01f)
                 {
                     currentPosition = tempPosition;

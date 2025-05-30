@@ -19,8 +19,8 @@ public class Bandage : MonoBehaviour
         CornerController bandagePositionCollider = other.GetComponentInParent<CornerController>();
         if (bandagePositionCollider != null && !bandagePositionCollider.isForClamps)
         {
-            _grabInteractable.enabled = false;
-            _rigidbody.isKinematic = true;
+            //_grabInteractable.enabled = false;
+            //_rigidbody.isKinematic = true;
             StartCoroutine(InterpolateToCorner());
         }
     }

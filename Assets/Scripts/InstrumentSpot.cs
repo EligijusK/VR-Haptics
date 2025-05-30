@@ -25,7 +25,6 @@ public class InstrumentSpot : MonoBehaviour
     private IEnumerator MoveAndPlace(Instrument instrumentToPlace)
     {
         yield return StartCoroutine(instrumentToPlace.MoveInstrumentToSpot(transform.position));
-        instrumentToPlace.OnPlace();
     }
 
     public void RemoveInstrumentFromSpot()

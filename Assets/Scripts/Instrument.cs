@@ -45,6 +45,10 @@ public class Instrument : MonoBehaviour
 
         transform.position = originalPosition;
         transform.rotation = originalRotation;
+        
+        // Make the item kinematic for 0.2 seconds to fully reset it
+        StartCoroutine(TemporaryKinematicReset());
+        
         if (GrabInteractable != null)
         {
             GrabInteractable.enabled = false;
@@ -53,6 +57,21 @@ public class Instrument : MonoBehaviour
         onTable = false;
         table.RemoveInstrument(this);
         AudioManager.Instance.FallenInstrument();
+    }
+    
+    private IEnumerator TemporaryKinematicReset()
+    {
+        if (_rigidbody != null)
+        {
+            _rigidbody.isKinematic = true;
+        }
+        
+        yield return new WaitForSeconds(1.5f);
+        
+        if (_rigidbody != null)
+        {
+            _rigidbody.isKinematic = false;
+        }
     }
 
     public virtual void InteractWithItem()
@@ -73,6 +92,7 @@ public class Instrument : MonoBehaviour
 
     public IEnumerator MoveInstrumentToSpot(Vector3 endPosition)
     {
+        StartCoroutine(TemporaryKinematicReset());
         isMoving = true;
         transform.rotation = originalRotation; 
         Vector3 startPosition = transform.position;  
@@ -96,10 +116,15 @@ public class Instrument : MonoBehaviour
         transform.rotation = originalRotation;  
         _rigidbody.constraints = RigidbodyConstraints.None;  
         isMoving = false;  
+        OnPlace();
     }
 
     public virtual void OnPlace()
     {
+        // Update the original position to the current position when placed on table
+        originalPosition = transform.position;
+        originalRotation = transform.rotation;
+        
         SimpleInteractable.enabled = false;
         if (GrabInteractable != null)
         {

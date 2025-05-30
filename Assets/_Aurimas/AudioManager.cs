@@ -9,6 +9,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource[] audioClips;
     [SerializeField] private AudioSource[] sfxList;
 
+    private bool instrumentHasFallen = false;
+
     public static AudioManager Instance
     {
         get
@@ -108,9 +110,15 @@ public class AudioManager : MonoBehaviour
 
     public void FallenInstrument()
     {
-        StopAllAudio();
-        if (audioClips[8] != null)
-            audioClips[8].Play();
+        if (!instrumentHasFallen)
+        {
+            instrumentHasFallen = true;
+            StopAllAudio();
+            if (audioClips[8] != null)
+            {
+                audioClips[8].Play();
+            }
+        }
     }
 
     public void OnlySelectNeededInstruments()
