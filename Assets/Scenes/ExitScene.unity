@@ -540,6 +540,8 @@ GameObject:
   - component: {fileID: 289825222}
   - component: {fileID: 289825221}
   - component: {fileID: 289825223}
+  - component: {fileID: 289825225}
+  - component: {fileID: 289825224}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -823,6 +825,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7656dfbf4c697043b70194446d5b554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &289825224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289825215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019f9147ace24ea4499ef3cf8f264bc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _handSide: 0
+  _touchablePosition: {x: 0, y: 0, z: 0}
+  _handPosition: {x: 0, y: 0, z: 0}
+  _touchableRotation: {x: 0, y: 0, z: 0, w: 0}
+  _handRotation: {x: 0, y: 0, z: 0, w: 0}
+  _thumbClosure: 0
+  _thumbAbduction: 0
+  _indexClosure: 0
+  _middleClosure: 0
+  _annularClosure: 0
+  _pinkyClosure: 0
+  _graspOriginOffset: {x: 0, y: 0, z: 0}
+  _graspOriginRadius: 0.1
+--- !u!114 &289825225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289825215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818fa9d7ef9470c4fabaccf234366b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _temperature:
+    _value: 0.5
+    _active: 0
+  _stiffness:
+    _value: 0
+    _active: 0
+  _texture:
+    _textureType: 0
+    _active: 0
+    _forcedVelocity: 0
+    _volume: 100
+  _graspable: 0
+  _surfaceExploration: 0
+  _graspingType: 0
 --- !u!1 &322300714 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7940807810997136023, guid: fd9fb6e27e2036c4988a047d38926dfb,
@@ -1001,6 +1055,8 @@ GameObject:
   - component: {fileID: 518226159}
   - component: {fileID: 518226158}
   - component: {fileID: 518226161}
+  - component: {fileID: 518226163}
+  - component: {fileID: 518226162}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -1284,6 +1340,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7656dfbf4c697043b70194446d5b554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &518226162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518226153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019f9147ace24ea4499ef3cf8f264bc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _handSide: 0
+  _touchablePosition: {x: 0, y: 0, z: 0}
+  _handPosition: {x: 0, y: 0, z: 0}
+  _touchableRotation: {x: 0, y: 0, z: 0, w: 0}
+  _handRotation: {x: 0, y: 0, z: 0, w: 0}
+  _thumbClosure: 0
+  _thumbAbduction: 0
+  _indexClosure: 0
+  _middleClosure: 0
+  _annularClosure: 0
+  _pinkyClosure: 0
+  _graspOriginOffset: {x: 0, y: 0, z: 0}
+  _graspOriginRadius: 0.1
+--- !u!114 &518226163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518226153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818fa9d7ef9470c4fabaccf234366b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _temperature:
+    _value: 0.5
+    _active: 0
+  _stiffness:
+    _value: 0
+    _active: 0
+  _texture:
+    _textureType: 0
+    _active: 0
+    _forcedVelocity: 0
+    _volume: 100
+  _graspable: 0
+  _surfaceExploration: 0
+  _graspingType: 0
 --- !u!1 &540314714 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2888722544849425612, guid: fd9fb6e27e2036c4988a047d38926dfb,
@@ -2978,7 +3086,7 @@ PrefabInstance:
     - target: {fileID: 5365118642188685207, guid: a5360446840a80a43933bba3ef82bbbc,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -995
+      value: -1725
       objectReference: {fileID: 0}
     - target: {fileID: 5391419347985355706, guid: a5360446840a80a43933bba3ef82bbbc,
         type: 3}
@@ -3383,7 +3491,7 @@ PrefabInstance:
     - target: {fileID: 8760697254269096060, guid: a5360446840a80a43933bba3ef82bbbc,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0005389642
+      value: -0.0041587544
       objectReference: {fileID: 0}
     - target: {fileID: 9192067925448537711, guid: a5360446840a80a43933bba3ef82bbbc,
         type: 3}
@@ -3530,6 +3638,8 @@ GameObject:
   - component: {fileID: 1165052863}
   - component: {fileID: 1165052865}
   - component: {fileID: 1165052868}
+  - component: {fileID: 1165052870}
+  - component: {fileID: 1165052869}
   m_Layer: 5
   m_Name: Previous
   m_TagString: Untagged
@@ -3773,6 +3883,58 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.54325086, y: 0.32952866, z: 0}
   m_Center: {x: 0.0072362423, y: -0.01910424, z: 0}
+--- !u!114 &1165052869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165052862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019f9147ace24ea4499ef3cf8f264bc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _handSide: 0
+  _touchablePosition: {x: 0, y: 0, z: 0}
+  _handPosition: {x: 0, y: 0, z: 0}
+  _touchableRotation: {x: 0, y: 0, z: 0, w: 0}
+  _handRotation: {x: 0, y: 0, z: 0, w: 0}
+  _thumbClosure: 0
+  _thumbAbduction: 0
+  _indexClosure: 0
+  _middleClosure: 0
+  _annularClosure: 0
+  _pinkyClosure: 0
+  _graspOriginOffset: {x: 0, y: 0, z: 0}
+  _graspOriginRadius: 0.1
+--- !u!114 &1165052870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165052862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818fa9d7ef9470c4fabaccf234366b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _temperature:
+    _value: 0.5
+    _active: 0
+  _stiffness:
+    _value: 0
+    _active: 0
+  _texture:
+    _textureType: 0
+    _active: 0
+    _forcedVelocity: 0
+    _volume: 100
+  _graspable: 0
+  _surfaceExploration: 0
+  _graspingType: 0
 --- !u!1 &1199060054 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3333488670073435194, guid: fd9fb6e27e2036c4988a047d38926dfb,
@@ -4442,6 +4604,8 @@ GameObject:
   - component: {fileID: 1898241522}
   - component: {fileID: 1898241519}
   - component: {fileID: 1898241523}
+  - component: {fileID: 1898241525}
+  - component: {fileID: 1898241524}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -4685,6 +4849,58 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5364302, y: 0.3379515, z: 0}
   m_Center: {x: -0.010094643, y: -0.028910613, z: 0}
+--- !u!114 &1898241524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898241517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019f9147ace24ea4499ef3cf8f264bc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _handSide: 0
+  _touchablePosition: {x: 0, y: 0, z: 0}
+  _handPosition: {x: 0, y: 0, z: 0}
+  _touchableRotation: {x: 0, y: 0, z: 0, w: 0}
+  _handRotation: {x: 0, y: 0, z: 0, w: 0}
+  _thumbClosure: 0
+  _thumbAbduction: 0
+  _indexClosure: 0
+  _middleClosure: 0
+  _annularClosure: 0
+  _pinkyClosure: 0
+  _graspOriginOffset: {x: 0, y: 0, z: 0}
+  _graspOriginRadius: 0.1
+--- !u!114 &1898241525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898241517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818fa9d7ef9470c4fabaccf234366b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _temperature:
+    _value: 0.5
+    _active: 0
+  _stiffness:
+    _value: 0
+    _active: 0
+  _texture:
+    _textureType: 0
+    _active: 0
+    _forcedVelocity: 0
+    _volume: 100
+  _graspable: 0
+  _surfaceExploration: 0
+  _graspingType: 0
 --- !u!1 &1939563952
 GameObject:
   m_ObjectHideFlags: 0
