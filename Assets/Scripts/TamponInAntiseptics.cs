@@ -14,6 +14,7 @@ public class TamponInAntiseptics : MonoBehaviour
     {
         MousePainter.painter.ResetPainting();
         wasUsed = false;
+        Debug.Log("dipped");
     }
 
     public float GetAvailableDistance()
@@ -29,5 +30,6 @@ public class TamponInAntiseptics : MonoBehaviour
     public void TamponWasUsed()
     {
         wasUsed = true;
+        Debug.Log("Naudotas");
     }
 }

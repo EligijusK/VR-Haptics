@@ -2,36 +2,39 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
+// 1) Declare this at namespace scope (outside of your MonoBehaviour)
+[Serializable]
+public class GameObjectEvent : UnityEvent<GameObject> { }
+
 public class NewAttachObject : MonoBehaviour
 {
     [SerializeField] Vector3 snapRotation;
-    public UnityEvent<GameObject> OnObjectAttached;
+    // 2) Use your serializable subclass here
+    public GameObjectEvent OnObjectAttached;
 
     private GameObject attachedObject;
     private Collider attachedCollider;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (attachedObject == null && other.attachedRigidbody != null && other.attachedRigidbody.CompareTag("Tampon"))
+        if (attachedObject == null 
+            && other.attachedRigidbody != null 
+            && other.attachedRigidbody.CompareTag("Tampon"))
         {
-            GameObject objectToAttach = other.attachedRigidbody.gameObject;
             attachedCollider = other;
-            attachedObject = objectToAttach;
-
-            // Attach the object automatically
+            attachedObject = other.attachedRigidbody.gameObject;
             AttachNow();
         }
     }
 
     private void AttachNow()
     {
-        if (attachedObject != null)
-        {
-            Destroy(attachedCollider.attachedRigidbody); // Optional: Remove Rigidbody if you want to freeze it
-            attachedObject.transform.SetParent(transform);
-            attachedObject.transform.position = transform.position;
-            attachedObject.transform.rotation = Quaternion.Euler(snapRotation);
-            OnObjectAttached.Invoke(attachedObject);
-        }
+        if (attachedObject == null) return;
+
+        Destroy(attachedCollider.attachedRigidbody);
+        attachedObject.transform.SetParent(transform);
+        attachedObject.transform.position = transform.position;
+        attachedObject.transform.rotation = Quaternion.Euler(snapRotation);
+        OnObjectAttached.Invoke(attachedObject);
     }
 }
